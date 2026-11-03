@@ -58,7 +58,7 @@ def extract(path, roots, overrides, header):
     # Reject accidentally expanding the slice to a service or external runner.
     forbidden = {'urllib', 'requests', 'subprocess', 'os', 'cgi', 'environ', 'socket', 'importlib'}
     if missing & forbidden: raise ValueError(f'Unsafe dependency expansion: {missing & forbidden}')
-    allowed = {'re','json','hashlib','copy','HTTPStatus','Path','app','_VIDEO_PROMPT_RULES'}
+    allowed = {'re','json','hashlib','copy','HTTPStatus','Path','app','_VIDEO_PROMPT_RULES','html','HTMLParser'}
     if missing - allowed: raise ValueError(f'Unresolved dependencies: {missing - allowed}')
     return header + '\n\n' + body + '\n', [
         {'name': name, 'sourceLine': n.lineno, 'sha256': hashlib.sha256(ast.get_source_segment(source,n).encode()).hexdigest()}
@@ -90,6 +90,12 @@ def main():
     worker, worker_records = extract(checkout/'deploy/kalam-design-worker.py',
         ['render_prompt','render_size','canvas_size'], {'app'}, header)
     (dest/'image_rules.py').write_text(worker, encoding='utf-8')
+    data, data_records=extract(checkout/'deploy/kalam-design-gateway.app.py',
+        ['MORNING_CITIES','PERSIAN_MONTHS','PERSIAN_WEEKDAYS','PERSIAN_CALENDAR_WEEKDAYS','FA_DIGITS',
+         'gregorian_to_jalali','weather_label','compact_number','attire_for_temperature',
+         'SPORT_COMPETITIONS','sport_fa_name','normalise_calendar_text','MonthlyCalendarRowParser',
+         'PERSIAN_DIGITS_TO_ASCII'],set(),header+'\nimport html\nfrom html.parser import HTMLParser')
+    (dest/'data_rules.py').write_text(data,encoding='utf-8')
     shutil.copyfile(checkout/'deploy/kalam-video-prompt.py',dest/'video_rules.py')
     source_files = [str(p.relative_to(checkout)) for p in sorted(
         (checkout/'kalam-design-studio/apps/admin-miniapp/src').iterdir()) if p.suffix in {'.ts','.tsx'}]
@@ -113,10 +119,10 @@ def main():
         for p in sorted(studio_assets.rglob('*')) if p.is_file() and p.name!='provenance.json' and 'references' not in p.relative_to(studio_assets).parts}})
     write_json(dest/'sources.json', {'repository':'https://github.com/FarzadKalam/KalamStudio',
         'commit':commit,'extraction':'AST dependency slice; application is never imported',
-        'gateway':records,'image':worker_records,
+        'gateway':records,'image':worker_records,'data':data_records,
         'snapshots':[{'path':p,'sha256':hashlib.sha256((checkout/p).read_bytes()).hexdigest()} for p in source_files]})
     write_json(dest/'checksums.json',{name:hashlib.sha256((dest/name).read_bytes()).hexdigest()
-               for name in ['gateway_rules.py','image_rules.py','video_rules.py']})
+               for name in ['gateway_rules.py','image_rules.py','video_rules.py','data_rules.py']})
     print(json.dumps({'commit':commit,'gatewaySymbols':len(records),'imageSymbols':len(worker_records)}))
 
 if __name__ == '__main__': main()

@@ -7,6 +7,7 @@ import {ROOT,inside,readJson,writeJson,browser,localEnv} from './lib/paths.mjs';
 import {binary} from './lib/tools.mjs';
 import {python} from './lib/studio-runtime.mjs';
 import {createContentProject,projectPath,attachReference,buildBrief,saveRevision,kinds} from './content-projects.mjs';
+import {defaultDataRequests,refreshData,importWebData,validateData} from './content-data.mjs';
 const [command,...args]=process.argv.slice(2),opts={},pos=[];
 for(let i=0;i<args.length;i++) {
   if(args[i].startsWith('--'))opts[args[i].slice(2)]=args[i+1]&&!args[i+1].startsWith('--')?args[++i]:true;
@@ -30,7 +31,10 @@ try {
     new:'--id job --kind image|text|slides|audio|video-prompts|motion --brand golbahar [--template news_story] [--spec file.json]',
     set:'job --patch changes.json (تنظیمات فعلی حفظ و نسخهٔ قبلی ذخیره می‌شود)',
     attach:'job input.png [--kind presenter --entityId kamran --scope studio]',
-    brief:'job (ساخت دستور دقیق برای ابزار داخلی؛ هیچ مدل یا API فراخوانی نمی‌شود)',
+    brief:'job (دریافت دادهٔ عمومی لازم و ساخت دستور؛ مدل تولید محتوا فراخوانی نمی‌شود)',
+    refresh:'job [--force] [--replace]؛ دریافت دادهٔ عمومی، ثبت منبع و حفظ مقادیر دستی',
+    'data-plan':'job؛ فهرست درخواست‌های دادهٔ موردنیاز قالب',
+    'data-import':'job --binding rates-request --file evidence.json؛ ورود مدرک بازبینی‌شدهٔ ابزار وب',
     resume:'job',capabilities:'job --file evidence.json',
     'image-export':'job input.png [--slide 1] (تطبیق ابعاد بدون برش؛ کنترل alpha استیکر)',
     'text-export':'job output.txt (اعتبارسنجی JSON اسلایدها در صورت نیاز)',
@@ -57,7 +61,7 @@ try {
         commonOptions:ui.stateDefaults.filter(s=>/^(news|studio|image|logo|advertising|citizen|videoFrame|videoOverlay|siteLink)/.test(s.name)),
         completeSettings:'catalog/studio-ui.json',sourceBuilders:ui.requestBuilders});
     } else if(opts.profile) {if(!rules.editorialProfiles[opts.profile])throw new Error('نوع متن ناشناخته است.');print(rules.editorialProfiles[opts.profile]);}
-    else print({kinds,templates:ui.templates,editorialProfiles:Object.fromEntries(Object.entries(rules.editorialProfiles).map(([k,v])=>[k,v.label])),sourceModels:rules.imageModels,sourceVoices:rules.voiceEngines,limits:rules.limits,live:rules.runtimeSnapshot});
+    else print({kinds,templates:ui.templates,editorialProfiles:Object.fromEntries(Object.entries(rules.editorialProfiles).map(([k,v])=>[k,v.label])),sourceModels:rules.imageModels,sourceVoices:rules.voiceEngines,limits:rules.limits,publicDataCatalog:'catalog/public-data.json',newsDiscovery:false,live:rules.runtimeSnapshot});
   } else if(command==='new') {
     const options={...opts,id:required(opts.id)};if(opts.spec)options.spec=readJson(opts.spec);
     print({project:createContentProject(options)});
@@ -65,9 +69,13 @@ try {
     const dest=projectPath(required(pos[0])),file=inside(dest,'spec.json');const before=readJson(file),patch=readJson(required(opts.patch));
     const next=merge(before,patch);
     if(next.kind!==before.kind||next.brand!==before.brand)throw new Error('نوع و برند سفارش را با تغییر تنظیمات عوض نکن؛ سفارش مستقل بساز.');
+    if(patch.dataRequests===undefined&&(patch.request?.format?.template||patch.request?.content?.sportMode||patch.slides))next.dataRequests=defaultDataRequests(next).map(binding=>({...binding,...before.dataRequests?.find(old=>old.id===binding.id&&old.task===binding.task)}));
     saveRevision(dest,'settings-change');writeJson(file,next);
     const state=readJson(inside(dest,'project.json'));state.phase='brief';delete state.latestBrief;delete state.latestBriefSpecSha256;writeJson(path.join(dest,'project.json'),state);print({spec:file});
   } else if(command==='attach')print(attachReference(required(pos[0]),required(pos[1]),opts));
+  else if(command==='refresh')print(refreshData(projectPath(required(pos[0])),{force:!!opts.force,replace:!!opts.replace,saveRevision}));
+  else if(command==='data-plan') {const spec=readJson(inside(projectPath(required(pos[0])),'spec.json'));print({configured:spec.dataRequests||[],suggested:defaultDataRequests(spec),catalog:'catalog/public-data.json'});}
+  else if(command==='data-import')print(importWebData(projectPath(required(pos[0])),required(opts.binding),required(opts.file),{replace:!!opts.replace,saveRevision}));
   else if(command==='brief') {const result=buildBrief(required(pos[0]));print({file:result.file,kind:result.result.kind});}
   else if(command==='resume') {
     const dest=projectPath(required(pos[0]));
@@ -81,6 +89,7 @@ try {
     saveRevision(dest,'host-capabilities');state.capabilities={...state.capabilities,...evidence};writeJson(path.join(dest,'project.json'),state);print(state.capabilities);
   } else if(command==='image-export'||command==='text-export') {
     const dest=projectPath(required(pos[0])),state=readJson(inside(dest,'project.json'));
+    validateData(dest);
     if(!state.latestBrief)throw new Error('ابتدا brief بساز.');
     const currentSpecHash=crypto.createHash('sha256').update(fs.readFileSync(inside(dest,'spec.json'))).digest('hex');
     if(state.latestBriefSpecSha256!==currentSpecHash)throw new Error('تنظیمات سفارش پس از ساخت brief تغییر کرده؛ brief تازه بساز.');

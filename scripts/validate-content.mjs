@@ -10,6 +10,7 @@ assert.deepEqual(ui.templates.map(t=>t.id).sort(),Object.keys(rules.imageTemplat
 assert.ok(ui.requestBuilders.length,'Missing original request builder');
 const current=JSON.parse(python([path.join(ROOT,'scripts/studio.py'),'catalog']));
 assert.deepEqual(current,rules,'Studio catalog is stale; run npm run catalog:studio');
+assert.deepEqual(JSON.parse(python([path.join(ROOT,'scripts/public_data.py'),'catalog'])),readJson(path.join(ROOT,'catalog/public-data.json')),'Public data catalog is stale');
 const source=readJson(path.join(ROOT,'vendor/studio/sources.json'));
 for(const item of source.snapshots)assert.equal(sha(path.join(ROOT,'vendor/studio/source',item.path)),item.sha256,'Source snapshot changed: '+item.path);
 const lock=readJson(path.join(ROOT,'vendor/studio/checksums.json'));

@@ -6,6 +6,7 @@ import {spawnSync} from 'node:child_process';
 import {ROOT,readJson} from '../scripts/lib/paths.mjs';
 import {createContentProject,attachReference,buildBrief} from '../scripts/content-projects.mjs';
 import {python} from '../scripts/lib/studio-runtime.mjs';
+import {refreshData,defaultDataRequests,validateData} from '../scripts/content-data.mjs';
 function fixture(t) {
   const base=path.join(ROOT,'.cache/tests');fs.mkdirSync(base,{recursive:true});
   const root=fs.mkdtempSync(path.join(base,'content-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
@@ -62,4 +63,36 @@ test('sticker export rejects opaque alpha and stale briefs while preserving real
   const result=JSON.parse(good.stdout);assert.equal((await sharp(result.file).metadata()).width,1024);
   spec.request.content.stickerText='متن تازه';fs.writeFileSync(specPath,JSON.stringify(spec));
   const stale=run(transparent);assert.equal(stale.status,1);assert.match(stale.stderr,/تغییر/);
+});
+function weatherEvidence() {
+  const date=python(['-c',"import sys;sys.path.insert(0,'scripts');import public_data as d;print(d.target_date('today',d.now_utc()))"]).trim();
+  return {schemaVersion:1,task:'weather',status:'ready',fetchedAt:new Date().toISOString(),expiresAt:new Date(Date.now()+900000).toISOString(),
+    meta:{city:'golbahar',date,timeZone:'Asia/Tehran',observedAt:new Date().toISOString()},sources:[{url:'https://api.open-meteo.com/',retrievedAt:new Date().toISOString(),sha256:'0'.repeat(64)}],warnings:[],
+    values:{morningWeatherCondition:'ابری',morningMinTemperature:'۸',morningMaxTemperature:'۱۸',morningWindSpeed:'۵ km/h',morningHumidity:'۶۰٪',morningAttire:'ژاکت سبک'}};
+}
+test('morning orders declare real data needs and use the selected city',t=>{
+  const root=fixture(t),dest=createContentProject({id:'morning',kind:'image',brand:'golbahar',template:'morning_local'},root),spec=readJson(path.join(dest,'spec.json'));
+  assert.deepEqual(spec.dataRequests.map(b=>b.task),['date','weather','prayer','occasions']);
+  assert.equal(spec.request.content.morningCity,'golbahar');
+  spec.kind='slides';spec.slides=[spec.request,spec.request];
+  assert.ok(defaultDataRequests(spec).some(b=>b.target===1&&b.task==='weather'));
+  assert.deepEqual(defaultDataRequests({kind:'image',request:{format:{template:'sport'},content:{sportMode:'news'}}}),[]);
+});
+test('data refresh preserves manual values, updates owned fields and gates the brief on valid evidence',t=>{
+  const root=fixture(t),dest=createContentProject({id:'weather',kind:'image',brand:'golbahar'},root),file=path.join(dest,'spec.json');
+  const spec=readJson(file);spec.request.content.title='نمونهٔ آزمون';spec.request.content.morningMinTemperature='۹۹';spec.dataRequests=[{id:'weather-request',task:'weather',target:'request'}];fs.writeFileSync(file,JSON.stringify(spec));
+  const evidence=weatherEvidence();const get=()=>[{id:'weather-request',result:evidence}];
+  const first=refreshData(dest,{fetchResults:get});assert.equal(first.canRender,true);
+  assert.equal(readJson(file).request.content.morningMinTemperature,'۹۹');assert.equal(readJson(file).request.content.morningMaxTemperature,'۱۸');
+  evidence.values.morningMaxTemperature='۲۰';refreshData(dest,{fetchResults:get});
+  assert.equal(readJson(file).request.content.morningMaxTemperature,'۲۰');assert.equal(readJson(file).request.content.morningMinTemperature,'۹۹');
+  assert.equal(validateData(dest).valid,true);
+  const result=buildBrief('weather',root);assert.ok(fs.existsSync(result.file));
+});
+test('failed public data leaves the project blocked and does not inject speculative values',t=>{
+  const root=fixture(t),dest=createContentProject({id:'blocked-data',kind:'image',brand:'golbahar'},root),file=path.join(dest,'spec.json'),spec=readJson(file);
+  spec.dataRequests=[{id:'weather-request',task:'weather',target:'request'}];fs.writeFileSync(file,JSON.stringify(spec));
+  const report=refreshData(dest,{fetchResults:()=>[{id:'weather-request',result:{...weatherEvidence(),status:'blocked',values:{},error:'offline'}}]});
+  assert.equal(report.canRender,false);assert.equal(readJson(path.join(dest,'project.json')).phase,'data-blocked');
+  assert.equal(readJson(file).request.content.morningMinTemperature,'');assert.throws(()=>validateData(dest));
 });

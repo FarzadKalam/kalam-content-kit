@@ -2,26 +2,263 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Kalam Content Spec",
   "type": "object",
-  "required": ["kind", "brand"],
+  "required": [
+    "kind",
+    "brand"
+  ],
   "properties": {
-    "schemaVersion": {"const": 1},
-    "kind": {"enum": ["text", "image", "slides", "audio", "video-prompts", "motion"]},
-    "brand": {"type": "string"},
-    "profile": {"type": "string"},
-    "text": {"type": "string"},
-    "additionalInstructions": {"type": "string"},
-    "channelJoinUrl": {"type": "string"},
-    "request": {"type": "object", "description": "Original Studio design payload; canonical validation is the pinned offline Gateway rule."},
-    "slides": {"type": "array", "minItems": 1, "maxItems": 10, "items": {"type": "object"}},
-    "video": {"type": "object", "description": "Original Studio video-project payload."},
-    "audio": {"type": "object", "properties": {"text": {"type": "string", "maxLength": 4096}, "instructions": {"type": "string", "maxLength": 800}, "engineId": {"type": "string"}, "voice": {"type": "string"}}},
-    "references": {"type": "array", "items": {"type": "object", "required": ["assetId", "kind", "entityId", "path"], "properties": {"assetId": {"type": "string"}, "kind": {"enum": ["image", "presenter", "location", "monitor", "audio", "footage"]}, "entityId": {"type": "string"}, "path": {"type": "string"}, "scope": {"enum": ["studio", "project"]}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}}
+    "schemaVersion": {
+      "const": 1
+    },
+    "kind": {
+      "enum": [
+        "text",
+        "image",
+        "slides",
+        "audio",
+        "video-prompts",
+        "motion"
+      ]
+    },
+    "brand": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "additionalInstructions": {
+      "type": "string"
+    },
+    "channelJoinUrl": {
+      "type": "string"
+    },
+    "request": {
+      "type": "object",
+      "description": "Original Studio design payload; canonical validation is the pinned offline Gateway rule."
+    },
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object"
+      }
+    },
+    "video": {
+      "type": "object",
+      "description": "Original Studio video-project payload."
+    },
+    "audio": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "maxLength": 4096
+        },
+        "instructions": {
+          "type": "string",
+          "maxLength": 800
+        },
+        "engineId": {
+          "type": "string"
+        },
+        "voice": {
+          "type": "string"
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "assetId",
+          "kind",
+          "entityId",
+          "path"
+        ],
+        "properties": {
+          "assetId": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "image",
+              "presenter",
+              "location",
+              "monitor",
+              "audio",
+              "footage"
+            ]
+          },
+          "entityId": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "scope": {
+            "enum": [
+              "studio",
+              "project"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "dataRequests": {
+      "type": "array",
+      "maxItems": 40,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "task"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+          },
+          "task": {
+            "enum": [
+              "date",
+              "market-date",
+              "weather",
+              "prayer",
+              "kalam-calendar",
+              "occasions",
+              "kalam-occasions",
+              "sports",
+              "rates"
+            ]
+          },
+          "target": {
+            "anyOf": [
+              {
+                "enum": [
+                  "request",
+                  "context"
+                ]
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9
+              }
+            ]
+          },
+          "date": {
+            "type": "string"
+          },
+          "city": {
+            "enum": [
+              "golbahar",
+              "chenaran"
+            ]
+          },
+          "competition": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "result",
+              "league",
+              "upcoming"
+            ]
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "required": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "dataEvidence": {
+      "type": "object",
+      "description": "Local immutable result files with SHA-256, applied fields and preserved manual fields."
+    }
   },
   "allOf": [
-    {"if": {"properties": {"kind": {"const": "image"}}}, "then": {"required": ["request"]}},
-    {"if": {"properties": {"kind": {"const": "slides"}}}, "then": {"required": ["slides"]}},
-    {"if": {"properties": {"kind": {"const": "text"}}}, "then": {"required": ["profile", "text"]}},
-    {"if": {"properties": {"kind": {"const": "audio"}}}, "then": {"required": ["audio"]}},
-    {"if": {"properties": {"kind": {"const": "video-prompts"}}}, "then": {"required": ["video"]}}
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "image"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "request"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "slides"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "slides"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "text"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "profile",
+          "text"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "audio"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "audio"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "video-prompts"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "video"
+        ]
+      }
+    }
   ]
 }

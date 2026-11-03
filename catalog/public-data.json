@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "cities": {
+    "golbahar": {
+      "label": "گلبهار",
+      "latitude": 36.56976,
+      "longitude": 59.1904
+    },
+    "chenaran": {
+      "label": "چناران",
+      "latitude": 36.64546,
+      "longitude": 59.12123
+    }
+  },
+  "competitions": {
+    "iran_pro": {
+      "leagueId": "4742",
+      "label": "لیگ برتر ایران",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "afc_champions": {
+      "leagueId": "4719",
+      "label": "لیگ نخبگان آسیا",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "premier_league": {
+      "leagueId": "4328",
+      "label": "لیگ برتر انگلیس",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "la_liga": {
+      "leagueId": "4335",
+      "label": "لالیگا",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "serie_a": {
+      "leagueId": "4332",
+      "label": "سری آ",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "bundesliga": {
+      "leagueId": "4331",
+      "label": "بوندس‌لیگا",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "champions_league": {
+      "leagueId": "4480",
+      "label": "لیگ قهرمانان اروپا",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "club_world_cup": {
+      "leagueId": "",
+      "label": "جام باشگاه‌های جهان",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "world_cup": {
+      "leagueId": "",
+      "label": "جام جهانی",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "euro": {
+      "leagueId": "",
+      "label": "یورو",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "asian_cup": {
+      "leagueId": "",
+      "label": "جام ملت‌های آسیا",
+      "sport": "فوتبال",
+      "provider": "TheSportsDB"
+    },
+    "iran_national": {
+      "leagueId": "",
+      "label": "تیم‌های ملی ایران و رقابت‌های مهم",
+      "sport": "چندرشته‌ای",
+      "provider": "منبع رسمی در حال اتصال"
+    },
+    "olympics": {
+      "leagueId": "",
+      "label": "المپیک",
+      "sport": "چندرشته‌ای",
+      "provider": "منبع رسمی در حال اتصال"
+    }
+  },
+  "tasks": {
+    "date": {
+      "fields": [
+        "morningWeekday",
+        "morningPersianDate",
+        "morningGregorianDate",
+        "morningHijriDate"
+      ],
+      "requiresModelApi": false
+    },
+    "market-date": {
+      "fields": [
+        "marketWeekday",
+        "marketPersianDate",
+        "marketGregorianDate",
+        "marketHijriDate",
+        "marketTime"
+      ],
+      "requiresModelApi": false
+    },
+    "weather": {
+      "fields": [
+        "morningWeatherCondition",
+        "morningMinTemperature",
+        "morningMaxTemperature",
+        "morningWindSpeed",
+        "morningHumidity",
+        "morningAttire"
+      ],
+      "requiresModelApi": false
+    },
+    "prayer": {
+      "fields": [
+        "morningFajr",
+        "morningSunrise",
+        "morningNoon",
+        "morningSunset",
+        "morningMaghrib",
+        "morningMidnight"
+      ],
+      "requiresModelApi": false
+    },
+    "kalam-calendar": {
+      "fields": [
+        "morningKalamWeekLabel",
+        "morningKalamTodayIndex",
+        "morningKalamDay1",
+        "morningKalamDay2",
+        "morningKalamDay3",
+        "morningKalamDay4",
+        "morningKalamDay5",
+        "morningKalamDay6",
+        "morningKalamDay7"
+      ],
+      "requiresModelApi": false
+    },
+    "occasions": {
+      "fields": [
+        "morningLocalOccasion"
+      ],
+      "requiresModelApi": false
+    },
+    "kalam-occasions": {
+      "fields": [
+        "morningKalamOccasion"
+      ],
+      "requiresModelApi": false
+    },
+    "sports": {
+      "fields": [
+        "sportCompetition",
+        "sportResults",
+        "sportSource",
+        "sportEventIds",
+        "sportVisualAssets"
+      ],
+      "requiresModelApi": false
+    },
+    "rates": {
+      "fields": [
+        "marketUsdPrice",
+        "marketEurPrice",
+        "marketCoinPrice",
+        "marketGold18Price",
+        "marketBitcoinPrice",
+        "marketUsdChange",
+        "marketEurChange",
+        "marketCoinChange",
+        "marketGold18Change",
+        "marketBitcoinChange",
+        "marketSource",
+        "marketTime"
+      ],
+      "requiresModelApi": false
+    }
+  },
+  "timeZone": "Asia/Tehran",
+  "newsDiscovery": false,
+  "hosts": [
+    "api.aladhan.com",
+    "api.open-meteo.com",
+    "baha24.com",
+    "pnldev.com",
+    "raw.githubusercontent.com",
+    "tgju.org",
+    "www.bahesab.ir",
+    "www.tgju.org",
+    "www.thesportsdb.com"
+  ]
+}

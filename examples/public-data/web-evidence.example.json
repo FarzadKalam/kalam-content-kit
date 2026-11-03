@@ -1,0 +1,25 @@
+{
+  "task": "rates",
+  "reviewed": false,
+  "reviewNote": "REPLACE_AFTER_ACTUAL_WEB_REVIEW",
+  "values": {
+    "marketUsdPrice": "REPLACE",
+    "marketEurPrice": "REPLACE",
+    "marketCoinPrice": "REPLACE",
+    "marketGold18Price": "REPLACE",
+    "marketBitcoinPrice": "REPLACE"
+  },
+  "meta": {
+    "date": "REPLACE_WITH_IRAN_DATE_YYYY-MM-DD",
+    "timeZone": "Asia/Tehran",
+    "observedAt": "REPLACE_WITH_QUOTE_TIME_AND_OFFSET",
+    "units": {
+      "marketUsdPrice": "toman",
+      "marketEurPrice": "toman",
+      "marketCoinPrice": "toman",
+      "marketGold18Price": "toman",
+      "marketBitcoinPrice": "USD"
+    }
+  },
+  "sources": [{"url": "https://www.tgju.org/", "retrievedAt": "REPLACE_WITH_ACTUAL_WEB_RETRIEVAL_TIME", "excerpt": "REPLACE_WITH_SOURCE_EVIDENCE"}]
+}

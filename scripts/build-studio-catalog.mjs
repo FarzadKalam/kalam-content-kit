@@ -73,4 +73,10 @@ for(const exe of [process.env.KALAM_PYTHON,'python3','python'].filter(Boolean)) 
 }
 if(!compiled)throw new Error('Python 3.11+ required');
 writeJson(path.join(ROOT,'catalog/studio.json'),compiled);
+for(const exe of [process.env.KALAM_PYTHON,'python3','python'].filter(Boolean)) {
+  const r=spawnSync(exe,[path.join(ROOT,'scripts/public_data.py'),'catalog'],{encoding:'utf8'});
+  if(r.error?.code==='ENOENT')continue;
+  if(r.status!==0)throw new Error(r.stderr||'Public data catalog failed');
+  writeJson(path.join(ROOT,'catalog/public-data.json'),JSON.parse(r.stdout));break;
+}
 console.log(JSON.stringify({templates:catalog.templates.length,contentFields:Object.keys(catalog.initialContent).length,controls:catalog.controls.length,stateDefaults:catalog.stateDefaults.length,editorialProfiles:Object.keys(compiled.editorialProfiles).length}));

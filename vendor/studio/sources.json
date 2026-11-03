@@ -391,6 +391,83 @@
       "sha256": "8efab98bbe6cece728649ca7f95fc2e3df58e475d0e93b9ba3d865321db00028"
     }
   ],
+  "data": [
+    {
+      "name": "FA_DIGITS",
+      "sourceLine": 792,
+      "sha256": "3f038ac27c34bba460eed1c36f8be6577da1d71df8eb9092855ba6d7c7e6d192"
+    },
+    {
+      "name": "MORNING_CITIES",
+      "sourceLine": 784,
+      "sha256": "e49c238ca7b06cefd2aa2421f1a5a6bb12ca627a923173d749cf7bd9c039df44"
+    },
+    {
+      "name": "MonthlyCalendarRowParser",
+      "sourceLine": 1347,
+      "sha256": "3e2959492eab5fbd897f589e973a3db902ade072ea980b3eff1a8fc8d9eee3c0"
+    },
+    {
+      "name": "PERSIAN_CALENDAR_WEEKDAYS",
+      "sourceLine": 790,
+      "sha256": "284cec653e7bdbbfea57e74ee83a8b71d13d961c7f3ddd04fca19965d5f52448"
+    },
+    {
+      "name": "PERSIAN_DIGITS_TO_ASCII",
+      "sourceLine": 1340,
+      "sha256": "c6ca80a4f383baedbe2f006c831ac893532e77476d1bb6dd9aa0a8029546579f"
+    },
+    {
+      "name": "PERSIAN_MONTHS",
+      "sourceLine": 788,
+      "sha256": "18b09112faebb424873f8b7215564ee2bff3b97575b94811dee216f7cb3c47b1"
+    },
+    {
+      "name": "PERSIAN_WEEKDAYS",
+      "sourceLine": 789,
+      "sha256": "d6999d233238e3922fb3155085223274577da4383f29169ce44f370a5bd1f7df"
+    },
+    {
+      "name": "SPORT_COMPETITIONS",
+      "sourceLine": 1216,
+      "sha256": "ba83b024bdb31dbc52bcf5a6e47d71df6cb7547d8a74f0f8006a7dd0e44c4e69"
+    },
+    {
+      "name": "SPORT_FA_NAMES",
+      "sourceLine": 1238,
+      "sha256": "2f80fc5ce50ab74c16f4eddd5c10e69a8096939239bac5d5ee401b8cb5d1fffc"
+    },
+    {
+      "name": "attire_for_temperature",
+      "sourceLine": 870,
+      "sha256": "a83a482ccec2604f5083e05c5aa2ed6e4bf0481ce182f46ea0e6a07f323edf4c"
+    },
+    {
+      "name": "compact_number",
+      "sourceLine": 865,
+      "sha256": "01241bfc0b6d8db3dc8f137afa95aa6b6209b704803de3b4ac581f74bb6c5497"
+    },
+    {
+      "name": "gregorian_to_jalali",
+      "sourceLine": 799,
+      "sha256": "61e3cbeca443a7d01ae538be2b467104ea1249049239107c2fcff12c91b5338f"
+    },
+    {
+      "name": "normalise_calendar_text",
+      "sourceLine": 1343,
+      "sha256": "16bec5fc5ae3d192536f5c4f754c0dea3d3f5ad39a3bb64fb2a1e555b16d2635"
+    },
+    {
+      "name": "sport_fa_name",
+      "sourceLine": 1244,
+      "sha256": "7d24422dae450de0bb8396a7cb9cdbba6c9ff30f3463a465b8d354b6259108ed"
+    },
+    {
+      "name": "weather_label",
+      "sourceLine": 860,
+      "sha256": "1a49be83539be40e13cc998079c94190553c133405860e4a552451babd6e748e"
+    }
+  ],
   "snapshots": [
     {
       "path": "kalam-design-studio/apps/admin-miniapp/src/App.tsx",

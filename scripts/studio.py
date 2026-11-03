@@ -109,6 +109,9 @@ def checked_reference(item, base):
     return path
 
 def compile_spec(spec, base, settings_dir=None):
+    if spec.get('dataRequests'):
+        from public_data import validate_evidence
+        validate_evidence(spec,base)
     references=spec.get('references',[])
     for item in references: checked_reference(item,base)
     settings,prompts=configure(settings_dir,references)

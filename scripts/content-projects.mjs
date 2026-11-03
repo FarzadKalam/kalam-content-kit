@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import {ROOT,inside,safeId,readJson,writeJson} from './lib/paths.mjs';
 import {createProject} from './projects.mjs';
 import {compile} from './lib/studio-runtime.mjs';
+import {defaultDataRequests,refreshData,dataIsFresh} from './content-data.mjs';
 
 export const kinds=['text','image','slides','audio','video-prompts','motion'];
 export const projectPath=(id,root=ROOT)=>inside(path.join(root,'.local/projects'),safeId(id));
@@ -17,6 +18,7 @@ export function imageRequest({id,brand,template='news_story',canvas,root=ROOT}) 
   canvas=canvas||(template==='sticker'?'sticker_1024x1024':template==='news_post'||template==='poll_post'?'post_1080x1350':'story_1080x1920');
   const req={requestId:id,platform:'codex',brand,format:{family:definition.group==='non_news'?'fixed':definition.group,template,canvas,logoBehavior:'floating_profile',slideMode:'single',slideCount:1},
     content:{...ui.initialContent},image:{mode:'generate',engine:'',quality:'medium',aiWritesText:true,useAllUploadedImages:true},assets:{adminImageIds:[]},production:{kind:'image'}};
+  if(template==='morning_local')req.content.morningCity=brand==='chenaran'?'chenaran':'golbahar';
   if(definition.group==='news'&&template!=='citizen_message')req.format.news={outputKind:'title_photo',layout:'top',photoFrame:'full',videoOverlay:false,videoFrame:'landscape',videoBackgroundBlur:false,siteLinkPlaceholder:false};
   if(template==='citizen_message')req.format.citizen={messageType:'text'};
   if(template==='morning_kalam')req.format.morningKalam={todayIndex:1,holidayIndexes:[]};
@@ -47,6 +49,7 @@ export function createContentProject({id,brand='kalametaze',kind='image',templat
     if(kind==='video-prompts')spec.video={projectId:crypto.randomUUID(),brand,canvas:'portrait',qualityMode:'precise',generationModel:'veo_3_1',directionMode:'news_bulletin',durationSeconds:8,resolution:'1080p',speechEnabled:true,presenterIds:['kamran'],
       location:{mode:'catalog',id:'newsroom'},monitor:{enabled:true,mode:'blank'},characterInstructions:{},referenceSelection:{presenters:{kamran:{mode:'auto',assetIds:[]}},location:{mode:'auto',assetIds:[]}},
       lines:[{presenterId:'kamran',text:'',shot:'medium',durationSeconds:8,description:'',dialogueStartSecond:0,dialogueEndSecond:8}],timeline:[],music:{mood:'neutral'},additionalInstructions:''};
+    spec.dataRequests=defaultDataRequests(spec);
   }
   if(kind==='motion') {
     width=Number(width);height=Number(height);
@@ -106,6 +109,10 @@ export function attachReference(id,input,{kind='image',entityId='input',assetId=
 export function buildBrief(id,root=ROOT) {
   const dest=projectPath(id,root);
   const specPath=inside(dest,'spec.json');
+  if(!dataIsFresh(dest)) {
+    const data=refreshData(dest,{saveRevision});
+    if(!data.canRender)throw new Error('داده‌های روز آماده نیستند؛ گزارش publicData را بخوان، منبع وب معتبر وارد کن یا دادهٔ دستیِ تأییدشده را انتخاب کن.');
+  }
   const result=compile(specPath,inside(dest,'settings'));
   saveRevision(dest,'compile-brief');
   const outputs=inside(dest,'analysis');fs.mkdirSync(outputs,{recursive:true});
