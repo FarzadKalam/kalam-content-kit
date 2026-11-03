@@ -61,4 +61,4 @@ npm run data -- catalog
 
 ریپو شامل فایل‌های مشترک است. سفارش‌ها، صوت و ویدیوی مشتری، خروجی‌ها، snapshotهای دریافت داده و اطلاعات ورود زیر `.local`/`.cache` باقی می‌مانند و عمومی نمی‌شوند. `content pack` فقط برای انتقال خصوصی یک سفارش اختیاری است و بخشی از توزیع کیت نیست. مجوزهای اصلی و ثالث در [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) حفظ شده‌اند.
 
-پشتیبانی آزموده‌شدهٔ نسخهٔ حاضر: Codex روی Linux x64. [راهنمای Claude، Manus و Gemini](docs/studio/portability.fa.md) محدودیت‌های انتقال را توضیح می‌دهد؛ اجرای کامل آن محیط‌ها ادعا نمی‌شود.
+اجرای محتوایی Codex روی Linux x64 آزموده شده است؛ بررسی‌های فنی کیت در [GitHub Actions](https://github.com/FarzadKalam/kalam-content-kit/actions) روی Linux و Windows موفق بوده‌اند. [راهنمای Claude، Manus و Gemini](docs/studio/portability.fa.md) محدودیت‌های انتقال را توضیح می‌دهد؛ اجرای کامل آن محیط‌ها ادعا نمی‌شود.
