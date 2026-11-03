@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import ts from 'typescript';
-import {spawnSync} from 'node:child_process';
 import {ROOT,writeJson} from './lib/paths.mjs';
+import {python} from './lib/studio-runtime.mjs';
 const base=path.join(ROOT,'vendor/studio/source/kalam-design-studio/apps/admin-miniapp/src');
 const files=fs.readdirSync(base).filter(f=>/\.tsx?$/.test(f)).sort();
 const catalog={schemaVersion:1,templates:[],initialContent:{},constants:[],stateDefaults:[],types:[],controls:[],requestBuilders:[]};
@@ -64,19 +64,7 @@ for(const file of files) {
   visit(source);
 }
 writeJson(path.join(ROOT,'catalog/studio-ui.json'),catalog);
-let compiled;
-for(const exe of [process.env.KALAM_PYTHON,'python3','python'].filter(Boolean)) {
-  const r=spawnSync(exe,[path.join(ROOT,'scripts/studio.py'),'catalog'],{encoding:'utf8'});
-  if(r.error?.code==='ENOENT')continue;
-  if(r.status!==0)throw new Error(r.stderr||'Studio catalog failed');
-  compiled=JSON.parse(r.stdout);break;
-}
-if(!compiled)throw new Error('Python 3.11+ required');
+const compiled=JSON.parse(python([path.join(ROOT,'scripts/studio.py'),'catalog']));
 writeJson(path.join(ROOT,'catalog/studio.json'),compiled);
-for(const exe of [process.env.KALAM_PYTHON,'python3','python'].filter(Boolean)) {
-  const r=spawnSync(exe,[path.join(ROOT,'scripts/public_data.py'),'catalog'],{encoding:'utf8'});
-  if(r.error?.code==='ENOENT')continue;
-  if(r.status!==0)throw new Error(r.stderr||'Public data catalog failed');
-  writeJson(path.join(ROOT,'catalog/public-data.json'),JSON.parse(r.stdout));break;
-}
+writeJson(path.join(ROOT,'catalog/public-data.json'),JSON.parse(python([path.join(ROOT,'scripts/public_data.py'),'catalog'])));
 console.log(JSON.stringify({templates:catalog.templates.length,contentFields:Object.keys(catalog.initialContent).length,controls:catalog.controls.length,stateDefaults:catalog.stateDefaults.length,editorialProfiles:Object.keys(compiled.editorialProfiles).length}));

@@ -38,7 +38,7 @@ class StudioRulesTests(unittest.TestCase):
             'resolution':'1080p','presenterIds':['kamran'],'location':{'mode':'catalog','id':'newsroom'},
             'lines':[{'presenterId':'kamran','text':'متن قطعی اول','shot':'medium'}]}}
     def test_all_studio_templates_and_editorial_profiles_are_retained(self):
-        ui=json.loads((ROOT/'catalog/studio-ui.json').read_text())
+        ui=json.loads((ROOT/'catalog/studio-ui.json').read_text(encoding='utf-8'))
         catalog=studio.catalog()
         self.assertEqual({t['id'] for t in ui['templates']},set(catalog['imageTemplates']))
         self.assertEqual(set(catalog['editorialProfiles']),set(studio.gateway.TEXT_PROMPT_META))
@@ -54,7 +54,7 @@ class StudioRulesTests(unittest.TestCase):
         self.assertIn('تیتر آزمون فارسی',top)
         self.assertEqual(before['request']['image'],{'mode':'generate','engine':'gpt-image-2.5-flare'})
     def test_all_27_templates_compile_with_their_own_fields(self):
-        ui=json.loads((ROOT/'catalog/studio-ui.json').read_text())
+        ui=json.loads((ROOT/'catalog/studio-ui.json').read_text(encoding='utf-8'))
         for definition in ui['templates']:
             with self.subTest(template=definition['id']):
                 spec=self.image(definition['id']);req=spec['request']

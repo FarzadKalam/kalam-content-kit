@@ -256,6 +256,8 @@ def main():
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
     try: main()
     except (ValueError,KeyError,TypeError,OSError,gateway.ClientError) as error:
         print(str(error),file=sys.stderr)

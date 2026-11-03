@@ -10,6 +10,7 @@ import json
 import math
 from pathlib import Path
 import re
+import sys
 import tempfile
 from html.parser import HTMLParser
 import urllib.error
@@ -308,7 +309,7 @@ class MarketRows(HTMLParser):
 def changes(rates,provider,client):
     file=client.cache/'market-history.json';history=[]
     if file.is_file():
-        try:history=json.loads(file.read_text())
+        try:history=json.loads(file.read_text(encoding='utf-8'))
         except ValueError:pass
     values={};now=client.now.timestamp()
     for field,amount in rates.items():
@@ -504,5 +505,7 @@ def main():
         else:validate_evidence(spec,path.resolve().parent);result={'valid':True}
     print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
     try:main()
     except (DataError,ValueError,KeyError,OSError) as exc:raise SystemExit(str(exc))
