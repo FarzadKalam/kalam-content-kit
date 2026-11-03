@@ -6,6 +6,12 @@
 
 ## شروع با ریپو
 
+ریپوی عمومی: [FarzadKalam/kalam-content-kit](https://github.com/FarzadKalam/kalam-content-kit)
+
+```bash
+git clone https://github.com/FarzadKalam/kalam-content-kit.git
+```
+
 ۱. پوشهٔ کامل ریپو را clone یا کپی کنید. تمام Skillها، تنظیمات، فونت‌ها، برندها، ابزارها و راهنماها داخل همان ریپو هستند؛ ZIP جداگانه و مرحلهٔ ساخت بسته لازم نیست. clone ریپوی عمومی به حساب GitHub نیاز ندارد.
 
 ۲. پوشه را در Codex App باز کنید و گفت‌وگوی تازه بسازید. در محیط ابری، ریپو در محیط دارای دسترسی فایل و اجرای فرمان باز شود. محیط چتِ فاقد فایل/رندر نمی‌تواند صرفاً با دریافت SKILL.md ویدیو بسازد.
