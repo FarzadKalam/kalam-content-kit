@@ -1,0 +1,4 @@
+{
+  "defaultVoiceEngine": "openai_gpt_4o_mini_tts",
+  "defaultVoice": "marin"
+}

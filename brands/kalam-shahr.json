@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "kalam-shahr",
+  "name": "آژانس تبلیغاتی کلام شهر",
+  "category": "advertising",
+  "status": "ready",
+  "primaryColor": "#361775",
+  "handle": "@kalameshahr",
+  "website": "https://kalam-shahr.ir",
+  "assets": {
+    "logo": "assets/brands/kalam-shahr/logo.png"
+  },
+  "headerPolicy": "agency-identity",
+  "font": "Doran",
+  "notes": [
+    "لوگو از logo-headerr-copy.png وب‌سایت رسمی. رنگ از --cn-primary در CSS قالب سایت؛ آیدی از sameAs ساختاری وب‌سایت. آخرین تطبیق: 2026-11-01."
+  ],
+  "fontPolicy": {
+    "primary": "Doran",
+    "selection": "owner-confirmed",
+    "status": "available"
+  }
+}

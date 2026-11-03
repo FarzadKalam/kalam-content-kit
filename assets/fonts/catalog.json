@@ -1,0 +1,581 @@
+[
+  {
+    "family": "Peyda",
+    "status": "available",
+    "default": true,
+    "files": [
+      {
+        "path": "Peyda-Regular.woff2",
+        "weight": 400
+      },
+      {
+        "path": "Peyda-SemiBold.woff2",
+        "weight": 600
+      },
+      {
+        "path": "Peyda-Bold.woff2",
+        "weight": 700
+      },
+      {
+        "path": "Peyda-Black.woff2",
+        "weight": 900
+      }
+    ],
+    "rights": "User authorized distribution to this private team repository; no public redistribution.",
+    "nameFa": "پیدا",
+    "recommendedRoles": [
+      "headline",
+      "body",
+      "captions",
+      "advertising"
+    ],
+    "guidance": "پیش‌فرض تیم؛ وزن‌های واقعی برای تیتر، متن و زیرنویس. انتخاب خانوادهٔ دیگر با کاربر یا مدل است.",
+    "defaultContext": "news-primary"
+  },
+  {
+    "family": "Vazirmatn",
+    "status": "available",
+    "files": [
+      {
+        "path": "Vazirmatn-wght.woff2",
+        "weightRange": [
+          100,
+          900
+        ]
+      }
+    ],
+    "license": "Vazirmatn-OFL.txt",
+    "nameFa": "وزیرمتن",
+    "recommendedRoles": [
+      "body",
+      "captions",
+      "ui",
+      "numbers"
+    ],
+    "guidance": "برای متن پیوسته، زیرنویس و رابط؛ وزن متغیر ۱۰۰ تا ۹۰۰.",
+    "defaultContext": "captions-and-body"
+  },
+  {
+    "family": "Aria",
+    "nameFa": "آریا",
+    "status": "available",
+    "default": false,
+    "recommendedRoles": [
+      "headline",
+      "kinetic-type",
+      "body",
+      "advertising"
+    ],
+    "guidance": "برای تیتر و تایپوگرافی منعطف و بازی با وزن؛ برای خبر و تبلیغ قابل انتخاب. نسخهٔ FaNum فقط وقتی تبدیل اعداد لاتین به شکل فارسی مطلوب است.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [
+      {
+        "path": "Aria/Aria-VF.woff2",
+        "style": "Regular",
+        "sourceFamily": "AriaVF",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "0c458d160ae39e3104cedb0842929ae37c0c21df2d579dcb30f236f06b4e60e6",
+        "sha256": "3172eb6571251591ea6ceccff7e096083e5c539962d3b3ee28ca0c758351e813",
+        "weightRange": [
+          50,
+          1000
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 50,
+            "default": 50,
+            "max": 1150
+          }
+        ]
+      },
+      {
+        "path": "Aria/AriaFaNum-Black.woff2",
+        "style": "Black",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "5558677a413cdf3fe2d720eb2979859913d452007aac6ecb73d35db58e8898a8",
+        "sha256": "5558677a413cdf3fe2d720eb2979859913d452007aac6ecb73d35db58e8898a8",
+        "weight": 900,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-Bold.woff2",
+        "style": "Bold",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "b95ace1ae2d0495cb10a219dfee0bd60150860ef28fea5550612d130b214beff",
+        "sha256": "b95ace1ae2d0495cb10a219dfee0bd60150860ef28fea5550612d130b214beff",
+        "weight": 700,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-ExtraBold.woff2",
+        "style": "ExtraBold",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "cb03aeac47de1d31dc23827855d76f455a97f76ae8894c9b33ab135623a03ef1",
+        "sha256": "cb03aeac47de1d31dc23827855d76f455a97f76ae8894c9b33ab135623a03ef1",
+        "weight": 800,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-ExtraLight.woff2",
+        "style": "ExtraLight",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "c7d6cfda9417b4c9a6d92d5556f6da6e6804ffcdfbe02b80a8b3b3d408323e8b",
+        "sha256": "c7d6cfda9417b4c9a6d92d5556f6da6e6804ffcdfbe02b80a8b3b3d408323e8b",
+        "weight": 200,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-Heavy.woff2",
+        "style": "Heavy",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "d24adca616c79f7cf64c80c2bda62056d3e3280e5dee46670388e27137640f72",
+        "sha256": "d24adca616c79f7cf64c80c2bda62056d3e3280e5dee46670388e27137640f72",
+        "weight": 900,
+        "cssFamily": "AriaFaNumHeavy"
+      },
+      {
+        "path": "Aria/AriaFaNum-Light.woff2",
+        "style": "Light",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "b00a50e599b13a66b5ea39690ff7adadb47d8403d4dbbffd86d5c4deedc6692b",
+        "sha256": "b00a50e599b13a66b5ea39690ff7adadb47d8403d4dbbffd86d5c4deedc6692b",
+        "weight": 300,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-Medium.woff2",
+        "style": "Medium",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "0a69c3734d7f564dfd9a5a55963b3d05f23ec0f123751e72bc1e12b4ce9d111c",
+        "sha256": "0a69c3734d7f564dfd9a5a55963b3d05f23ec0f123751e72bc1e12b4ce9d111c",
+        "weight": 500,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-Normal.woff2",
+        "style": "Normal",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "36b5f2f2fe9ad96c288376123b2d59a9813654320bbc2405c74d9bd23bd673ff",
+        "sha256": "36b5f2f2fe9ad96c288376123b2d59a9813654320bbc2405c74d9bd23bd673ff",
+        "weight": 400,
+        "cssFamily": "AriaFaNumNormal"
+      },
+      {
+        "path": "Aria/AriaFaNum-Regular.woff2",
+        "style": "Regular",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "3ce32a4dcaba7fa5bb479c2ce9e26a46863e27eeeae8d4e9178b1d7a6cdab8e2",
+        "sha256": "3ce32a4dcaba7fa5bb479c2ce9e26a46863e27eeeae8d4e9178b1d7a6cdab8e2",
+        "weight": 400,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-SemiBold.woff2",
+        "style": "SemiBold",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "a7bf77d72bd1cd83be891fae905fd66c8096ecf73c4affa577a0657254df4482",
+        "sha256": "a7bf77d72bd1cd83be891fae905fd66c8096ecf73c4affa577a0657254df4482",
+        "weight": 600,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-Thin.woff2",
+        "style": "Thin",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "e8046ed1d2b89005c0ea022c4f94efb4b4d664ff24dcc8c9f410c2e5cd87e551",
+        "sha256": "e8046ed1d2b89005c0ea022c4f94efb4b4d664ff24dcc8c9f410c2e5cd87e551",
+        "weight": 100,
+        "cssFamily": "AriaFaNum"
+      },
+      {
+        "path": "Aria/AriaFaNum-UltraBold.woff2",
+        "style": "UltraBold",
+        "sourceFamily": "AriaWeb[FaNum]",
+        "version": "1.00",
+        "persianLettersVerified": true,
+        "sourceSha256": "fe650f054fdd03ccac9f2d139dd11d51b152d1f7e56d7b5c233297e6bcbbaf44",
+        "sha256": "fe650f054fdd03ccac9f2d139dd11d51b152d1f7e56d7b5c233297e6bcbbaf44",
+        "weight": 800,
+        "cssFamily": "AriaFaNumUltraBold"
+      }
+    ],
+    "defaultContext": "advertising-preferred"
+  },
+  {
+    "family": "Maneli",
+    "nameFa": "مانلی",
+    "status": "available",
+    "default": false,
+    "recommendedRoles": [
+      "display",
+      "short-quote",
+      "advertising"
+    ],
+    "guidance": "قلم نمایشی برای عبارت کوتاه و لحن شخصی؛ خوانایی متن ریز و زیرنویس باید جدا بررسی شود.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [
+      {
+        "path": "Maneli/Maneli-Regular.woff2",
+        "style": "Regular",
+        "sourceFamily": "Maneli",
+        "version": "Version 2.00;March 21, 2021;FontCreator 13.0.0.2683 64-bit",
+        "persianLettersVerified": true,
+        "sourceSha256": "3357c211d9477ccdff531e7315cc37d9a20d47d8c1417bac5767f2ae4247104b",
+        "sha256": "5b938dca2e4b28fb2e915f776ff64a5404a76e0970446c095fb461b34ef4537f",
+        "weight": 400
+      }
+    ],
+    "defaultContext": "advertising-preferred"
+  },
+  {
+    "family": "Meem",
+    "nameFa": "میم",
+    "status": "disabled-owner-reported-issue",
+    "default": false,
+    "recommendedRoles": [],
+    "guidance": "به درخواست صریح مالک در ۲۰۲۶-۱۱-۰۱ استفاده نشود؛ نمونهٔ فایل ارسالی ایراد بصری داشته است. فایل جایگزین هنوز تأیید نشده.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [],
+    "defaultContext": "disabled"
+  },
+  {
+    "family": "Parsa",
+    "nameFa": "پارسا",
+    "status": "available",
+    "default": false,
+    "recommendedRoles": [
+      "handwriting",
+      "display",
+      "headline",
+      "advertising"
+    ],
+    "guidance": "دست‌نویس، طبق تشخیص و ترجیح مالک؛ برای عبارت صمیمی و تیتر کوتاه. تک‌وزن؛ بولد مصنوعی و استفادهٔ طولانی در زیرنویس پیش‌فرض نباشد.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [
+      {
+        "path": "Parsa/Parsa-FaNum.woff2",
+        "style": "Regular",
+        "sourceFamily": "parsa_mf",
+        "version": "Version 1.30;May 9, 2024;FontCreator 13.0.0.2683 64-bit",
+        "persianLettersVerified": true,
+        "sourceSha256": "848cc4e2da3df417ad76c4d5ba970354deae8719cc507fc7c44bbd6eb5c9687e",
+        "sha256": "848cc4e2da3df417ad76c4d5ba970354deae8719cc507fc7c44bbd6eb5c9687e",
+        "weight": 400,
+        "cssFamily": "ParsaFaNum"
+      },
+      {
+        "path": "Parsa/Parsa-Regular.woff2",
+        "style": "Regular",
+        "sourceFamily": "parsa",
+        "version": "Version 1.30;May 9, 2024;FontCreator 13.0.0.2683 64-bit",
+        "persianLettersVerified": true,
+        "sourceSha256": "68fd5d1aa9bb29a447bd77bafc7c1626517cfe174dd43e73d9dc6f2cfc5a64e3",
+        "sha256": "68fd5d1aa9bb29a447bd77bafc7c1626517cfe174dd43e73d9dc6f2cfc5a64e3",
+        "weight": 400
+      }
+    ],
+    "defaultContext": "advertising-preferred"
+  },
+  {
+    "family": "Pinar",
+    "nameFa": "پینار",
+    "status": "available",
+    "default": false,
+    "recommendedRoles": [
+      "headline",
+      "kinetic-type",
+      "advertising",
+      "short-body"
+    ],
+    "guidance": "برای تیتر، موشن نرم و هویت تبلیغاتی؛ وزن و محورهای واقعی KSHD و DSTY قابل انتخاب‌اند. نام محورها حدس عملکرد نیست؛ خروجی هر مقدار را ببین.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [
+      {
+        "path": "Pinar/Pinar-FD-VF.woff2",
+        "style": "Regular",
+        "sourceFamily": "Pinar FD VF",
+        "version": "Version 2.000",
+        "persianLettersVerified": true,
+        "sourceSha256": "10f33fa653ec77701d88e4126e6630c6856e2b9d168357bc7081df5891330bc3",
+        "sha256": "10f33fa653ec77701d88e4126e6630c6856e2b9d168357bc7081df5891330bc3",
+        "weightRange": [
+          300,
+          900
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 300,
+            "default": 300,
+            "max": 900
+          },
+          {
+            "tag": "KSHD",
+            "min": 100,
+            "default": 100,
+            "max": 200
+          },
+          {
+            "tag": "DSTY",
+            "min": 1,
+            "default": 1,
+            "max": 5
+          }
+        ],
+        "cssFamily": "PinarFD"
+      },
+      {
+        "path": "Pinar/Pinar-VF.woff2",
+        "style": "Regular",
+        "sourceFamily": "Pinar VF",
+        "version": "Version 2.000",
+        "persianLettersVerified": true,
+        "sourceSha256": "7db548532ae2d2bd85be2eafd814668f2676b031d9bb139b18bb6bf091c15987",
+        "sha256": "7db548532ae2d2bd85be2eafd814668f2676b031d9bb139b18bb6bf091c15987",
+        "weightRange": [
+          300,
+          900
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 300,
+            "default": 300,
+            "max": 900
+          },
+          {
+            "tag": "KSHD",
+            "min": 100,
+            "default": 100,
+            "max": 200
+          },
+          {
+            "tag": "DSTY",
+            "min": 1,
+            "default": 1,
+            "max": 5
+          }
+        ]
+      }
+    ],
+    "defaultContext": "advertising-preferred"
+  },
+  {
+    "family": "IRANYekanX",
+    "nameFa": "ایران‌یکان ایکس",
+    "status": "available",
+    "default": false,
+    "recommendedRoles": [
+      "advertising",
+      "body",
+      "captions",
+      "ui"
+    ],
+    "guidance": "برای متن تبلیغاتی خوانا، معرفی نرم‌افزار، رابط و زیرنویس؛ نسخهٔ FaNum و محور dots موجود است. برای تازه سیستم پیدا انتخاب مالک است؛ این خانواده برای تبلیغات و مشتریان در دسترس می‌ماند.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [
+      {
+        "path": "IRANYekanX/IRANYekanX-FaNum-VF.woff2",
+        "style": "Regular",
+        "sourceFamily": "IRANYekanXVFaNum",
+        "version": "Version 4.000;Glyphs 3.1.1 (3134)",
+        "persianLettersVerified": true,
+        "sourceSha256": "a3d6164334f3cfd8a78d0162f93005f0a35baa2814e3c334af3b2e2a9183838d",
+        "sha256": "a3d6164334f3cfd8a78d0162f93005f0a35baa2814e3c334af3b2e2a9183838d",
+        "weightRange": [
+          100,
+          1000
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 100,
+            "default": 100,
+            "max": 1000
+          },
+          {
+            "tag": "dots",
+            "min": 0,
+            "default": 0,
+            "max": 4
+          }
+        ],
+        "cssFamily": "IRANYekanXFaNum"
+      },
+      {
+        "path": "IRANYekanX/IRANYekanX-VF.woff2",
+        "style": "Regular",
+        "sourceFamily": "IRANYekanXVF",
+        "version": "Version 4.000;Glyphs 3.1.1 (3134)",
+        "persianLettersVerified": true,
+        "sourceSha256": "3a3a62a935a549584d610e38b4b27ea30053c6fe137ca0186687dec038cfcf88",
+        "sha256": "3a3a62a935a549584d610e38b4b27ea30053c6fe137ca0186687dec038cfcf88",
+        "weightRange": [
+          100,
+          1000
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 100,
+            "default": 100,
+            "max": 1000
+          },
+          {
+            "tag": "dots",
+            "min": 0,
+            "default": 0,
+            "max": 4
+          }
+        ]
+      }
+    ],
+    "defaultContext": "advertising-preferred"
+  },
+  {
+    "family": "Morabba",
+    "nameFa": "مربع",
+    "status": "available",
+    "default": false,
+    "recommendedRoles": [
+      "advertising",
+      "headline",
+      "kinetic-type",
+      "product"
+    ],
+    "guidance": "برای تیتر هندسی، معرفی محصول و تبلیغات؛ محورهای wght و kash در فایل متغیر موجود است. وزن UltraLight جدا تا وزن ۲۰۰ حفظ شود.",
+    "rights": "Owner-supplied for this private team kit; do not publish font files publicly.",
+    "files": [
+      {
+        "path": "Morabba/Morabba-VF.woff2",
+        "style": "Regular",
+        "sourceFamily": "MorabbaVF",
+        "version": "Version 1.000;FEAKit 1.0",
+        "persianLettersVerified": true,
+        "sourceSha256": "c7a74bca7e09a873f4cbd69f8a489aa2c5b7d298f85c2d87a66854f3d4b329d9",
+        "sha256": "c7a74bca7e09a873f4cbd69f8a489aa2c5b7d298f85c2d87a66854f3d4b329d9",
+        "weightRange": [
+          250,
+          900
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 250,
+            "default": 250,
+            "max": 900
+          },
+          {
+            "tag": "kash",
+            "min": 0,
+            "default": 0,
+            "max": 100
+          }
+        ]
+      },
+      {
+        "path": "Morabba/Morabba-Heavy.woff2",
+        "style": "Heavy",
+        "sourceFamily": "Morabba",
+        "version": "Version 1.000",
+        "persianLettersVerified": true,
+        "sourceSha256": "657a788295f2f5a1381f0a5e9938c618271fc414b49cfbb1a17b7a6f660addca",
+        "sha256": "657a788295f2f5a1381f0a5e9938c618271fc414b49cfbb1a17b7a6f660addca",
+        "weight": 900,
+        "cssFamily": "MorabbaHeavy"
+      },
+      {
+        "path": "Morabba/Morabba-UltraLight.woff2",
+        "style": "UltraLight",
+        "sourceFamily": "Morabba",
+        "version": "Version 1.000",
+        "persianLettersVerified": true,
+        "sourceSha256": "ca6970b69c8786461cf415586c9ae2a0d2f3893912084e201b7bcccc2f926cce",
+        "sha256": "ca6970b69c8786461cf415586c9ae2a0d2f3893912084e201b7bcccc2f926cce",
+        "weight": 200
+      }
+    ],
+    "defaultContext": "advertising-preferred"
+  },
+  {
+    "family": "Doran",
+    "nameFa": "دوران پرو",
+    "status": "available",
+    "defaultContext": "kalam-shahr-primary",
+    "recommendedRoles": [
+      "headline",
+      "brand",
+      "advertising",
+      "short-body"
+    ],
+    "guidance": "فونت اصلی کلام شهر به انتخاب مالک؛ نسخهٔ متغیر اصلی و FaNum از بستهٔ DoranPro1.1. در بقیهٔ برندها انتخاب صریح کاربر مقدم است.",
+    "rights": "Owner-supplied for the private team repository; not for public redistribution.",
+    "files": [
+      {
+        "path": "Doran/Doran-VF.woff2",
+        "weightRange": [
+          100,
+          900
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 100,
+            "default": 100,
+            "max": 900
+          }
+        ],
+        "style": "Regular",
+        "sourceFamily": "Doran VF",
+        "persianLettersVerified": true,
+        "sourceSha256": "bd89e8eeff134e1cc7c9ec1e7ec1c315a982e045611ca0de914e4a7f12737a3d",
+        "sha256": "d49aec9c62adbe1416bcd941eac0b2a4fd71f794ee3827668d21c14810dc212f"
+      },
+      {
+        "path": "Doran/Doran-FaNum-VF.woff2",
+        "weightRange": [
+          100,
+          900
+        ],
+        "axes": [
+          {
+            "tag": "wght",
+            "min": 100,
+            "default": 100,
+            "max": 900
+          }
+        ],
+        "style": "Regular",
+        "sourceFamily": "Doran FaNum VF",
+        "persianLettersVerified": true,
+        "sourceSha256": "a5231d5156000db54db59446a9520eb50b92405996032f61fa19ca1d822c94bc",
+        "sha256": "314f8849856f30b8b5d3c97fbb145f260a839ef7defc22a92c0285d888516e4a",
+        "cssFamily": "DoranFaNum"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "editorialModel": "gpt-6.1-terra",
+  "replyModel": "gpt-6-luna",
+  "analysisModel": "gpt-6-astra",
+  "videoPromptModel": "gpt-6-luna"
+}

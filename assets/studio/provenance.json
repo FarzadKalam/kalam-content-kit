@@ -1,0 +1,20 @@
+{
+  "source": "https://github.com/FarzadKalam/KalamStudio",
+  "commit": "fd3367b7dbd23735823e9b3660159858a472d676",
+  "files": {
+    "brand/chenaran-profile.jpg": "14f47429d55169f6e0061beeb3f6a5d78f53ee2088426dd7e8ceb9661684203e",
+    "brand/golbahar-profile.jpg": "fe5bc8c1eebcfa8ea09c9db111ee02ebeb4d8a73af56b2a486e5aca8cdb4d12e",
+    "brand/kalametaze-profile.jpg": "b1de155db9e1edfa271b88f2c2b6bff52acc87e6707d6c41ed5128e6015206e4",
+    "brand/kalamlogoprofile.jpg": "3c16c6434c844d375d0414b94c702e477eeb5c5f0dc585dd14890bff3ccc6465",
+    "brand/logos/chenaran-on-dark.png": "a015125b36dbd6816412f597c19e31c15312ce6018862b29873bbc2d78415df3",
+    "brand/logos/chenaran-on-light.png": "daf851a59307a4f927401beaed4178e2608b80c5d94d76830295fcecf5319d94",
+    "brand/logos/golbahar-on-dark.png": "e30e7ab4308ecc99949e52c58c0e65ec77ef7fdc6e3faec001a4fe6c3f5b2b35",
+    "brand/logos/golbahar-on-light.png": "05c384c42b65e2c16c6d4d88cddc24d90c562bdb950b608acc2beac371a5c35f",
+    "brand/logos/kalametaze-on-dark.png": "2b136db2b64f5cfae62006616800ec19e5fa0be132aea11d22e14c35d4ee0f47",
+    "brand/logos/kalametaze-on-light.png": "c84084e70489be8539c37a7f67867e78d9c562eb540f77911c6706690d091bd2",
+    "club-logo.png": "e4bb2e7eea66e441391d01e9fd7961b93cc4d5acff37a5a083a3443376cf2230",
+    "fonts/PeydaWeb-Bold.woff2": "476f54935f60379c5393073230aeaf914f153a0403a2776fe06238b7a7750cdb",
+    "fonts/PeydaWeb-Regular.woff2": "555d8331d79ded1b23ffff8adc0cfbc344f749255a114811b7edc5ab3572130b",
+    "fonts/PeydaWeb-SemiBold.woff2": "f6d34aa253178da7b5a17292eac71ec8f358b9a4771d09161263df7b853aaeb5"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "studio": "fd3367b7dbd23735823e9b3660159858a472d676",
+  "videoKit": {
+    "repository": "https://github.com/FarzadKalam/kalam-video-kit",
+    "commit": "8eec3616117133c74fd7cdd1cf7a522166fd65a9"
+  },
+  "live": {
+    "status": "pending-live-export"
+  }
+}

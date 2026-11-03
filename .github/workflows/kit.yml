@@ -1,0 +1,33 @@
+name: kit-checks
+on: [push, pull_request]
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --no-audit --no-fund
+        env:
+          HYPERFRAMES_SKIP_SKILLS: '1'
+          HYPERFRAMES_NO_UPDATE_CHECK: '1'
+          HYPERFRAMES_NO_TELEMETRY: '1'
+          npm_config_cache: ${{ github.workspace }}/.cache/npm
+          TMPDIR: ${{ runner.temp }}
+      - run: npm ci --prefix engines/remotion --no-audit --no-fund
+      - run: npm test
+      - run: npm run validate
+      - run: npm run doctor
+      - run: npm run catalog:studio
+      - run: git diff --exit-code -- catalog
+      - run: node scripts/prepare-examples.mjs
+      - run: npm run hf -- check .local/examples/hyperframes-news --json
+      - run: node scripts/remotion.mjs compositions engines/remotion/src/index.jsx
+# Cross-platform runtime checks are not a creative review or a full delivery render.

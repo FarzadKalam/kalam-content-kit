@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "fps": 30,
+  "events": [
+    {
+      "id": "reveal",
+      "frame": 10,
+      "durationFrames": 12,
+      "visualTarget": "h1",
+      "kind": "text-reveal",
+      "asset": "assets/sfx/soft-sweep.wav",
+      "gainDb": -13.2
+    },
+    {
+      "id": "pop",
+      "frame": 36,
+      "durationFrames": 5,
+      "visualTarget": "tick-path",
+      "kind": "check",
+      "asset": "assets/sfx/pop.wav",
+      "gainDb": -14
+    },
+    {
+      "id": "ping",
+      "frame": 122,
+      "durationFrames": 7,
+      "visualTarget": "trend",
+      "kind": "line-start",
+      "asset": "assets/sfx/scan-ping.wav",
+      "gainDb": -14.9
+    },
+    {
+      "id": "progress-rise",
+      "frame": 122,
+      "durationFrames": 48,
+      "visualTarget": "fill",
+      "kind": "progress",
+      "asset": "assets/sfx/progress-rise.wav",
+      "gainDb": -11.1
+    },
+    {
+      "id": "complete",
+      "frame": 170,
+      "durationFrames": 5,
+      "visualTarget": "fill",
+      "kind": "completion",
+      "asset": "assets/sfx/pop.wav",
+      "gainDb": -14.9
+    }
+  ],
+  "tracks": [],
+  "review": {
+    "status": "pending-listening",
+    "listened": false,
+    "notes": "Timeline-aligned teaching cues; listening review not claimed."
+  }
+}

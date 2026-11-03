@@ -1,0 +1,10 @@
+<template><style>
+@font-face{font-family:Peyda;src:url('assets/fonts/Peyda-Black.woff2');font-weight:900} @font-face{font-family:Peyda;src:url('assets/fonts/Peyda-Regular.woff2');font-weight:400}
+*{box-sizing:border-box}body{margin:0}#root{width:1080px;height:1920px;position:relative;overflow:hidden;background:#f4f6ef;font-family:Peyda;color:#14251c}.scene{position:absolute;inset:0}.pad{position:absolute;left:120px;right:150px;top:470px}.kicker{font-size:38px;font-weight:400;color:#296149}.mask{overflow:hidden}h1{font-size:138px;line-height:1.2;margin:40px 0;font-weight:900}.accent{color:#198754}.line{height:12px;width:430px;border-radius:12px;background:#198754;transform-origin:right}.pill{display:inline-block;border:3px solid #198754;border-radius:30px;padding:20px 32px;font-size:42px;margin-top:55px}.test-note{position:absolute;top:220px;right:150px;font-size:32px}.bar-row{display:flex;align-items:center;gap:24px;margin:32px 0;font-size:42px}.rail{width:570px;height:50px;background:#dee6df;border-radius:20px;overflow:hidden}.fill{width:100%;height:100%;background:#198754;border-radius:20px;transform-origin:right}.number{font-size:60px;font-weight:900;min-width:110px}.footer{position:absolute;bottom:265px;left:120px;right:150px;font-size:34px;border-top:2px solid #b9cebf;padding-top:24px}
+</style><div id="root" data-composition-id="hero" data-width="1080" data-height="1920" data-duration="4"><div class="pad"><p class="kicker" id="kicker">نمونهٔ فنی</p><div class="mask"><h1 id="title">از یک ایده<br><span class="accent">تا یک حرکت</span></h1></div><div class="line" id="rule"></div><div class="pill" id="pill">وزن واقعی</div></div></div><script>const tl=gsap.timeline({paused:true});
+tl.fromTo('#kicker',{y:30,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},0);
+tl.fromTo('#title',{y:360},{y:0,duration:.8,ease:'expo.out'},.2);
+tl.fromTo('#rule',{scaleX:0},{scaleX:1,duration:.6,ease:'power3.out'},.7);
+tl.fromTo('#pill',{scale:.82,opacity:0},{scale:1,opacity:1,duration:.5,ease:'back.out(1.5)'},.7);
+tl.to('#title,#pill,#kicker,#rule',{x:-90,opacity:0,duration:.25},3.75);
+window.__timelines['hero']=tl;</script></template>

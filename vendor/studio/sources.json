@@ -1,0 +1,472 @@
+{
+  "repository": "https://github.com/FarzadKalam/KalamStudio",
+  "commit": "fd3367b7dbd23735823e9b3660159858a472d676",
+  "extraction": "AST dependency slice; application is never imported",
+  "gateway": [
+    {
+      "name": "ClientError",
+      "sourceLine": 554,
+      "sha256": "df50ebc2f2264ede5f7d835b5c128270776b0d1f728b129c01d0f36d704983ab"
+    },
+    {
+      "name": "DEFAULT_ANALYSIS_TEXT_MODEL",
+      "sourceLine": 456,
+      "sha256": "cad5df4b19159a666be3ec0184ab886cb013c69f3b17dcbbf5d91b82adcedc71"
+    },
+    {
+      "name": "DEFAULT_EDITORIAL_TEXT_MODEL",
+      "sourceLine": 451,
+      "sha256": "ac90545d29fc636729f04a5774ecf3fedd3ac761dfa51b665fb6c64dedb769f7"
+    },
+    {
+      "name": "DEFAULT_IMAGE_BASE_PROMPT",
+      "sourceLine": 410,
+      "sha256": "ec5a6ee03c983d6ba8260d9af529f44b55378d34fd187e54af0d27affb288b22"
+    },
+    {
+      "name": "DEFAULT_IMAGE_MODEL",
+      "sourceLine": 423,
+      "sha256": "27349457b72b305783ec6e9036881921a56553112781edf63ccdfbb10ab0b7a1"
+    },
+    {
+      "name": "DEFAULT_IMAGE_NON_NEWS_PROMPT",
+      "sourceLine": 413,
+      "sha256": "65532551f31500b34809a7482346f6ca6e2bd6de3627bbf90dd732a9d626a8f4"
+    },
+    {
+      "name": "DEFAULT_IMAGE_STYLE_PROMPT",
+      "sourceLine": 415,
+      "sha256": "a28be9467e3a0450df48b71490be10c11a4681905fa85e827ba89bb27c943cd7"
+    },
+    {
+      "name": "DEFAULT_REPLY_TEXT_MODEL",
+      "sourceLine": 452,
+      "sha256": "11a61e75764367f339f77f92537432c4bf3d426a9e38ec9dbaedc0e79ee1ffb7"
+    },
+    {
+      "name": "DEFAULT_TEMPLATE_PROMPTS",
+      "sourceLine": 509,
+      "sha256": "fe4242ccb749fcf711075afdf9759d6f58432557ceb37a7262798acf3e82e54f"
+    },
+    {
+      "name": "DEFAULT_TRANSCRIPTION_MODEL",
+      "sourceLine": 508,
+      "sha256": "3780dd64e8b71f1f8d02ae54c0955cc0ee3de554de84fae56f611a0fa0c303c8"
+    },
+    {
+      "name": "DEFAULT_VOICE_BY_ENGINE",
+      "sourceLine": 502,
+      "sha256": "48e7d7d66aac6f54003b4aa0e4f05aa05899397a70361c4ca4fa290bdcd777aa"
+    },
+    {
+      "name": "DEFAULT_VOICE_ENGINE",
+      "sourceLine": 501,
+      "sha256": "f5f1dd9b988cc5645aa87927f4feb351d60fc0613ee08daaad35e0c9e6365780"
+    },
+    {
+      "name": "EDITORIAL_PROFILE_INSTRUCTIONS",
+      "sourceLine": 4221,
+      "sha256": "06db9b3724fa7ca423ae2813fbac2e8582d126b9a8831f00b59319a03717cd55"
+    },
+    {
+      "name": "FA_DIGITS",
+      "sourceLine": 792,
+      "sha256": "3f038ac27c34bba460eed1c36f8be6577da1d71df8eb9092855ba6d7c7e6d192"
+    },
+    {
+      "name": "IMAGE_MODELS",
+      "sourceLine": 416,
+      "sha256": "e845736d2914c5e68e482c1c8362c0cd1beee4d4ffadbfdd6a4d17f04db02211"
+    },
+    {
+      "name": "MAX_ARTICLE_FIELD_CHARS",
+      "sourceLine": 396,
+      "sha256": "f4088698fa9ad0acad91dadb2b2f737c6ff4a4becf1bff970a9aaa7b443a2778"
+    },
+    {
+      "name": "MAX_SLIDES_PER_SERIES",
+      "sourceLine": 395,
+      "sha256": "82c0d9fdb1c5486b476e05c4cb6d773f16a0a8d90e374dcf9dc416e28bedf9ad"
+    },
+    {
+      "name": "NEWSROOM_REWRITE_PROMPT",
+      "sourceLine": 4266,
+      "sha256": "d9dee3002fc1ebff05ddfe2e60272d3e6d46d7774324a2bc83fd6f9c1c7559e8"
+    },
+    {
+      "name": "REPORTER_EXTRACT_PROMPT",
+      "sourceLine": 4255,
+      "sha256": "6c06440bb7ef83684dce6ed5bb5450314bf61ddb21fecbe88635e70457881f1c"
+    },
+    {
+      "name": "REPORTER_MASTER_PROMPT",
+      "sourceLine": 4247,
+      "sha256": "c84bfba388970f3ddddd7de3c59ec562943bb98826d7a0fb4a7f346f0389e8e1"
+    },
+    {
+      "name": "SITE_PUBLISH_PROMPT",
+      "sourceLine": 4262,
+      "sha256": "6727f3da0d9eeb60b98dc415d339eaf9bb0c3493ce375fafb4e16f7a1513feea"
+    },
+    {
+      "name": "SLIDE_FIELDS",
+      "sourceLine": 383,
+      "sha256": "ca258d660ba2498432dc035a91ed79fe5b855073815676be9d9bddb39ec89823"
+    },
+    {
+      "name": "SLIDE_IMAGE_MODES",
+      "sourceLine": 385,
+      "sha256": "fca12371998d8102b460fb1ed42d3b830f0762ab8bd6f5d4e53a72f54bd1e5a0"
+    },
+    {
+      "name": "SLIDE_JSON_CONTRACT",
+      "sourceLine": 4243,
+      "sha256": "b6865fd81ad63fa4775b5fcd366e1b96dee1d4e21d1692462b5a7586953e8693"
+    },
+    {
+      "name": "SLIDE_REPORTER_PROFILES",
+      "sourceLine": 4242,
+      "sha256": "8bd9dffc8984c4872a6527aebd40d4f8975d77eedf2bd88266214692c2794031"
+    },
+    {
+      "name": "SLIDE_TEXT_FIELDS",
+      "sourceLine": 384,
+      "sha256": "0871da8952f688cda6417d3d93231286f41fce353525d7582aa43df9ecdcd45c"
+    },
+    {
+      "name": "STUDIO_IMAGE_REFERENCE_LIMIT",
+      "sourceLine": 9245,
+      "sha256": "088a1609ef56283b38ab54b3c4caa7ca62327a065eba74a635fd21617fb546dc"
+    },
+    {
+      "name": "TEXT_MODELS",
+      "sourceLine": 425,
+      "sha256": "3e630fea958aa3a953996ee95c3c4fc21f067c2ef487013787f791fdfe20b68a"
+    },
+    {
+      "name": "TEXT_PROMPT_META",
+      "sourceLine": 4282,
+      "sha256": "be3fa30ba3380d270c15c9cbb2ff9ee1aff55750ac7cb30b23108a436f820786"
+    },
+    {
+      "name": "TRANSCRIPTION_MODELS",
+      "sourceLine": 503,
+      "sha256": "55cad30b3392d162d29c0b599db00e6280781006eb290803efec8123bf9095cb"
+    },
+    {
+      "name": "VIDEO_ASSET_ENTITIES",
+      "sourceLine": 9226,
+      "sha256": "54477178d938c6d1513b982f16362ccc3971dc53b76df911a020ad1c4048ef3d"
+    },
+    {
+      "name": "VIDEO_ASSET_PROFILE_OPTIONS",
+      "sourceLine": 9248,
+      "sha256": "56ed31a9626a683fea6a5e7479ddc6dff7f85594aa3019e32dea3b7dbde01bed"
+    },
+    {
+      "name": "VIDEO_MODEL_REFERENCE_LIMITS",
+      "sourceLine": 9246,
+      "sha256": "511035531df75fc5720147161de7716c5f2ffa6c4e400d96faddb6448a3ed52c"
+    },
+    {
+      "name": "VIDEO_MOTION_TEXT_ANIMATIONS",
+      "sourceLine": 9977,
+      "sha256": "8ab1699879533ad9e0136a8bea5ee4441f04f12a783173e0ec96d66bff56939e"
+    },
+    {
+      "name": "VIDEO_MOTION_TEXT_POSITIONS",
+      "sourceLine": 9970,
+      "sha256": "dc177cec7633eec7bca353f9d459df70ccc28ef57eecfb6157e50109e4483754"
+    },
+    {
+      "name": "VIDEO_MOTION_TEXT_STYLES",
+      "sourceLine": 9964,
+      "sha256": "2b6fb3e686c0d3dbbc4d569f5adc0f9eb8e803aedd1547f33fb3cc38fa39eb93"
+    },
+    {
+      "name": "VOICE_ENGINES",
+      "sourceLine": 460,
+      "sha256": "4ecbcb1be4a3b9507e5b0dd15e8a9f4e8527edb803e90785a5c1b2dda5a2da40"
+    },
+    {
+      "name": "_GEMINI_PREBUILT_VOICES",
+      "sourceLine": 490,
+      "sha256": "80fa2c4f0e2545c27e00c42798e0f874b18714ba4a8d73987853418ccfc21ed8"
+    },
+    {
+      "name": "content_text",
+      "sourceLine": 3544,
+      "sha256": "a501241f7ba09f0cb8f845798cbab9cceae3187d95aaa7a70e5d675217607e8e"
+    },
+    {
+      "name": "fa_number",
+      "sourceLine": 795,
+      "sha256": "6b48c999e528f09d91382ca53336c4e8a6fb771be40aaa34a038b481ae41ae07"
+    },
+    {
+      "name": "is_studio_image_request",
+      "sourceLine": 388,
+      "sha256": "23803bf816e525370596b775c1d89eb85cd9656566d4dd2945ae6410a6669aa1"
+    },
+    {
+      "name": "normalize_series_visual_contract",
+      "sourceLine": 2604,
+      "sha256": "3dbeece34ac5b3be778a9db4fa32b0533a8dd6960839d494f62b7530c2a40728"
+    },
+    {
+      "name": "parse_reporter_slide_deck",
+      "sourceLine": 4375,
+      "sha256": "09f879386dcb0a7790d41b2dca5c638a9de3e6bce8e077cbfe0df825f313c542"
+    },
+    {
+      "name": "reference_selection_choice",
+      "sourceLine": 9318,
+      "sha256": "4bd69cfee2c9fec8158477ef67ef34a92a7a78523bdf5175db55df4f42c5a1c4"
+    },
+    {
+      "name": "reporter_prompt",
+      "sourceLine": 4335,
+      "sha256": "1b6b4177aded060a21d6d27b990399547fc9553dea0d99bf83035b95d9c99a98"
+    },
+    {
+      "name": "selected_design_presenter_reference_assets",
+      "sourceLine": 9484,
+      "sha256": "74fa679bc5638403a370508ece4d134546bbdfc4d8fdabed82a38168ca200de0"
+    },
+    {
+      "name": "selected_studio_image_reference_assets",
+      "sourceLine": 9420,
+      "sha256": "6164dff4a3181692f95e3448c341cb8ebe449f786be7aedfff3194548e82d0a4"
+    },
+    {
+      "name": "slide_deck",
+      "sourceLine": 3566,
+      "sha256": "dd13baee6eb8521c5f17f08cd9ef6b171f19f05836c1d62050a1de15239e7afc"
+    },
+    {
+      "name": "smart_video_asset",
+      "sourceLine": 9651,
+      "sha256": "ad30698521384849ae219ca1cb059837e4fbae366599ad471e665eead9c88101"
+    },
+    {
+      "name": "studio_asset_need",
+      "sourceLine": 9371,
+      "sha256": "df83bc74ec37698481fb1d05aaa34ad1aa77d858dc6ddbe297db048bc511411b"
+    },
+    {
+      "name": "studio_image_asset_need",
+      "sourceLine": 9400,
+      "sha256": "b559729f27c151598e60859879c0e87d0350bd39d9da253e113a875dc84a5f9a"
+    },
+    {
+      "name": "studio_image_prompt_sections",
+      "sourceLine": 2461,
+      "sha256": "d090b5ed782b11527de9ed84c0e2a5d39b67c403661fe99f9b660d1079570ea1"
+    },
+    {
+      "name": "studio_image_reference_contract",
+      "sourceLine": 9553,
+      "sha256": "e18e09e722bd5aca5695c863b36d8d03e29f1789621ab42f1c946c144e1939e7"
+    },
+    {
+      "name": "validate_request",
+      "sourceLine": 2624,
+      "sha256": "84238f5a46d66cac597aca46df523d70e6c6718fe346d3d4c9211da7cd672f52"
+    },
+    {
+      "name": "validate_studio_image_reference_budget",
+      "sourceLine": 9538,
+      "sha256": "9f0bbfc12fd0302095901fa3d43e510003466bd253c676344f113e7fb56569bb"
+    },
+    {
+      "name": "validate_video_project",
+      "sourceLine": 10335,
+      "sha256": "ece96915c2ae58724359c217b5b8280b750c98f8b8454fa363deaddc24d20401"
+    },
+    {
+      "name": "video_asset_match_score",
+      "sourceLine": 9612,
+      "sha256": "6554a5635dfbc0e2c2555ea2d0ac628799f71ab9376bc58f632e7a03001467b8"
+    },
+    {
+      "name": "video_asset_profile",
+      "sourceLine": 9281,
+      "sha256": "be79a60adc78cd948382692e38abf91672ac2f65ccd6c5843456444a2bd30c64"
+    },
+    {
+      "name": "video_asset_profile_summary",
+      "sourceLine": 9658,
+      "sha256": "a652d186a4a177ec4abd0a14041d94a193023d2ac61a02c91cd396a26d0a624c"
+    },
+    {
+      "name": "video_asset_scope",
+      "sourceLine": 9714,
+      "sha256": "626be07a13b01549ad3443a5e218a283bcc158a33fa714dbf6780424532d94d9"
+    },
+    {
+      "name": "video_generation_contract",
+      "sourceLine": 10002,
+      "sha256": "f6027808286e906aee343545be3c4705ee170bdb05d645fadc6e6fba62769cc1"
+    },
+    {
+      "name": "video_motion_text_contract",
+      "sourceLine": 9985,
+      "sha256": "f48750c27192a2f4917078d488801f3aa401d7291c9e44120d0062ede049eee5"
+    }
+  ],
+  "image": [
+    {
+      "name": "AVALAI_IMAGE_FULL_MODEL",
+      "sourceLine": 40,
+      "sha256": "208852e08fc36657a8d8fa8ffd32933bcffe2df9da20d051b04af81045c34405"
+    },
+    {
+      "name": "FA_DIGITS",
+      "sourceLine": 51,
+      "sha256": "3f038ac27c34bba460eed1c36f8be6577da1d71df8eb9092855ba6d7c7e6d192"
+    },
+    {
+      "name": "canvas_size",
+      "sourceLine": 1158,
+      "sha256": "6d42b64721657bf1352540f40e1623125fe1cec4a4d8a29883f589d4d5517668"
+    },
+    {
+      "name": "editorial_header_copy",
+      "sourceLine": 204,
+      "sha256": "1d0ba5961d32a03e8173314ee1d2f8baef853e511cad84e8a814b464707e7fc8"
+    },
+    {
+      "name": "fa_number",
+      "sourceLine": 54,
+      "sha256": "6b48c999e528f09d91382ca53336c4e8a6fb771be40aaa34a038b481ae41ae07"
+    },
+    {
+      "name": "floating_profile_prompt",
+      "sourceLine": 231,
+      "sha256": "40f35ecad6390a37f33de0390dbaed0c06a2f6af0d285e01c9b5f2a6e7eb5b53"
+    },
+    {
+      "name": "news_art_direction",
+      "sourceLine": 239,
+      "sha256": "6de769edc4d3bd46e2a1465dfc4ad9165e87a7130e30fd0add3891cb69dab25d"
+    },
+    {
+      "name": "news_palette_contract",
+      "sourceLine": 256,
+      "sha256": "5ca79d6d66626fd8db529408f22cc6d741f0cad6483f64193633d7a44e0cb2db"
+    },
+    {
+      "name": "news_watermark_contract",
+      "sourceLine": 264,
+      "sha256": "06a53c54d7e41b4264e38bef5cc47cc4a78951bf9950318e47929aa095a9f78e"
+    },
+    {
+      "name": "persian_glyph_contract",
+      "sourceLine": 249,
+      "sha256": "ab87ffded5d59a104f120e6b77482de9268ac0d26f0be5981dd4b312e4534182"
+    },
+    {
+      "name": "render_prompt",
+      "sourceLine": 270,
+      "sha256": "1258c2f05efa01c38ea211b2d1e8a4ab080056efcdcebe0aa239e19803b9709a"
+    },
+    {
+      "name": "render_size",
+      "sourceLine": 1148,
+      "sha256": "5a39f63e597bbc728474366016e589d5c789fc86217b9e6f8caefa9c5c74d8f1"
+    },
+    {
+      "name": "resolved_logo_behavior",
+      "sourceLine": 182,
+      "sha256": "091461218de4bda53ea3ab6e4ecfa427c29c13338fb0a3ca10cbfadcdd0ff5b5"
+    },
+    {
+      "name": "selected_image_model",
+      "sourceLine": 2243,
+      "sha256": "00259ce9300a8b9bd5670315a076eb3bbb7ceacf6ec617225302bd62e4021d63"
+    },
+    {
+      "name": "uses_editorial_header",
+      "sourceLine": 175,
+      "sha256": "8efab98bbe6cece728649ca7f95fc2e3df58e475d0e93b9ba3d865321db00028"
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/App.tsx",
+      "sha256": "61a88b11f2bc6cf7ccfed7e16088b0d2ebd205e150c39b774040389f7cc8ee4e"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/ClubAdmin.tsx",
+      "sha256": "22b8ee57bf1dd95d510452a4bd6fa641f9793367c0699e5815f65b4ac3b49fe6"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/ClubAttachment.tsx",
+      "sha256": "8de2d5531dde29cbc29c34bbc6a2b27b0ff3133378f57414952127649fb2ebd1"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/ClubCampaignAdmin.tsx",
+      "sha256": "231fa38b79ddc3ed58d873c20d1d1a2501a0c56a4149406bed67f1e8c571a904"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/ClubShowcaseFields.tsx",
+      "sha256": "ccad82f897adee35250901869bd0082e8b845b5a08b2cc20844a9cb8c8a04be4"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/VideoSceneEditor.tsx",
+      "sha256": "b01152a5a4d8569606e41d218c3c97d1a4492bd662bd09efa2ae9501955b07a1"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/api.ts",
+      "sha256": "6430fc26a239bcf7c61dc34871cf569f3682b8def5c1f11663c0de2a6cfc4faf"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/clubUploads.ts",
+      "sha256": "104fc9d1168d78974a6aee9efbbc2adb8457c3fd78f475c21aa15a5dbc95381a"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/main.tsx",
+      "sha256": "f8f84c570dde89c7b406c1f1719b90552cb24d74c676fd15ccfcfc9d9cd61912"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/series-visuals.ts",
+      "sha256": "8df9aa1453cea8c0dfaa74e5bdd185e6e52c16caa9470ebff5132b53bde2ad1e"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/telegram.ts",
+      "sha256": "966b3a3ae842b292590bd5aa0de9f9fc5fc766359cbaeed8e804d20b809936be"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/video-scenes.ts",
+      "sha256": "532eb56da00cdf067f37ccaa3fd36876baf291ed01b73cb1b1cf626ee946db82"
+    },
+    {
+      "path": "kalam-design-studio/apps/admin-miniapp/src/vite-env.d.ts",
+      "sha256": "067ab5bf46746d85449a730fabd080e411e03e43bc9b891329d61ef57135af93"
+    },
+    {
+      "path": "kalam-design-studio/contracts/design-request.schema.json",
+      "sha256": "20ccd37793aca1b7b6b8c876b0ad664aa37397ed72c798504d89e952d9a75a1b"
+    },
+    {
+      "path": "kalam-design-studio/contracts/video-project.schema.json",
+      "sha256": "513fb1141113074b7dde7aef72cdd0d6b0b4c78d7c8fe5cb2d59e6ecc1dea80a"
+    },
+    {
+      "path": "deploy/prompts/poster.production.fa.txt",
+      "sha256": "c8712afac68ed334711a726b365dae75b01e4308c8d4e1c5211a37d169caad89"
+    },
+    {
+      "path": "deploy/prompts/news_post.master.fa.txt",
+      "sha256": "2014155f12f02764ab9a52a4e484d5eaa841fc1485fc5d77e0705253f562ce2b"
+    },
+    {
+      "path": "deploy/prompts/news_story.master.fa.txt",
+      "sha256": "dd1077089295320491ee33b380d6bdaba6f3abb4397b1b2ce0b919733181dd86"
+    },
+    {
+      "path": "deploy/prompts/image-base.production.fa.txt",
+      "sha256": "23940b593ecdc961787d083511d37239e475812aad2bdbfcaf79d492fc85c385"
+    }
+  ]
+}

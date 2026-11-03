@@ -1,0 +1,30 @@
+@font-face{font-family:'Peyda';src:url('Peyda-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Peyda';src:url('Peyda-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'Peyda';src:url('Peyda-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'Peyda';src:url('Peyda-Black.woff2') format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'Vazirmatn';src:url('Vazirmatn-wght.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:block}
+@font-face{font-family:'Aria';src:url('Aria/Aria-VF.woff2') format('woff2');font-weight:50 1000;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-Black.woff2') format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-ExtraBold.woff2') format('woff2');font-weight:800;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-ExtraLight.woff2') format('woff2');font-weight:200;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNumHeavy';src:url('Aria/AriaFaNum-Heavy.woff2') format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNumNormal';src:url('Aria/AriaFaNum-Normal.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNum';src:url('Aria/AriaFaNum-Thin.woff2') format('woff2');font-weight:100;font-style:normal;font-display:block}
+@font-face{font-family:'AriaFaNumUltraBold';src:url('Aria/AriaFaNum-UltraBold.woff2') format('woff2');font-weight:800;font-style:normal;font-display:block}
+@font-face{font-family:'Maneli';src:url('Maneli/Maneli-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'ParsaFaNum';src:url('Parsa/Parsa-FaNum.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Parsa';src:url('Parsa/Parsa-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'PinarFD';src:url('Pinar/Pinar-FD-VF.woff2') format('woff2');font-weight:300 900;font-style:normal;font-display:block}
+@font-face{font-family:'Pinar';src:url('Pinar/Pinar-VF.woff2') format('woff2');font-weight:300 900;font-style:normal;font-display:block}
+@font-face{font-family:'IRANYekanXFaNum';src:url('IRANYekanX/IRANYekanX-FaNum-VF.woff2') format('woff2');font-weight:100 1000;font-style:normal;font-display:block}
+@font-face{font-family:'IRANYekanX';src:url('IRANYekanX/IRANYekanX-VF.woff2') format('woff2');font-weight:100 1000;font-style:normal;font-display:block}
+@font-face{font-family:'Morabba';src:url('Morabba/Morabba-VF.woff2') format('woff2');font-weight:250 900;font-style:normal;font-display:block}
+@font-face{font-family:'MorabbaHeavy';src:url('Morabba/Morabba-Heavy.woff2') format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'Morabba';src:url('Morabba/Morabba-UltraLight.woff2') format('woff2');font-weight:200;font-style:normal;font-display:block}
+@font-face{font-family:'Doran';src:url('Doran/Doran-VF.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:block}
+@font-face{font-family:'DoranFaNum';src:url('Doran/Doran-FaNum-VF.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:block}

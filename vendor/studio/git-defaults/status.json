@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "status": "pending-live-export",
+  "source": "Git defaults plus tracked deployment production prompts",
+  "liveVerified": false,
+  "missing": [
+    "runtime prompt overrides",
+    "runtime model settings",
+    "shared presenter/location reference files"
+  ]
+}

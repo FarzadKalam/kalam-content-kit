@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "client",
+  "name": "پروژهٔ تبلیغاتی مشتری",
+  "category": "advertising",
+  "status": "client-brief",
+  "primaryColor": null,
+  "handle": null,
+  "assets": {},
+  "headerPolicy": "client-specific",
+  "font": "Peyda",
+  "required": [
+    "clientName",
+    "logo-or-explicit-no-logo",
+    "palette",
+    "goal",
+    "approvedCopy",
+    "cta"
+  ],
+  "notes": [
+    "هویت در brand-override.json همین سفارش نگه‌داری شود؛ برند هیچ مشتری به سفارش بعدی منتقل نشود."
+  ],
+  "fontPolicy": {
+    "primary": "Peyda",
+    "selection": "client-brief",
+    "preferredContext": "advertising"
+  }
+}

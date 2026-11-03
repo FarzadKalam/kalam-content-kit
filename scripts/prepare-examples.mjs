@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {ROOT,writeJson} from './lib/paths.mjs';
+const dest=path.join(ROOT,'.local/examples/hyperframes');fs.mkdirSync(dest,{recursive:true});
+fs.copyFileSync(path.join(ROOT,'examples/hyperframes/index.html'),path.join(dest,'index.html'));
+fs.cpSync(path.join(ROOT,'examples/hyperframes/compositions'),path.join(dest,'compositions'),{recursive:true});
+fs.cpSync(path.join(ROOT,'assets'),path.join(dest,'assets'),{recursive:true});
+fs.copyFileSync(path.join(ROOT,'node_modules/gsap/dist/gsap.min.js'),path.join(dest,'assets/gsap.min.js'));
+writeJson(path.join(dest,'hyperframes.json'),{paths:{assets:'assets',blocks:'compositions',components:'compositions/components'},media:{autoProxy:false}});
+const news=path.join(ROOT,'.local/examples/hyperframes-news');fs.mkdirSync(news,{recursive:true});
+fs.cpSync(path.join(ROOT,'examples/hyperframes-news'),news,{recursive:true});
+fs.cpSync(path.join(ROOT,'assets'),path.join(news,'assets'),{recursive:true});
+fs.copyFileSync(path.join(ROOT,'node_modules/gsap/dist/gsap.min.js'),path.join(news,'assets/gsap.min.js'));
+writeJson(path.join(news,'hyperframes.json'),{paths:{assets:'assets',blocks:'compositions',components:'compositions/components'},media:{autoProxy:false}});
+const publicAssets=path.join(ROOT,'engines/remotion/public/assets');fs.mkdirSync(path.dirname(publicAssets),{recursive:true});
+fs.cpSync(path.join(ROOT,'assets'),publicAssets,{recursive:true});
+console.log('Prepared local HyperFrames and Remotion examples; source jobs were not imported.');

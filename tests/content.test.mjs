@@ -1,0 +1,65 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {ROOT,readJson} from '../scripts/lib/paths.mjs';
+import {createContentProject,attachReference,buildBrief} from '../scripts/content-projects.mjs';
+import {python} from '../scripts/lib/studio-runtime.mjs';
+function fixture(t) {
+  const base=path.join(ROOT,'.cache/tests');fs.mkdirSync(base,{recursive:true});
+  const root=fs.mkdtempSync(path.join(base,'content-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  for(const name of ['catalog','brands','config/studio','vendor/studio'])fs.mkdirSync(path.join(root,name),{recursive:true});
+  for(const rel of ['catalog/studio-ui.json','brands/golbahar.json','config/studio/status.json','vendor/studio/sources.json'])fs.copyFileSync(path.join(ROOT,rel),path.join(root,rel));
+  fs.mkdirSync(path.join(root,'config/studio/prompts'),{recursive:true});fs.writeFileSync(path.join(root,'config/studio/prompts/test.txt'),'نسخهٔ اول');return root;
+}
+test('new orders freeze settings and refuse replacing another order',t=>{
+  const root=fixture(t),dest=createContentProject({id:'job',kind:'image',brand:'golbahar',template:'news_story'},root);
+  fs.writeFileSync(path.join(root,'config/studio/prompts/test.txt'),'تغییر مشترک');
+  assert.equal(fs.readFileSync(path.join(dest,'settings/prompts/test.txt'),'utf8'),'نسخهٔ اول');
+  assert.equal(readJson(path.join(dest,'spec.json')).request.format.logoBehavior,'floating_profile');
+  assert.throws(()=>createContentProject({id:'job',kind:'text',brand:'golbahar'},root));
+});
+test('attachments preserve originals and keep content outside the shared repository',t=>{
+  const root=fixture(t),dest=createContentProject({id:'job',kind:'text',brand:'golbahar'},root);
+  const input=path.join(root,'original.png');fs.writeFileSync(input,'immutable');
+  const ref=attachReference('job',input,{},root);
+  assert.equal(fs.readFileSync(input,'utf8'),'immutable');
+  assert.equal(fs.readFileSync(path.join(dest,ref.path),'utf8'),'immutable');
+  assert.ok(ref.sha256);assert.equal(fs.readdirSync(path.join(dest,'history')).length,1);
+});
+test('motion orders preserve explicitly selected landscape dimensions',t=>{
+  const id='test-landscape-'+process.pid,dest=path.join(ROOT,'.local/projects',id);
+  t.after(()=>fs.rmSync(dest,{recursive:true,force:true}));
+  createContentProject({id,kind:'motion',brand:'golbahar',width:'1920',height:'1080'});
+  const state=readJson(path.join(dest,'project.json')),spec=readJson(path.join(dest,'spec.json'));
+  assert.equal(state.width,1920);assert.equal(state.height,1080);
+  assert.equal(spec.motion.width,1920);assert.equal(spec.motion.engine,'hyperframes');
+});
+test('cloud media commands cannot be launched through the renderer wrapper',()=>{
+  for(const command of ['tts','transcribe','cloud','publish']) {
+    const r=spawnSync(process.execPath,['scripts/kit.mjs','hf',command],{cwd:ROOT,encoding:'utf8'});
+    assert.equal(r.status,1);assert.match(r.stderr,/محلی/);
+  }
+});
+test('offline Studio and live-export regression suite',()=>{
+  const output=python(['-m','unittest','discover','-s','tests','-p','test_*.py']);
+  assert.equal(typeof output,'string');
+});
+test('sticker export rejects opaque alpha and stale briefs while preserving real transparency',async t=>{
+  const {default:sharp}=await import('sharp');
+  const id='test-alpha-'+process.pid,dest=path.join(ROOT,'.local/projects',id);
+  t.after(()=>fs.rmSync(dest,{recursive:true,force:true}));
+  createContentProject({id,kind:'image',brand:'golbahar',template:'sticker'});
+  const specPath=path.join(dest,'spec.json'),spec=readJson(specPath);spec.request.content.stickerText='آزمون شفافیت';fs.writeFileSync(specPath,JSON.stringify(spec));
+  buildBrief(id);
+  const opaque=path.join(dest,'opaque.png'),transparent=path.join(dest,'transparent.png');
+  await sharp({create:{width:32,height:32,channels:4,background:{r:20,g:40,b:60,alpha:1}}}).png().toFile(opaque);
+  await sharp({create:{width:32,height:32,channels:4,background:{r:20,g:40,b:60,alpha:0.5}}}).png().toFile(transparent);
+  const run=input=>spawnSync(process.execPath,['scripts/content.mjs','image-export',id,input],{cwd:ROOT,encoding:'utf8'});
+  assert.equal(run(opaque).status,1);
+  const good=run(transparent);assert.equal(good.status,0,good.stderr);
+  const result=JSON.parse(good.stdout);assert.equal((await sharp(result.file).metadata()).width,1024);
+  spec.request.content.stickerText='متن تازه';fs.writeFileSync(specPath,JSON.stringify(spec));
+  const stale=run(transparent);assert.equal(stale.status,1);assert.match(stale.stderr,/تغییر/);
+});
