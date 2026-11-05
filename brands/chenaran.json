@@ -43,9 +43,13 @@
   "motionDirection": {
     "guide": "docs/workflows/news-motion.md",
     "backgrounds": [
-      "angled-grid-gradient",
+      "editorial-light",
+      "paper-layers-light",
+      "pastel-color-field",
+      "soft-geometric-light",
+      "footage-aware",
       "layered-light",
-      "footage-aware"
+      "angled-grid-gradient"
     ],
     "cards": "glass-when-needed",
     "text": "kinetic-phrase-based",
@@ -55,6 +59,34 @@
       "check-cross",
       "cursor-click",
       "animated-svg"
-    ]
+    ],
+    "backgroundPolicy": {
+      "defaultTone": "light",
+      "prevalence": "most-projects-and-majority-of-graphic-scene-duration",
+      "lightPalette": [
+        "white",
+        "ivory",
+        "light-gray",
+        "soft-pastels"
+      ],
+      "darkUsage": "content-justified-or-brief-emphasis; document in DECISIONS.md",
+      "variety": "vary composition, surface, depth, grid angle, spacing, motion and fade regions; compare previous project when available",
+      "footage": "preserve actual lighting and color",
+      "review": "record light predominance, variety and text contrast in REVIEW.md",
+      "grid": {
+        "style": "angled-moving-faint-with-soft-faded-regions",
+        "lines": "thin-low-contrast",
+        "motion": "slow-timeline-driven; no CSS loop or unseeded random",
+        "fade": "soft spatial masks on grid only; keep text and identity sharp",
+        "variation": [
+          "angle",
+          "line-spacing",
+          "scale",
+          "motion-direction",
+          "fade-regions"
+        ],
+        "footage": "graphic areas only; keep faces and news details clear"
+      }
+    }
   }
 }
