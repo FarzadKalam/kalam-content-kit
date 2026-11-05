@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "irna",
+      "label": "ایرنا",
+      "domain": "irna.ir",
+      "scope": "national",
+      "credibility": 95
+    },
+    {
+      "id": "isna",
+      "label": "ایسنا",
+      "domain": "isna.ir",
+      "scope": "national",
+      "credibility": 92
+    },
+    {
+      "id": "ilna",
+      "label": "ایلنا",
+      "domain": "ilna.ir",
+      "scope": "national",
+      "credibility": 86
+    },
+    {
+      "id": "mehr",
+      "label": "مهر",
+      "domain": "mehrnews.com",
+      "scope": "national",
+      "credibility": 86
+    },
+    {
+      "id": "fars",
+      "label": "فارس",
+      "domain": "farsnews.ir",
+      "scope": "national",
+      "credibility": 82
+    },
+    {
+      "id": "tasnim",
+      "label": "تسنیم",
+      "domain": "tasnimnews.com",
+      "scope": "national",
+      "credibility": 82
+    },
+    {
+      "id": "shargh",
+      "label": "روزنامه شرق",
+      "domain": "sharghdaily.com",
+      "scope": "national",
+      "credibility": 84
+    },
+    {
+      "id": "akharin_khabar",
+      "label": "آخرین خبر",
+      "domain": "akharinkhabar.ir",
+      "scope": "national",
+      "credibility": 80
+    },
+    {
+      "id": "khorasan",
+      "label": "روزنامه خراسان",
+      "domain": "khorasannews.com",
+      "scope": "khorasan_razavi",
+      "credibility": 85
+    },
+    {
+      "id": "khorasan_razavi",
+      "label": "خراسان رضوی",
+      "domain": "khorasannews.com",
+      "scope": "khorasan_razavi",
+      "credibility": 88
+    },
+    {
+      "id": "khabaronline",
+      "label": "خبرآنلاین",
+      "domain": "khabaronline.ir",
+      "scope": "national",
+      "credibility": 78
+    },
+    {
+      "id": "asriran",
+      "label": "عصر ایران",
+      "domain": "asriran.com",
+      "scope": "national",
+      "credibility": 76
+    },
+    {
+      "id": "entekhab",
+      "label": "انتخاب",
+      "domain": "entekhab.ir",
+      "scope": "national",
+      "credibility": 76
+    },
+    {
+      "id": "fararu",
+      "label": "fararu.com",
+      "domain": "fararu.com",
+      "scope": "national",
+      "credibility": 74
+    },
+    {
+      "id": "ham_mihan",
+      "label": "هم‌میهن",
+      "domain": "hammihanonline.ir",
+      "scope": "national",
+      "credibility": 74
+    },
+    {
+      "id": "etemad",
+      "label": "اعتماد",
+      "domain": "etemaadonline.ir",
+      "scope": "national",
+      "credibility": 72
+    },
+    {
+      "id": "roads_golbahar",
+      "label": "وزارت راه و شهرسازی — گلبهار",
+      "domain": "mrud.ir",
+      "scope": "golbahar",
+      "credibility": 88
+    }
+  ],
+  "sensitiveTerms": [
+    "جنگ",
+    "حمله",
+    "کشته",
+    "فوت",
+    "زلزله",
+    "سیل",
+    "انفجار",
+    "بازداشت",
+    "اعدام",
+    "ترور",
+    "بحران",
+    "کرونا"
+  ],
+  "shellTitleTerms": [
+    "آرشیو",
+    "archive",
+    "صفحه اصلی",
+    "homepage",
+    "cdn.",
+    "سامانه خودنویس",
+    "login",
+    "ورود",
+    "برچسب ها",
+    "سامانه سپامک",
+    "سامانه شهراه",
+    "پنجره واحد خدمات هوشمند",
+    "سامانه ملی املاک"
+  ],
+  "maxArticleAgeHours": 48,
+  "legacyFilters": {
+    "blacklistedDomains": [
+      "divar.ir",
+      "sheypoor.com",
+      "bama.ir",
+      "torob.com",
+      "emalls.ir",
+      "basalam.com",
+      "digikala.com",
+      "facebook.com",
+      "linkedin.com",
+      "twitter.com",
+      "neshan.org",
+      "balad.ir"
+    ],
+    "blacklistedKeywords": [
+      "استخدام",
+      "نیازمند",
+      "اجاره",
+      "رهن",
+      "مزایده",
+      "مناقصه",
+      "دست دوم",
+      "نو و دسته دوم",
+      "کارکرده",
+      "سنجاق",
+      "مشاوره املاک"
+    ],
+    "excludedLocations": [
+      "چناران شهر",
+      "چناران‌شهر",
+      "فلارد",
+      "منارجان",
+      "لردگان",
+      "چهارمحال",
+      "یاسوج"
+    ]
+  },
+  "legacyEditorialPrompt": "=این محتوا را آنالیز کن ببین ارزش خبری برای انتشار در رسانه خبری دارد یا نه؟:\n\nTitle: {{ $json.title }}\nSnippet: {{ $json.contentSnippet }}\nFull Text: {{ $json.content }}\n\nوظایف:\n1. اگر این محتوا \"آگهی\"، \"تبلیغ\"، \"پیام تبریک/تسلیت شخصی\"، \"گزارش گمشدن مدارک\" یا \"بی‌ارزش\" است، مقدار valid را false بگذار.\n2. تیتر (headline) را جذاب و کوتاه (بدون زردنویسی) بنویس.\n3. خلاصه (summary) را در حداکثر 2 خط بنویس.\n4. منبع (source) را شناسایی کن.\n5. هشتگ‌ها (hashtags) را بساز (#چناران یا #گلبهار الزامی است).\n6. خیلی مهم: محتواها را هیچ تغییری نده و عین مطلب را منتقل کن.\n7. محتواهایی که عربی هستند یا محتواهای متفرقه و غیرخبری در اینستاگرام و... هستند را انتقال نده.\n8. priorityScore را یک عدد صحیح از ۰ تا ۱۰۰ بده: اهمیت فوری محلی، اثر عمومی، تازگی و قابلیت انتشار را بسنج؛ صرفاً جذاب‌بودن تیتر امتیاز بالا نگیرد.\n9. priorityReason را در حداکثر ۸ کلمه، بی‌طرفانه و فارسی بنویس.\n\nخروجی فقط JSON باشد:\n{\n  \"valid\": true,\n  \"headline\": \"...\",\n  \"summary\": \"...\",\n  \"source\": \"...\",\n  \"hashtags\": \"...\",\n  \"priorityScore\": 0,\n  \"priorityReason\": \"...\"\n}",
+  "originalRuleText": {
+    "newsroom_clean_title": "def newsroom_clean_title(value: object) -> str:\n    text = re.sub(r\"[^\\w\\u0600-\\u06ff]+\", \" \", str(value or \"\").casefold())\n    return re.sub(r\"\\s+\", \" \", text).strip()",
+    "newsroom_published_timestamp": "def newsroom_published_timestamp(value: object) -> int | None:\n    \"\"\"Parse RSS dates without trusting an undated search-result landing page.\"\"\"\n    raw = str(value or \"\").strip()\n    if not raw:\n        return None\n    try:\n        parsed = parsedate_to_datetime(raw)\n    except (TypeError, ValueError, IndexError):\n        try:\n            parsed = dt.datetime.fromisoformat(raw.replace(\"Z\", \"+00:00\"))\n        except ValueError:\n            return None\n    if parsed.tzinfo is None:\n        parsed = parsed.replace(tzinfo=dt.timezone.utc)\n    return int(parsed.timestamp())",
+    "newsroom_valid_source_item": "def newsroom_valid_source_item(item: dict, include_local_only: bool = True) -> bool:\n    \"\"\"Reject publisher shells, stale RSS artifacts and non-editorial results.\n\n    Google News domain search is only transport, not an editorial source. Its\n    occasional archive/CDN/homepage result must never become a publish card.\n    Legacy local/trend snapshots have no sourceId and deliberately bypass this\n    guard so their existing tabs and archive remain intact.\n    \"\"\"\n    source_id = str(item.get(\"sourceId\") or \"\")\n    if source_id not in NEWSROOM_SOURCE_INDEX:\n        return True\n    title = re.sub(r\"\\s+\", \" \", html.unescape(str(item.get(\"title\") or \"\"))).strip()\n    normalized = title.casefold()\n    source_label = str(NEWSROOM_SOURCE_INDEX[source_id].get(\"label\") or \"\").casefold()\n    # Google News occasionally emits only \"- نام ناشر\".  Compare semantic\n    # keys, not raw strings, so punctuation and a zero-width joiner cannot\n    # turn a publisher label into a fake article.\n    title_key = newsroom_clean_title(title)\n    source_key = newsroom_clean_title(source_label)\n    title_parts = [newsroom_clean_title(part) for part in re.split(r\"\\s*[-–—]\\s*\", title) if newsroom_clean_title(part)]\n    repeated_title_parts = len(title_parts) > 1 and len(set(title_parts)) == 1\n    if (len(title) < 14 or normalized == source_label or repeated_title_parts or\n            (source_key and title_key == source_key) or\n            any(term in normalized for term in NEWSROOM_SHELL_TITLE_TERMS)):\n        return False\n    persian_chars = len(re.findall(r\"[\\u0600-\\u06ff]\", title))\n    latin_chars = len(re.findall(r\"[A-Za-z]\", title))\n    if persian_chars < 5 or latin_chars > persian_chars * 2:\n        return False\n    published_at = newsroom_published_timestamp(item.get(\"publishedAt\"))\n    if published_at is None:\n        return False\n    age = int(time.time()) - published_at\n    if age > NEWSROOM_MAX_ARTICLE_AGE_SECONDS or age < -6 * 60 * 60:\n        return False\n    return True",
+    "newsroom_priority": "def newsroom_priority(item: dict) -> tuple[int, str, bool]:\n    \"\"\"Deterministic score: explainable enough for an editorial pilot.\"\"\"\n    source_id = str(item.get(\"sourceId\", \"\"))\n    source = NEWSROOM_SOURCE_INDEX.get(source_id, {})\n    score = min(34, int(source.get(\"credibility\", 70)) // 3)\n    title = f\"{item.get('title', '')} {item.get('summary', '')}\".casefold()\n    if item.get(\"trendKeyword\") or item.get(\"traffic\"):\n        score += 15\n    published_at = newsroom_published_timestamp(item.get(\"publishedAt\"))\n    if published_at:\n        age = max(0, int(time.time()) - published_at)\n        score += 16 if age <= 2 * 60 * 60 else 10 if age <= 12 * 60 * 60 else 4\n    if any(word in title for word in (\"فوری\", \"هم‌اکنون\", \"امشب\", \"امروز\", \"دقایقی پیش\")):\n        score += 15\n    if str(item.get(\"scope\", \"\")) == \"khorasan_razavi\":\n        score += 8\n    related_count = len(item.get(\"related\", []))\n    score += min(20, related_count * 7)\n    sensitive = any(word in title for word in NEWSROOM_SENSITIVE_TERMS)\n    if sensitive:\n        score += 6\n    score = max(0, min(100, score))\n    reason = \"منبع معتبر\"\n    if related_count:\n        reason += f\" + تأیید توسط {related_count} منبع\"\n    if item.get(\"trendKeyword\") or item.get(\"traffic\"):\n        reason += \" + سیگنال ترند\"\n    if sensitive:\n        reason += \" + نیازمند بررسی حساسیت\"\n    return score, reason[:180], sensitive",
+    "newsroom_deduplicate_items": "def newsroom_deduplicate_items(snapshots: list[dict]) -> list[dict]:\n    \"\"\"Return latest article records while retaining related-source evidence.\"\"\"\n    groups: dict[str, dict] = {}\n    for snapshot in snapshots[:120]:\n        for raw in snapshot.get(\"items\", []):\n            if not isinstance(raw, dict):\n                continue\n            # The central suggestions are for national/Khorasan editorial\n            # review. The road ministry feed belongs only to the local view,\n            # and old/noisy source artifacts are never ranked for publishing.\n            if str(raw.get(\"scope\") or \"\") == \"golbahar\" or not newsroom_valid_source_item(raw):\n                continue\n            key = newsroom_clean_title(raw.get(\"title\"))[:150] or str(raw.get(\"url\", \"\"))\n            if not key:\n                continue\n            item = copy.deepcopy(raw)\n            item[\"snapshotId\"] = snapshot.get(\"snapshotId\", \"\")\n            item[\"receivedAt\"] = snapshot.get(\"createdAt\", 0)\n            existing = groups.get(key)\n            if not existing:\n                groups[key] = item\n                continue\n            related = existing.setdefault(\"related\", [])\n            candidate = {key: item.get(key, \"\") for key in (\"id\", \"title\", \"summary\", \"source\", \"sourceId\", \"url\", \"publishedAt\", \"imageUrl\")}\n            if candidate[\"url\"] and candidate[\"url\"] != existing.get(\"url\") and not any(row.get(\"url\") == candidate[\"url\"] for row in related):\n                related.append(candidate)\n            score, reason, sensitive = newsroom_priority(existing)\n            existing[\"priorityScore\"] = max(int(existing.get(\"priorityScore\") or 0), score)\n            existing[\"priorityReason\"] = reason\n            existing[\"needsReview\"] = bool(existing.get(\"needsReview\") or sensitive)\n    return sorted(groups.values(), key=lambda item: (int(item.get(\"priorityScore\") or 0), int(item.get(\"receivedAt\") or 0)), reverse=True)"
+  },
+  "provenance": {
+    "source": "KalamN8N local News Seeker and newsroom pilot",
+    "gatewaySha256": "78a933d258fbd122b760b92c4d0779be7a3c1b1c5a62c0eee69c518453c7fc4d",
+    "workflowSha256": "037a34446a249f48481dd15f617690a18ae2e6fafa842373820397b7840e9381",
+    "definitionHashes": {
+      "NEWSROOM_SOURCES": "776bc42b7c5c9ea866deb24caf62f6a083a2c70937184c1d208310d3e0eb4191",
+      "NEWSROOM_SENSITIVE_TERMS": "f6702ac60ff260a71a948b1079812e19688ddfc000a0496a299558948895382a",
+      "NEWSROOM_SHELL_TITLE_TERMS": "56f6c5178ecd11ce132dbafc5f52fc77a2e02eb380be270398ed2b3277a6b82d",
+      "NEWSROOM_MAX_ARTICLE_AGE_SECONDS": "0e050241008d80593f2d564a859690caf928bb3cb1e6bbb36b74ded3fcc42b31",
+      "newsroom_clean_title": "c92121d2a8f7eb358edc06925101680a7d83750e39e6c1ff16c6cca37f892aa0",
+      "newsroom_published_timestamp": "fd212925d51968c2818ad2d4f7c9b38cc5b9accc25229fb24d527b208650c705",
+      "newsroom_valid_source_item": "b7a9637c52e9c8fa0fa1c94c99edcd41fd7e2ead0c113235e83249cef3611d1f",
+      "newsroom_priority": "5d875a88deecf31eaece988576b7a5b0db99dfa6a996000f4c318a673ab8f9eb",
+      "newsroom_deduplicate_items": "801ba8d2a07921711e8a9510f0404a19c5117363961ab713fed069f20632d013"
+    },
+    "excluded": [
+      "credentials",
+      "personal Google Alerts feed",
+      "webhooks",
+      "Telegram recipients",
+      "n8n runtime",
+      "automatic sends",
+      "server accounts"
+    ]
+  }
+}

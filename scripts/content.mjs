@@ -8,6 +8,7 @@ import {binary} from './lib/tools.mjs';
 import {python} from './lib/studio-runtime.mjs';
 import {createContentProject,projectPath,attachReference,buildBrief,saveRevision,kinds} from './content-projects.mjs';
 import {defaultDataRequests,refreshData,importWebData,validateData} from './content-data.mjs';
+import {contentGuidance} from './content-guidance.mjs';
 const [command,...args]=process.argv.slice(2),opts={},pos=[];
 for(let i=0;i<args.length;i++) {
   if(args[i].startsWith('--'))opts[args[i].slice(2)]=args[i+1]&&!args[i+1].startsWith('--')?args[++i]:true;
@@ -28,7 +29,8 @@ try {
   if(command==='help'||!command)print({commands:{
     doctor:'بررسی ابزار محلی؛ وجود تصویرساز و نریشن را خود عامل جدا بررسی کند',
     settings:'--template news_story | --profile post | --all',
-    new:'--id job --kind image|text|slides|audio|video-prompts|motion --brand golbahar [--template news_story] [--spec file.json]',
+    guide:'[job] [--kind motion] [--purpose motion] [--template morning_local] [--profile channel]؛ شناخت قابلیت‌ها و فرم مرتبط، بدون تولید',
+    new:'--id job --kind image|text|slides|audio|video-prompts|motion --brand golbahar [--template news_story] [--purpose motion] [--spec file.json]',
     set:'job --patch changes.json (تنظیمات فعلی حفظ و نسخهٔ قبلی ذخیره می‌شود)',
     attach:'job input.png [--kind presenter --entityId kamran --scope studio]',
     brief:'job (دریافت دادهٔ عمومی لازم و ساخت دستور؛ مدل تولید محتوا فراخوانی نمی‌شود)',
@@ -47,10 +49,19 @@ try {
     try{fs.accessSync(ROOT,fs.constants.W_OK);checks.writableRoot.passed=true}catch{}
     for(const name of ['ffmpeg','ffprobe']){try{checks[name]={passed:fs.existsSync(binary(name))}}catch{checks[name]={passed:false}}}
     checks.hyperframes={passed:fs.existsSync(path.join(ROOT,'node_modules/hyperframes/package.json'))};
-    print({local:checks,hostTools:{image:{status:'unknown',action:'عامل باید ابزار واقعی همین جلسه را بررسی کند'},speech:{status:'unknown',fallback:'فایل صوتی ادمین'}},
+    print({local:checks,hostTools:{image:{status:'unknown',action:'عامل باید ابزار واقعی همین جلسه را بررسی کند'},speech:{status:'unknown',fallback:'فایل صوتی ادمین'},music:{status:'unknown',fallback:'فایل مجاز یا پرامپت برای تولید جداگانهٔ کاربر'}},
       ready:{text:checks.node.passed&&checks.python.passed&&checks.writableRoot.passed,
         media:Object.values(checks).every(v=>v.passed)},runtimeSnapshot:readJson(path.join(ROOT,'config/studio/status.json'))});
     if(!checks.node.passed||!checks.python.passed||!checks.writableRoot.passed)process.exitCode=1;
+  } else if(command==='guide') {
+    if(pos[0]) {
+      const dest=projectPath(pos[0]);
+      print(contentGuidance({spec:readJson(inside(dest,'spec.json')),state:readJson(inside(dest,'project.json')),settingsDir:inside(dest,'settings')}));
+    } else {
+      if(opts.kind&&!kinds.includes(opts.kind))throw new Error('نوع راهنما معتبر نیست.');
+      print(contentGuidance({spec:{kind:opts.kind,profile:opts.profile,purpose:opts.purpose,
+        ...(opts.template?{request:{format:{template:opts.template}}}:{})}}));
+    }
   } else if(command==='settings') {
     const ui=readJson(path.join(ROOT,'catalog/studio-ui.json')),rules=readJson(path.join(ROOT,'catalog/studio.json'));
     if(opts.all)print({ui,rules});
@@ -61,7 +72,7 @@ try {
         commonOptions:ui.stateDefaults.filter(s=>/^(news|studio|image|logo|advertising|citizen|videoFrame|videoOverlay|siteLink)/.test(s.name)),
         completeSettings:'catalog/studio-ui.json',sourceBuilders:ui.requestBuilders});
     } else if(opts.profile) {if(!rules.editorialProfiles[opts.profile])throw new Error('نوع متن ناشناخته است.');print(rules.editorialProfiles[opts.profile]);}
-    else print({kinds,templates:ui.templates,editorialProfiles:Object.fromEntries(Object.entries(rules.editorialProfiles).map(([k,v])=>[k,v.label])),sourceModels:rules.imageModels,sourceVoices:rules.voiceEngines,limits:rules.limits,publicDataCatalog:'catalog/public-data.json',newsDiscovery:false,live:rules.runtimeSnapshot});
+    else print({kinds,templates:ui.templates,editorialProfiles:Object.fromEntries(Object.entries(rules.editorialProfiles).map(([k,v])=>[k,v.label])),sourceModels:rules.imageModels,sourceVoices:rules.voiceEngines,limits:rules.limits,publicDataCatalog:'catalog/public-data.json',newsDiscovery:true,newsSettings:'config/news.json',newsGuide:'docs/studio/news-discovery.fa.md',sourceStatus:rules.runtimeSnapshot,assistantGuide:'content guide'});
   } else if(command==='new') {
     const options={...opts,id:required(opts.id)};if(opts.spec)options.spec=readJson(opts.spec);
     print({project:createContentProject(options)});
@@ -84,7 +95,7 @@ try {
   } else if(command==='capabilities') {
     const dest=projectPath(required(pos[0])),state=readJson(inside(dest,'project.json')),evidence=readJson(required(opts.file));
     for(const [key,value] of Object.entries(evidence)) {
-      if(!['image','speech','transcription','fileAccess'].includes(key)||!['available','unavailable','unknown'].includes(value.status)||typeof value.evidence!=='string'||!value.evidence.trim())throw new Error('وضعیت ابزار باید همراه مدرک واقعی ثبت شود.');
+      if(!['image','speech','music','transcription','fileAccess'].includes(key)||!['available','unavailable','unknown'].includes(value.status)||typeof value.evidence!=='string'||!value.evidence.trim())throw new Error('وضعیت ابزار باید همراه مدرک واقعی ثبت شود.');
     }
     saveRevision(dest,'host-capabilities');state.capabilities={...state.capabilities,...evidence};writeJson(path.join(dest,'project.json'),state);print(state.capabilities);
   } else if(command==='image-export'||command==='text-export') {

@@ -6,6 +6,7 @@
     "commit": "8eec3616117133c74fd7cdd1cf7a522166fd65a9"
   },
   "live": {
-    "status": "pending-live-export"
+    "status": "not-required",
+    "required": false
   }
 }

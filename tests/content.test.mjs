@@ -11,7 +11,7 @@ function fixture(t) {
   const base=path.join(ROOT,'.cache/tests');fs.mkdirSync(base,{recursive:true});
   const root=fs.mkdtempSync(path.join(base,'content-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
   for(const name of ['catalog','brands','config/studio','vendor/studio'])fs.mkdirSync(path.join(root,name),{recursive:true});
-  for(const rel of ['catalog/studio-ui.json','brands/golbahar.json','config/studio/status.json','vendor/studio/sources.json'])fs.copyFileSync(path.join(ROOT,rel),path.join(root,rel));
+  for(const rel of ['catalog/studio-ui.json','catalog/studio.json','brands/golbahar.json','config/studio/status.json','vendor/studio/sources.json'])fs.copyFileSync(path.join(ROOT,rel),path.join(root,rel));
   fs.mkdirSync(path.join(root,'config/studio/prompts'),{recursive:true});fs.writeFileSync(path.join(root,'config/studio/prompts/test.txt'),'نسخهٔ اول');return root;
 }
 test('new orders freeze settings and refuse replacing another order',t=>{

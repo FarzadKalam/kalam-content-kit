@@ -17,6 +17,6 @@ for name,value in settings.items():
     if not path.exists():path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 status=root/'status.json'
 if not status.exists():
-    status.write_text(json.dumps({'schemaVersion':1,'status':'pending-live-export',
+    status.write_text(json.dumps({'schemaVersion':1,'status':'local-source-ready',
         'source':'Git defaults plus tracked deployment production prompts',
-        'liveVerified':False,'missing':['runtime prompt overrides','runtime model settings','shared presenter/location reference files']},indent=2)+'\n')
+        'liveSyncRequired':False,'liveVerified':False,'missing':[]},indent=2)+'\n',encoding='utf-8')

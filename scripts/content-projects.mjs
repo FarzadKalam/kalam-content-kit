@@ -5,6 +5,7 @@ import {ROOT,inside,safeId,readJson,writeJson} from './lib/paths.mjs';
 import {createProject} from './projects.mjs';
 import {compile} from './lib/studio-runtime.mjs';
 import {defaultDataRequests,refreshData,dataIsFresh} from './content-data.mjs';
+import {contentGuidance} from './content-guidance.mjs';
 
 export const kinds=['text','image','slides','audio','video-prompts','motion'];
 export const projectPath=(id,root=ROOT)=>inside(path.join(root,'.local/projects'),safeId(id));
@@ -32,12 +33,13 @@ export function imageRequest({id,brand,template='news_story',canvas,root=ROOT}) 
   return req;
 }
 
-export function createContentProject({id,brand='kalametaze',kind='image',template,profile='post',canvas,engine='hyperframes',mode='motion',width=1080,height=1920,spec:provided},root=ROOT) {
+export function createContentProject({id,brand='kalametaze',kind='image',template,profile='post',purpose,canvas,engine='hyperframes',mode='motion',width=1080,height=1920,spec:provided},root=ROOT) {
   if(!kinds.includes(kind))throw new Error('نوع سفارش معتبر نیست.');
   const dest=projectPath(id,root);
   const brandProfile=readJson(inside(path.join(root,'brands'),safeId(brand)+'.json'));
   if(fs.existsSync(dest))throw new Error('این سفارش وجود دارد؛ resume را اجرا کن.');
   let spec=provided?structuredClone(provided):{schemaVersion:1,kind,brand,references:[]};
+  if(purpose&&!provided)spec.purpose=purpose;
   if(spec.kind!==kind||spec.brand!==brand)throw new Error('نوع و برند فایل تنظیمات با سفارش یکسان نیست.');
   if(!provided) {
     if(kind==='text')Object.assign(spec,{profile,text:'',additionalInstructions:'',channelJoinUrl:''});
@@ -68,7 +70,7 @@ export function createContentProject({id,brand='kalametaze',kind='image',templat
   const state=kind==='motion'?readJson(path.join(dest,'project.json')):{};
   writeJson(path.join(dest,'project.json'),{...state,schemaVersion:2,id,kind,brand,phase:'brief',createdAt:new Date().toISOString(),
     source:readJson(path.join(root,'vendor/studio/sources.json')).commit,settingsStatus:readJson(path.join(dest,'settings/status.json')),
-    capabilities:{image:{status:'unknown'},speech:{status:'unknown'}},approvals:[],artifacts:[]});
+    capabilities:{image:{status:'unknown'},speech:{status:'unknown'},music:{status:'unknown'}},fonts:brandProfile.fontPolicy||{primary:brandProfile.font||'Peyda'},approvals:[],artifacts:[]});
   // Stage approved shared references into each job; jobs never depend on a remote URL.
   const registry=path.join(root,'assets/studio/references/registry.json');
   if(fs.existsSync(registry))for(const ref of readJson(registry).assets) {
@@ -109,11 +111,14 @@ export function attachReference(id,input,{kind='image',entityId='input',assetId=
 export function buildBrief(id,root=ROOT) {
   const dest=projectPath(id,root);
   const specPath=inside(dest,'spec.json');
+  const discovery=readJson(specPath).discovery;
+  if(discovery&&hash(inside(dest,discovery.evidencePath))!==discovery.evidenceSha256)throw new Error('مدرک خبر انتخاب‌شده پس از ثبت تغییر کرده است.');
   if(!dataIsFresh(dest)) {
     const data=refreshData(dest,{saveRevision});
     if(!data.canRender)throw new Error('داده‌های روز آماده نیستند؛ گزارش publicData را بخوان، منبع وب معتبر وارد کن یا دادهٔ دستیِ تأییدشده را انتخاب کن.');
   }
   const result=compile(specPath,inside(dest,'settings'));
+  result.assistantGuidance=contentGuidance({spec:readJson(specPath),state:readJson(inside(dest,'project.json')),settingsDir:inside(dest,'settings'),root});
   saveRevision(dest,'compile-brief');
   const outputs=inside(dest,'analysis');fs.mkdirSync(outputs,{recursive:true});
   const existing=fs.readdirSync(outputs).filter(n=>/^brief-\d+\.json$/.test(n));

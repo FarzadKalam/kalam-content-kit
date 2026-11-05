@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "timeZone": "Asia/Tehran",
+  "categories": {
+    "all": "پیشنهادهای ملی",
+    "local": "گلبهار و چناران",
+    "national": "خبر‌یاب ملی",
+    "khorasan_razavi": "خراسان رضوی",
+    "khabarfarsi": "خبرفارسی",
+    "google_trends": "ترند عمومی",
+    "google_sports": "ترند ورزشی"
+  },
+  "defaults": {"category": "local", "lookbackHours": 48, "limit": 10, "targetLanguage": "fa", "includeSocial": true},
+  "localTerms": ["گلبهار", "گلمکان", "چناران", "شهرستان چناران", "شهرستان گلبهار"],
+  "regionalTerms": ["خراسان رضوی", "مشهد"],
+  "socialDomains": ["t.me", "instagram.com", "x.com", "youtube.com", "aparat.com"],
+  "publicFeeds": {
+    "khabarfarsi": "https://khabarfarsi.com/rss/top",
+    "google_trends": "https://trends.google.com/trending/rss?geo=IR"
+  },
+  "disabledSourceIds": [],
+  "additionalSources": [],
+  "maxFutureMinutes": 10,
+  "weights": {"credibilityDivisor": 3, "credibilityCap": 34, "trend": 15, "fresh2h": 16, "fresh12h": 10, "older": 4, "urgent": 15, "regional": 8, "independentCoverageEach": 7, "independentCoverageCap": 20, "sensitive": 6},
+  "queryLimit": 40,
+  "briefPrompt": "config/studio/assistant-prompts/news-discovery.txt"
+}

@@ -1,0 +1,734 @@
+{
+  "version": 1,
+  "source": "approved-local-studio-packs",
+  "metadataChecksums": {
+    "deploy/register-approved-reference-assets-20260831.py": "9003ee608d7896edeb30f30f7d6aedf3f0b636561a08831a9f91e696d34b078a",
+    "deploy/register-tara-reference-assets.py": "026715ec566ffee0e513a0175e4da3fbcc0260f9a802694eaaa99cd48bc4d7aa",
+    "deploy/register-studio-main-reference-assets.py": "4ef04ddc47b62920e436e3477a7a5ce3a2c53c6ad46b0becb801078dc470c669",
+    "deploy/register-newsroom-reference-assets.py": "3ea47e7a94a6428e7899fd677933200f39843cb8905a0b9abad8ca91ddc08d93",
+    "deploy/register-studio-2-reference-assets.py": "b1153b3ebc3acd988d9313ae0deec46996b10609b6b0de1f98aff16a289a66a4",
+    "deploy/promote-studio-2-final-assets.py": "d9014041d0dc5c0b2006becbaeb042ce9dea4a019e7058c93e818fe2da0d5d7c"
+  },
+  "assets": [
+    {
+      "assetId": "0b75cc57-6cbb-546f-a8b3-2b1428f8ea2f",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "کامران؛ مرجع هویت اصلی بدون کراوات"
+      },
+      "path": "presenter/kamran/01-kamran-editorial-master.png",
+      "filename": "01-kamran-editorial-master.png",
+      "sha256": "d7506d880719f3f187b4363c5d7d003372dcc91e38f0b63667d12a6d90345e16",
+      "sourcePath": "output/reference-assets/kamran-20260831/01-kamran-editorial-master.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "87950beb-b475-5d84-977e-a401e3b1100e",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "full_body",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "کامران؛ تمام‌قد با زمینهٔ خنثی"
+      },
+      "path": "presenter/kamran/02-kamran-full-neutral.png",
+      "filename": "02-kamran-full-neutral.png",
+      "sha256": "47049ed0e517384826139bf3abfccd2c5614e4c318f874d30d3d0b6d374db9df",
+      "sourcePath": "output/reference-assets/kamran-20260831/02-kamran-full-neutral.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "8e47aed6-08aa-541b-ba9b-4c26a99b34e3",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "portrait",
+        "aspectRatio": "portrait",
+        "framing": "close",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "کامران؛ کلوزآپ هویتی"
+      },
+      "path": "presenter/kamran/03-kamran-closeup.png",
+      "filename": "03-kamran-closeup.png",
+      "sha256": "741628916d711a106a968fc6fc4a588394da2d3063f14e33f19ea758dd889cf3",
+      "sourcePath": "output/reference-assets/kamran-20260831/03-kamran-closeup.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "e4e637ea-19d6-5825-b2a5-b83c2b34c680",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "expression",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "کامران؛ اشاره با فضای طبیعی متن"
+      },
+      "path": "presenter/kamran/04-kamran-pointing-copyspace.png",
+      "filename": "04-kamran-pointing-copyspace.png",
+      "sha256": "10946a17023c83ffb17addcc3d7fa438dc4378c45cfc4ef55f38012ecc40bce3",
+      "sourcePath": "output/reference-assets/kamran-20260831/04-kamran-pointing-copyspace.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "83303faa-6847-5b39-8d16-8359606687f8",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "left",
+        "label": "کامران؛ نشسته در نشیمن معاصر"
+      },
+      "path": "presenter/kamran/05-kamran-seated-living-room.png",
+      "filename": "05-kamran-seated-living-room.png",
+      "sha256": "d6e6a3df48f574dd5e44d4ca55bb97911f6d62ba11d9c19bf7fedc403e38d282",
+      "sourcePath": "output/reference-assets/kamran-20260831/05-kamran-seated-living-room.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "901801bc-5d53-5d77-a6c2-e9aadc381ad7",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "تارا؛ نشسته در نشیمن معاصر"
+      },
+      "path": "presenter/tara/08-tara-seated-living-room.png",
+      "filename": "08-tara-seated-living-room.png",
+      "sha256": "e3c9730c8ba7bcd7462b59aa658bb6321b2204094c66c5f1393d3da354f34277",
+      "sourcePath": "output/reference-assets/tara-20260831/08-tara-seated-living-room.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "3706bda6-95cb-5e51-8a75-81152301921d",
+      "kind": "location",
+      "entityId": "living_room",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "right",
+        "label": "نشیمن معاصر؛ نمای اصلی روشن با لوگوتایپ"
+      },
+      "path": "location/living_room/01-living-room-master.png",
+      "filename": "01-living-room-master.png",
+      "sha256": "cf5912e4e7caaace662d54567e98963f39471a22dda2579342cbd02dc19b9241",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/01-living-room-master.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "7b83ec62-ce80-5202-a19f-9688f80cd8ce",
+      "kind": "location",
+      "entityId": "living_room",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "نشیمن؛ زاویهٔ معکوس از پنجره به کنج و مانیتور دیواری"
+      },
+      "path": "location/living_room/02-living-room-window-reverse-monitor.png",
+      "filename": "02-living-room-window-reverse-monitor.png",
+      "sha256": "1cfd20d10d995b14bc333e88b82c95906a6ad06d2d8aaf8e073c940b325a6e24",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/02-living-room-window-reverse-monitor.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "238df4c4-9836-5740-a6b6-fcf33c91c41e",
+      "kind": "location",
+      "entityId": "terrace",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "تراس سرزنده؛ نمای اصلی با لوگوتایپ"
+      },
+      "path": "location/terrace/03-terrace-master.png",
+      "filename": "03-terrace-master.png",
+      "sha256": "ede7d3beff3d28490d7d453e580f9235273758e83b9586170bf97b3de85e7bb0",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/03-terrace-master.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "4a1b2b99-644b-5a22-8ecd-e1dba8c52c02",
+      "kind": "location",
+      "entityId": "terrace",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "right",
+        "label": "تراس؛ زاویهٔ معکوس به نما و نمایشگر استندی"
+      },
+      "path": "location/terrace/04-terrace-building-reverse-monitor.png",
+      "filename": "04-terrace-building-reverse-monitor.png",
+      "sha256": "ea521c0bf0eee68e7b8450102afe433104d2bf0e21db1547fce91ab4e10e17a4",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/04-terrace-building-reverse-monitor.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "6019acb1-b3a3-558d-9922-e1f4f3755271",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ مرجع هویت اصلی و پوشش خبری"
+      },
+      "path": "presenter/tara/01-tara-editorial-master.png",
+      "filename": "01-tara-editorial-master.png",
+      "sha256": "534fd1372961784dcb9fe1982576f14e2ea287d1e14f5eff77dcb6acf5c8e917",
+      "sourcePath": "output/reference-assets/tara-20260831/01-tara-editorial-master.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "86a751a9-521f-5efb-b5fa-d3675e4bcabc",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "full_body",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ تمام‌قد با زمینهٔ خنثی"
+      },
+      "path": "presenter/tara/02-tara-full-neutral.png",
+      "filename": "02-tara-full-neutral.png",
+      "sha256": "c9070ba2243c77f23ee87bbe7a4a2b731615f505a1038648e3b18e6df4684c96",
+      "sourcePath": "output/reference-assets/tara-20260831/02-tara-full-neutral.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "d696f4c3-7e95-57d0-b7bf-087687398e5d",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "portrait",
+        "aspectRatio": "portrait",
+        "framing": "close",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ کلوزآپ هویتی"
+      },
+      "path": "presenter/tara/03-tara-closeup.png",
+      "filename": "03-tara-closeup.png",
+      "sha256": "26cdc7b5f82bdea4aa492a9f24c7c0b191cc044a6cfcc62d4b52c637a0d4f9b6",
+      "sourcePath": "output/reference-assets/tara-20260831/03-tara-closeup.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "dbe398aa-90dd-5ce5-bc85-ea01eb311ea4",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ نیم‌تنه در حال توضیح"
+      },
+      "path": "presenter/tara/04-tara-explaining.png",
+      "filename": "04-tara-explaining.png",
+      "sha256": "a098b40ea523e0c0a3f3388ceceaad8732ac0d8da13013ec312d3cb8935163b3",
+      "sourcePath": "output/reference-assets/tara-20260831/04-tara-explaining.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "ee803e3e-b869-5647-8a0c-d74e0b871a4d",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "expression",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "تارا؛ اشاره با فضای طبیعی متن در راست"
+      },
+      "path": "presenter/tara/05-tara-pointing-copyspace.png",
+      "filename": "05-tara-pointing-copyspace.png",
+      "sha256": "f866ea4a7c2c33c459278238b6ac1aebda03e666135c09075503eff02785b247",
+      "sourcePath": "output/reference-assets/tara-20260831/05-tara-pointing-copyspace.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "2188d82b-162f-5b0a-aba7-77e2f971f3d1",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ نشسته پشت میز خبری"
+      },
+      "path": "presenter/tara/06-tara-seated-newsdesk.png",
+      "filename": "06-tara-seated-newsdesk.png",
+      "sha256": "20f2162785b94ea26a58d0eb4bbd2bdb755f7d955cb34e6508dc83ea70a87b54",
+      "sourcePath": "output/reference-assets/tara-20260831/06-tara-seated-newsdesk.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "f90256df-4483-5400-8719-4519e7818c47",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "three_quarter",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ نمای سه‌رخ ملایم"
+      },
+      "path": "presenter/tara/07-tara-three-quarter.png",
+      "filename": "07-tara-three-quarter.png",
+      "sha256": "c440514a567982571955e76622b9fc02abe116af32ae73cfac13511401f32e97",
+      "sourcePath": "output/reference-assets/tara-20260831/07-tara-three-quarter.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "ca5e5fa0-dbae-5ff9-9158-a49115850d03",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "استودیو اصلی؛ دیوار مانیتوری بزرگ، نمای روشن اصلی"
+      },
+      "path": "location/studio_main/01-bright-master-wall.png",
+      "filename": "01-bright-master-wall.png",
+      "sha256": "732d420e131bb2e6fcd51b3944611e73ab448154d45c1c4906a74f3211bc4bae",
+      "sourcePath": "output/reference-assets/studio-main-20260830/01-bright-master-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "3de633e9-67fe-56df-99b7-76f7d859664c",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "alternate",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "right",
+        "label": "استودیو اصلی؛ زاویهٔ مکمل دیوار مانیتوری"
+      },
+      "path": "location/studio_main/02-dark-angle-wall.png",
+      "filename": "02-dark-angle-wall.png",
+      "sha256": "1b0e5aa1f4100dd720c26237aa71709ae88ba48ebfe95d64407887cb6590f549",
+      "sourcePath": "output/reference-assets/studio-main-20260830/02-dark-angle-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "6b31f90d-8081-587e-8e53-a6f61511cd48",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "استودیو اصلی؛ میز و دیوار مانیتوری برای تک‌مجری"
+      },
+      "path": "location/studio_main/03-dark-desk-wall.png",
+      "filename": "03-dark-desk-wall.png",
+      "sha256": "b1e3eb85cdb1ac661fed8c31d4279abb6405536cf126589a5c4142d4d917a935",
+      "sourcePath": "output/reference-assets/studio-main-20260830/03-dark-desk-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "c3f74fa5-9a06-54d0-b9cb-dadc52caa074",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو اصلی؛ نمای مجری کنار مانیتور بزرگ"
+      },
+      "path": "location/studio_main/04-dark-wide-wall.png",
+      "filename": "04-dark-wide-wall.png",
+      "sha256": "2b4ffef3efeecde4ebf3b50d5a4243910e42748eaf0cdd07b539d2ccdcbd438e",
+      "sourcePath": "output/reference-assets/studio-main-20260830/04-dark-wide-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "18afcbae-4995-5cfb-b964-687e6419c1d8",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "title_space",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "استودیو اصلی؛ دیوار مانیتوری و فضای عنوان"
+      },
+      "path": "location/studio_main/05-bright-title-space.png",
+      "filename": "05-bright-title-space.png",
+      "sha256": "0b27c91632d3ec57d73f2fefd0bd48796d13bc621e63096e7a6f1edd0047457d",
+      "sourcePath": "output/reference-assets/studio-main-20260830/05-bright-title-space.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "dfe726d5-f451-5786-a3b3-3b9129d83f4d",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو اصلی؛ زاویهٔ روشن دیوار مانیتوری"
+      },
+      "path": "location/studio_main/06-bright-wall-angle.png",
+      "filename": "06-bright-wall-angle.png",
+      "sha256": "997d3198ff236fae057f6915d34969e0c67fc97c315bc7f568758185cdf0fea5",
+      "sourcePath": "output/reference-assets/studio-main-20260830/06-bright-wall-angle.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "6d6e0c93-730a-5822-8af9-4df0227487c4",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "landscape",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "نمای اصلی و باز تحریریه"
+      },
+      "path": "location/newsroom/01-master-wide.png",
+      "filename": "01-master-wide.png",
+      "sha256": "bfa89d18575a6efc586f0c84eabc0af53fb5b93a836a2b539e046e13332bf685",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/01-master-wide.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "1297e952-e33c-5327-808c-d649f4cb19d4",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "landscape",
+        "framing": "wide",
+        "presenterCapacity": 1,
+        "copySpace": "left",
+        "label": "نمای خبری عریض با فضای مجری"
+      },
+      "path": "location/newsroom/02-news-wide-left.png",
+      "filename": "02-news-wide-left.png",
+      "sha256": "1c8d5896a6f2d5476363fde55c9ce33eaf23095b66917dde60932d352ccbf681",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/02-news-wide-left.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "2a2ebcf0-c3b0-586e-8a38-5fec8bc2cc5e",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "landscape",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "زاویهٔ مکمل تک‌مجری"
+      },
+      "path": "location/newsroom/03-presenter-angle.png",
+      "filename": "03-presenter-angle.png",
+      "sha256": "5ffe5e00bfa233edd17c1393008a77afd1a81396e98c4271a9f88ba987803857",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/03-presenter-angle.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "79e0c369-6058-51a6-8258-2439e4dd2914",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "landscape",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "زاویهٔ معکوس دو‌مجری"
+      },
+      "path": "location/newsroom/04-reverse-two-presenter.png",
+      "filename": "04-reverse-two-presenter.png",
+      "sha256": "7b886204659e6c9be4263223a5c3106844232c54d044743b293e826e1bc79a7b",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/04-reverse-two-presenter.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "c37fda7c-4f66-5c90-859f-c8a6d1903a9a",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "قاب عمودی تک‌مجری"
+      },
+      "path": "location/newsroom/05-vertical-single-presenter-9x16.png",
+      "filename": "05-vertical-single-presenter-9x16.png",
+      "sha256": "f879c9eb849b7f1869f56b151f149c1cc9dbbf14e326c8429f05f6be00791d65",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/05-vertical-single-presenter-9x16.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "74142ae9-db18-5b61-91ec-1831874891d2",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "قاب عمودی دو‌مجری"
+      },
+      "path": "location/newsroom/06-vertical-two-presenter-9x16.png",
+      "filename": "06-vertical-two-presenter-9x16.png",
+      "sha256": "b90d235f8372c2fce7fc6c6a8d48299a96341c5e9a42931f9cbbeba10f8374d8",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/06-vertical-two-presenter-9x16.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "7fba2ad2-1e70-546b-9496-226683239495",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "title_space",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "قاب عمودی با فضای خالی عنوان در چپ"
+      },
+      "path": "location/newsroom/07-vertical-blank-title-9x16.png",
+      "filename": "07-vertical-blank-title-9x16.png",
+      "sha256": "6ddffe0a4f8fe4f0ec75f75ce92f43d490087935443c16d01673cebd89175c38",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/07-vertical-blank-title-9x16.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "c7cf15e6-c8ee-51f1-8d31-0385779ffc25",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "square",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "قاب مربعی تک‌مجری"
+      },
+      "path": "location/newsroom/08-square-presenter-1x1.png",
+      "filename": "08-square-presenter-1x1.png",
+      "sha256": "b1313c900e190136b9a1b11d03b2a981687af76bdfba82859db623527b9bdb58",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/08-square-presenter-1x1.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "39d4c461-6620-5144-be4d-c274acdcdc41",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "continuity",
+        "aspectRatio": "landscape",
+        "framing": "medium",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "قاب افقی متوسط برای تداوم خبری"
+      },
+      "path": "location/newsroom/09-horizontal-medium-news-16x9.png",
+      "filename": "09-horizontal-medium-news-16x9.png",
+      "sha256": "8124063a6b9794e8710ead8369ce31a0a949fe7477b2aec036c6844bb27ba610",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/09-horizontal-medium-news-16x9.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "6e0910ad-4a23-5de8-96d8-90a472d1e5b9",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ عمودی تک‌مجری با مانیتور"
+      },
+      "path": "location/studio_2/01-vertical-single-presenter-monitor.png",
+      "filename": "01-vertical-single-presenter-monitor.png",
+      "sha256": "bb634650c6e0e1607a5cc473f03e556ef0533d44b4d4e13bfd76c93e9fc654f2",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v1/01-vertical-single-presenter-monitor.png",
+      "metadataSource": "deploy/register-studio-2-reference-assets.py"
+    },
+    {
+      "assetId": "7c1cca09-15bf-5b1f-81e8-59c5e8eff6b2",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ عمودی دو‌مجری با مانیتور"
+      },
+      "path": "location/studio_2/02-vertical-two-presenter-monitor.png",
+      "filename": "02-vertical-two-presenter-monitor.png",
+      "sha256": "26607d8b9abaa5657655271cf48a8b958c4d530b1d02989171427bd6298a339b",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v1/02-vertical-two-presenter-monitor.png",
+      "metadataSource": "deploy/register-studio-2-reference-assets.py"
+    },
+    {
+      "assetId": "97b34264-c1b9-5e70-9084-5b3599bc93ee",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ نسخهٔ نهایی تک‌مجری"
+      },
+      "path": "location/studio_2/01-vertical-single-presenter-final.png",
+      "filename": "01-vertical-single-presenter-final.png",
+      "sha256": "b1e3eb85cdb1ac661fed8c31d4279abb6405536cf126589a5c4142d4d917a935",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v2/01-vertical-single-presenter-final.png",
+      "metadataSource": "deploy/promote-studio-2-final-assets.py"
+    },
+    {
+      "assetId": "4740ba1d-f11a-5c31-87a5-fa41bc9a1091",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ نسخهٔ نهایی دو‌مجری"
+      },
+      "path": "location/studio_2/02-vertical-two-presenter-final.png",
+      "filename": "02-vertical-two-presenter-final.png",
+      "sha256": "2b4ffef3efeecde4ebf3b50d5a4243910e42748eaf0cdd07b539d2ccdcbd438e",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v2/02-vertical-two-presenter-final.png",
+      "metadataSource": "deploy/promote-studio-2-final-assets.py"
+    }
+  ]
+}

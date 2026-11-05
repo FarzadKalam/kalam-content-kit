@@ -26,6 +26,21 @@
     "profile": {
       "type": "string"
     },
+    "purpose": {
+      "type": "string",
+      "description": "Use motion for narration with an accompanying visual scenario; does not authorize audio generation."
+    },
+    "discovery": {
+      "type": "object",
+      "required": ["runId", "itemId", "sourceUrl", "evidencePath", "evidenceSha256"],
+      "properties": {
+        "runId": {"type": "string"},
+        "itemId": {"type": "string"},
+        "sourceUrl": {"type": "string", "format": "uri"},
+        "evidencePath": {"type": "string"},
+        "evidenceSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
     "text": {
       "type": "string"
     },
@@ -69,6 +84,17 @@
           "type": "string"
         }
       }
+    },
+    "music": {
+      "type": "object",
+      "properties": {
+        "mode": {"enum": ["none", "file", "external-prompt", "native-if-available"]},
+        "intent": {"type": "string"},
+        "assetId": {"type": "string"},
+        "prompt": {"type": "string"},
+        "rights": {"type": "string"}
+      },
+      "description": "Music preparation and source choice; not an authorization or claim of generation."
     },
     "references": {
       "type": "array",

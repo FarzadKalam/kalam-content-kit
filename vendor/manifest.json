@@ -1790,5 +1790,707 @@
         "sha256": "b4cfddd463ca44b6127aac813c5f8330f5fe2587f516af5ddfdb0fda453cf8eb"
       }
     ]
+  },
+  "gsapSkills": {
+    "source": "https://github.com/greensock/gsap-skills",
+    "sourceCommit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "snapshotDate": "2026-11-06",
+    "license": "MIT",
+    "notes": "Unmodified official skill files and complete MIT license. Technical guidance only; illustration-kalam adapts examples to the pinned local runtime and HyperFrames contract. No upstream installer or package scripts executed.",
+    "files": [
+      {
+        "path": ".agents/skills/gsap-core/SKILL.md",
+        "sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3"
+      },
+      {
+        "path": ".agents/skills/gsap-frameworks/SKILL.md",
+        "sha256": "842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6"
+      },
+      {
+        "path": ".agents/skills/gsap-performance/SKILL.md",
+        "sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e"
+      },
+      {
+        "path": ".agents/skills/gsap-plugins/SKILL.md",
+        "sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4"
+      },
+      {
+        "path": ".agents/skills/gsap-react/SKILL.md",
+        "sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74"
+      },
+      {
+        "path": ".agents/skills/gsap-scrolltrigger/SKILL.md",
+        "sha256": "9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4"
+      },
+      {
+        "path": ".agents/skills/gsap-timeline/SKILL.md",
+        "sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02"
+      },
+      {
+        "path": ".agents/skills/gsap-utils/SKILL.md",
+        "sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba"
+      },
+      {
+        "path": "vendor/gsap-skills-LICENSE",
+        "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+      },
+      {
+        "path": "vendor/gsap-skills-llms.txt",
+        "sha256": "32dab4bde09bc822ac17ebc49ee2ff87ca8c304a1c6e0509aadde7223f78b42f"
+      }
+    ]
+  },
+  "mengtoIllustration": {
+    "source": "https://github.com/MengTo/Skills",
+    "sourceCommit": "5ea1661a0e05d82b054553daaa6baf6d0233c33c",
+    "snapshotDate": "2026-11-06",
+    "license": "MIT",
+    "notes": "All 14 complete illustration skill folders and index are retained byte-for-byte under vendor/mengto-illustration, including references, drawing kits, generators, style data, 42 SVG examples, prompt/agent metadata and MIT license. Duplicate demo/index.html and demo/preview.jpg omitted. Local discovery wrappers under .agents/skills/illustration-* adapt the kit; 8 upstream entrypoints contain invalid YAML descriptions and are not exposed as directly discovered skills. Upstream originals remain unchanged.",
+    "files": [
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/agents/openai.yaml",
+        "sha256": "c5ae15c3f04b0cc907542c71a986be8d5d6a3ae0871c75d1e0a206f290fa35cb"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/demo/PROMPT.md",
+        "sha256": "469167ef42c0de9b01dafc8c012903c3c4e3712dc8a9fc00b19cda6ced60668e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/examples/hot-reload.svg",
+        "sha256": "13500d6ffbd30cffe8e1c3989a001c25aac492034b71cd5eb71f7b9028950015"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/examples/page-under-construction.svg",
+        "sha256": "7ccbbfab0d5379a38ff0f411364b48628b6b084c6bf202bc1e5460fe1ebf645c"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/examples/two-factor-auth.svg",
+        "sha256": "25c8d4e9bff2ac72a0b3421a26bfb8a2240b363e78d839766ed8107cec4c6b5e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/scripts/pop.mjs",
+        "sha256": "a0af299818bb514aa610015819e4fc95545c8dea7eeb792375fa13e0344debc1"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/SKILL.md",
+        "sha256": "41d760636f5942d732b35d68ace26f99d62a75ad1bfd3bbe0326ae723378f45d"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-bold-pop/style.json",
+        "sha256": "6b3af180cb7dd62d3fb1b0e1d95be9669fbf7bd94c371a266084d24d96e43053"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/agents/openai.yaml",
+        "sha256": "c29e37c6107328b5baf3db958d05b9025c5a2594ef2399e4d5121500e8d54587"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/demo/PROMPT.md",
+        "sha256": "7ad5e30d5260b37fb5af038a6c12363473a0119551c81698d88bb7416ca293a6"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/examples/broken-link.svg",
+        "sha256": "6c40d01a974a9d1a15c175fbdc1164397a1d57cea6585a06daaaf73d6448ab33"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/examples/coming-soon.svg",
+        "sha256": "791dac6fda882eeb7ec9bca784aae0f945bcc3622c1d2e2dc659d59d4a8231c8"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/examples/fatal-error.svg",
+        "sha256": "1c7b54f5b2b6e777cdf82f1a2bf9a6ae0489261c32f8f707960c6dd06574092b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/scripts/flat-kit.mjs",
+        "sha256": "4caae2f20c177de34d095a9317fc7652f25dea7d7ba2e849f6a645a1d817a577"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/SKILL.md",
+        "sha256": "a9b06cd733a2e5f8429747f12816057377faf2ecbf55940ea23d213577c30744"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat/style.json",
+        "sha256": "4284d3ab0300e3f0ae2f0d6f8a28e9d3ae3f06d276cea6c8ba66a7c233f3a288"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/agents/openai.yaml",
+        "sha256": "a5b8feeba4802daf6192f841d41b301b1ce67587c5e2a648dcda6b5031d0f4d1"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/demo/PROMPT.md",
+        "sha256": "dcc4f55233a90c3712695d08146d6749e620a351a6e04d72ba2891a4c7aa68b9"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/examples/friday-deploy.svg",
+        "sha256": "1d0dc98e80193c8b2c03289245bde32f8174e87f268dafb6ad54d2733d26829a"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/examples/messages.svg",
+        "sha256": "7b772805fede69b7c4a8557bfc6417bebaf79896db5237a188b5a4bd6d1032cd"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/examples/stand-up.svg",
+        "sha256": "76dd519b7380f9331c40ec65e58567e268927a3ad480e32a6b2d51b98df08371"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/scripts/parts.mjs",
+        "sha256": "091e229973967dd720d4e3826c972b5806960e62422e24816b2d7a75d3911d9b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/SKILL.md",
+        "sha256": "54c2db5d334db277f9098dad911dade0dba2c87ab2c5e046655567dcf540d341"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-flat-with-black/style.json",
+        "sha256": "cc01adedd2cea03b592e63351e315b7377e013d39b5e541d46fb42e209b67e83"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/agents/openai.yaml",
+        "sha256": "b7f05ca590e8919308464b0014ff9c06710de56e91eae034a65ca767166ba39b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/demo/PROMPT.md",
+        "sha256": "a4bc2424ad70147a3f55433c2a992f8d0a6001db17fe984f7f1a8193cfe7cc55"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/examples/design-system.svg",
+        "sha256": "12306bbfa477a912a1537eba06db9e6bd95e4adfe7d491ba4bd850a930abfc78"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/examples/live-coding.svg",
+        "sha256": "35ff694a9b911832892e021d43cd3da99b6b5fd511926ace7ab0bb229a06693e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/examples/support.svg",
+        "sha256": "f3bb388edda55975d01f1ed13099326ef32a4eecfe40d9c5437ed9ea0aaabb20"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/scripts/panel-kit.mjs",
+        "sha256": "bdeb62392061bb1797a61db8c86d817b2b3c4189b478451a222cec249c9a3eb2"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/SKILL.md",
+        "sha256": "b5333635a651587a9b4bdc8d75f82f2f510257bff280ad567248a3a30d502102"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-framed-panel/style.json",
+        "sha256": "1abe15eddecc25e201af16574b354ced166eea320532f06c8ac6a2cf4938f64c"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/agents/openai.yaml",
+        "sha256": "725e2339bf5af1dd2455515e4df81ce730d962cf259d87938ba20817325d22ef"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/demo/PROMPT.md",
+        "sha256": "aa613adae82ec446b6bb9c90e57ad465ca1725e0b9a3182928458fe09af15892"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/examples/cozy-commit.svg",
+        "sha256": "b58554e2e1403597e3cbef8d8722d18d307e80b315949c93f3c8f3197eb6fb1a"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/examples/night-shift.svg",
+        "sha256": "07b34e4a190201a3568d07172a80f1f0325605540c0fdeb226c2b6cdb807447f"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/examples/rainy-refactor.svg",
+        "sha256": "cc6cc8952db9419e7e900611ea10c69d245015086d2be6ce5d6e0ba8cf4620bb"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/scripts/gouache.mjs",
+        "sha256": "bde4c5d67868359f852b435563f7e9ec3b5301e66b8d9f635f7bb351b8319205"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/SKILL.md",
+        "sha256": "a43ee40bd82072ad35424183577c3f823a9df7fc70250103e520627e8c91e168"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-grainy-gouache/style.json",
+        "sha256": "1f8769b8219866a57de71ae54937bfeabc88c171c214fd725291c975bccf0218"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/agents/openai.yaml",
+        "sha256": "561f13305a927a532d0fb659f192854617c864c385939caf8ea478d52d0adc30"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/demo/PROMPT.md",
+        "sha256": "e3acc87668cf5130a8dbf4bc97a7903bd26e91b7440ad5b46ad72c130720de99"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/examples/design-critique.svg",
+        "sha256": "ee1777b46bcf3ac63c9becb0ff5975ed0482fff77a7b7f9b3983bdc80560a536"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/examples/pair-programming.svg",
+        "sha256": "e1301a688dfc36b1fc4794521904a727d5106bbaacbb4376bdf81f88df47c3e0"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/examples/train-ride.svg",
+        "sha256": "71c85ed226a90caa1caad5b9ee1309819f09188d42bc57819530dd39474d85a8"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/scripts/halftone.mjs",
+        "sha256": "1f5896fe30b13603424d21292f05945d1717121113557337d0cf64ebaaa8688e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/SKILL.md",
+        "sha256": "d52117df7bbe3a0aab994d723cf3cec0e985f8440837b5010c6eddaae54281dd"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-halftone-line/style.json",
+        "sha256": "c85f1f6b6eae33f46f6bd39c50a1116f686a633a7ad2ce32bf5242e2d01f7699"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/agents/openai.yaml",
+        "sha256": "e3b4647ca769983cf2ee8588fbefc80549f846fed175a4e5ff77eac00e5f21e8"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/demo/PROMPT.md",
+        "sha256": "c0baec65c16b744e57b9144f518846f011ad4dad9c798d0842b29bab87a273fa"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/examples/hello-world.svg",
+        "sha256": "47ab9af3acd505e9e0fc19e87de43d4920c2b3f3d9626a6a7b6333ca7c1a7142"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/examples/merge-conflict.svg",
+        "sha256": "44bcea217bb4f5385b496315bc60b378382053c24a795c7952f4f6877c7d0249"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/examples/slow-build.svg",
+        "sha256": "e1f13e6b501a895df0a6eb7b2e56b78f8da1a60506aae2cae9341c696d2a12c4"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/scripts/ink-kit.mjs",
+        "sha256": "f88ae5b0e95ab6e9c4479c050e6c23953b2ea5012fd9c9ee9c82e60b5185dbcc"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/SKILL.md",
+        "sha256": "92cf018068face3293e69be4e197d69b9e38125a3a50e0129fc53f2e3726a118"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-ink-sketch/style.json",
+        "sha256": "a087813ecf2a83213dc302a3f0daf2b7748c8c764a738c72f9651bb5500013f9"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/agents/openai.yaml",
+        "sha256": "b1431b78f4f0abb8da04986d9a977a370e2e640ecca107812da63a934750a8c3"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/demo/PROMPT.md",
+        "sha256": "8619b379bac435ddebf33e08a06aa9e7e9922ff0026440eea11e06da4b50a73f"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/examples/ci-pipeline.svg",
+        "sha256": "1d2759f0da3d7e0d08d8baacbd71d66b4486a29c7e833a2be93e9612b5c3d088"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/examples/design-studio.svg",
+        "sha256": "4099be950ef224a1c8c24304a10d59ec0a47b94877bf1d9103a5b1c1f4099129"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/examples/dev-stack.svg",
+        "sha256": "f96f81906445f75d13302c2afd0f90b64ddc940860303f9bba6e3bb9e45755c7"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/scripts/dev-stack.gen.mjs",
+        "sha256": "5c52cdcc60187f8e67b51e32365712f88d8c7acc2834f679c80bfaaf60328dde"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/scripts/iso.mjs",
+        "sha256": "bc73863ab107ed00731936ffe98ffa52d0079c9ddbf8a36addcec86b04582702"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/scripts/ramp-check.mjs",
+        "sha256": "0cdbad09a7ed3e775a80269c9ab05be3d727fdabd79081e36f27c4f99f9beed1"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/SKILL.md",
+        "sha256": "7def7bca69443aef2ce31ab5942f0953bd9a08d5528249adb8fe1ce4592ca3e2"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-isometric-mono/style.json",
+        "sha256": "9e920c7785bb77030a05f104f49b73ad45539be36db8e52a148ab30d0b40562a"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/agents/openai.yaml",
+        "sha256": "63d9f54261196f1d9d1d75456a9aad28a0d6a85051d6cda7ff800c349e703420"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/demo/PROMPT.md",
+        "sha256": "e0d4e66865dbac13e8a046096bf88ab7b62ef7a5b4af446ceb537f2fcbbb5eca"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/examples/books.svg",
+        "sha256": "19e0e8ad882d9d3ac4cd0cb948d14dfd0fc77e6506b9629aa8740c66731cae57"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/examples/remote-work.svg",
+        "sha256": "e1fc316235b9415ced68cb02335d85dda376f2184643792bebadf74bd6b94f9a"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/examples/whiteboard.svg",
+        "sha256": "9c8c32b36e1fc23de49906c2de2aa1896ad3afa4a52239cba0e8d42a35a444ab"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/scripts/interior.mjs",
+        "sha256": "a3559e8ba9adbf1c9791187bfe4ede121336eac2e37d205d206b8c73b1396c7b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/SKILL.md",
+        "sha256": "0bfcfd52341d464c606f3fc7e57db5b66e90c980b14b2ae49453e56cda922db2"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-line-interior/style.json",
+        "sha256": "effe1481d1ea2bbbb99bcf4c1a4866b700b1bf3a3b0268f30517f7ee5ded2e86"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/agents/openai.yaml",
+        "sha256": "6e1b1a557e4cde6c496b205915588991c1479f4deb374056984fe658090a172b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/demo/PROMPT.md",
+        "sha256": "6eabb7fbc71f2b91f03867400f7c690d22971e596367211324873abacb74bb65"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/examples/flow-state.svg",
+        "sha256": "949e8556f6461dda39266176cd9da7db013686c756d495de25e6f454aa7904b0"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/examples/hackathon-sprint.svg",
+        "sha256": "615ba7043f6849e58111c308448fb95ffbe1667a5670a457567ddca031675758"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/examples/juggling-tasks.svg",
+        "sha256": "ee20a3b5623d1f4d7748e405db1a66b6009a9d6e6f7cca0b16ae9d9cc57bd4e0"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/scripts/oneline.mjs",
+        "sha256": "312f9464ff27c2ac692815fea7e273799124dfbec79f4e4810fb8a359f1cc6be"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/SKILL.md",
+        "sha256": "7e18cbbb8969d533dd4c00534b26bb59ca12800fe70e518fc02987a2cdf87b4a"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-one-line/style.json",
+        "sha256": "ba018f9195fb4eaff7ffcec1604e6e919b501f9763975b4ea9255a84e514a488"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/agents/openai.yaml",
+        "sha256": "a4225057f6ce2f6335cf9c844150c7dd20b78d2386d0c1b2c552c5ae98c3f420"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/demo/PROMPT.md",
+        "sha256": "002d31b80a18649e657f95c70ae52579626b4ea6f5dac98f392c510ab86a62e8"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/examples/awards.svg",
+        "sha256": "eb703e86dbfc3bdb66d4e154d55437a3ebdf7a6bc1067c09ec1715c30e983439"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/examples/code-review.svg",
+        "sha256": "600a47d9592643c5bbfc8612ffeb36e16a8a79053e0ed0d62ca29d556d7654ab"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/examples/designer.svg",
+        "sha256": "d3b2d758fd525d23ca32cb422e360e7e57ef714efbcb7ac7a34d06cfda9b95bb"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/scripts/outline-kit.mjs",
+        "sha256": "a6d93295abbfd651c898b3232fd70257384983dd089c1d3b71ccee8e3ab1bf8c"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/SKILL.md",
+        "sha256": "2bfa28fdf6456316aa5bb4d161234251e233855ae35b698de5ee439a034edd2e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-outlined-cartoon/style.json",
+        "sha256": "5aef37c9e29f278b4ce46431f91fda107f4251d3ad7a9419c9711b57c7bd4745"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/agents/openai.yaml",
+        "sha256": "5bac26e0ae05fab0d1d0716fc1eb355004cb6b86baa438d5259a8578d367e68a"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/demo/PROMPT.md",
+        "sha256": "ee74420a3689dbbe0fa0303bdaa12fe8703ab93c9926ecd27fff1a2453c47534"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/examples/backup.svg",
+        "sha256": "6644853542842658b84565b60a57794b813f06ccf075254a95f3ed93e89fe958"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/examples/command-k.svg",
+        "sha256": "f643a50679a6a2f114f76c83c7f52e555a18e0388fb86d762ad11b044eafbc5d"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/examples/git-merge.svg",
+        "sha256": "b5da5a26906555accfcd8a5aefeed2dddf6049ad21a8c54a06ec2f51a63eccd4"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/scripts/starter.mjs",
+        "sha256": "4e77eefc23c2463bddbaf22d33de0804009bd2429bb34830cc2de7e12116368b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/scripts/teal3d.mjs",
+        "sha256": "4b85417e7e3e31ca71d53f8512c89213ce90a002bcc48955c3f05f1d42a7f516"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/SKILL.md",
+        "sha256": "48439cffdd64dad656e4647b7021cdac0444aa034cf528d92c7dd1eba0b9ca1e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-teal-spot/style.json",
+        "sha256": "772315148b1153e76e40377a68021bd87b94b3dbbee4ebaae036e4e26f5b5bd9"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/agents/openai.yaml",
+        "sha256": "37d8c1c34bdd7eb3df3e87a0fe327e25b3a46687d3b884d344d183d090e95574"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/demo/PROMPT.md",
+        "sha256": "447d75c8305589aea9617598e08d7c36334b0c257fa7948f3320c0339212bcf4"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/examples/coffee-driven.svg",
+        "sha256": "dc671490c0abc571d0af671e623c8926581d7163cd0648e90e4ce23ff636cfaf"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/examples/night-owl.svg",
+        "sha256": "8e73f9e543487935f7a6da03ac944b1c3ad3d83f9b659211f4d5233aaf8357e5"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/examples/rubber-ducking.svg",
+        "sha256": "03c6983b1df6c418ad5e6d92156fb6206ad7df5de291452a6f0679de7506f6dc"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/scripts/brush.mjs",
+        "sha256": "228b2227605fa03d60e6db497b8ff135f4db433c0da34bc5451363373fa82e35"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/SKILL.md",
+        "sha256": "3470f6dd5ac5cd090b8e10a7ae12f418f57173c0064c267c3c9e34823a99fe45"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-two-colour-brush/style.json",
+        "sha256": "dc3f0431456d1d141844412a0b821c9747444e94a99e78367c1cac86dc691680"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/agents/openai.yaml",
+        "sha256": "11f626ee87739f420304a307068885a7ce4f821eae312c01bcf791ebc8d8f89b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/demo/PROMPT.md",
+        "sha256": "d531e99bff2c0e993784e1129364b7c0be891958717837b395d6aeaa95dc3768"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/examples/debug-club.svg",
+        "sha256": "4cb51a827574ae1bc475b0c7dc83a2f0a304ebea131eabfc1591d54e33ce0eb5"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/examples/open-source.svg",
+        "sha256": "2f76066e0baefaa77c06053a6a0365bd013a51c6dfe14edc92ae94aed2ed6692"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/examples/ship-it.svg",
+        "sha256": "b130a6e0008bd9a4349a6bf1e44f6bb24a538fa58051b6df749640607f4da48e"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/references/craft.md",
+        "sha256": "bfc7480c0ca1228ad265f340727a698704f2df558c69f7e3bebf602000ca3430"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/scripts/emblem-kit.mjs",
+        "sha256": "c0ba31271061c5bb7729fda754cbb6d43c1c72d54ada38caa25204c8cdd5c4a8"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/scripts/lint.mjs",
+        "sha256": "c7c0dee90b45a5792ceb638208bdc9012d5c2f315e709323fe28b0f56bfa6909"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/scripts/render.mjs",
+        "sha256": "b750840ebb56b2261a8b78695aef065b51ad17e65653d076e892926165e1075b"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/scripts/wordmark.mjs",
+        "sha256": "92f993cbf26d908e86f34660eeee81ef7f333b713c5417b83ef97fbf94af5229"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/SKILL.md",
+        "sha256": "1f470fd5edbd99e464d3a586003f766b5d4f0ce9287693444bf614038f9fa627"
+      },
+      {
+        "path": "vendor/mengto-illustration/illustration-vintage-emblem/style.json",
+        "sha256": "a8b655fa85a664479c477f31ffcfb2d3932ec226ab513e84cefeabced1a8678f"
+      },
+      {
+        "path": "vendor/mengto-illustration/LICENSE",
+        "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6"
+      },
+      {
+        "path": "vendor/mengto-illustration/README.md",
+        "sha256": "706c3dfdea6bdf133315da251f904bca7cc114e9f73d8279050f0eab99f339c1"
+      },
+      {
+        "path": "vendor/mengto-illustration/styles.jpg",
+        "sha256": "087123c5cdccd28fed6e453693a8b7d8a520f79f9afd87e01f9d8b9d91b2d33b"
+      }
+    ]
   }
 }

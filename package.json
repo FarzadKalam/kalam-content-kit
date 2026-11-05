@@ -15,6 +15,7 @@
     "validate": "node scripts/validate.mjs",
     "test": "node --test tests/*.test.mjs",
     "content": "node scripts/content.mjs",
+    "news": "node scripts/news.mjs",
     "doctor:video": "node scripts/kit.mjs doctor",
     "catalog:studio": "node scripts/build-studio-catalog.mjs",
     "data": "node scripts/data.mjs"

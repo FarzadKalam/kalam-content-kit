@@ -22,10 +22,18 @@
   ],
   "fontPolicy": {
     "primary": "Peyda",
-    "complement": [],
+    "complement": ["Morabba", "Parsa"],
     "captionFallback": "Vazirmatn",
     "selection": "brand-default",
-    "notes": "Meem explicitly disabled by owner; use Peyda for news identity."
+    "roles": {
+      "headline": {"family": "Morabba", "weights": [700, 800, 900]},
+      "kineticEmphasis": {"family": "Morabba", "weights": [700, 800, 900]},
+      "body": {"family": "Peyda", "weights": [400, 600]},
+      "captions": {"family": "Peyda", "weights": [600, 700]},
+      "identity": {"family": "Peyda", "weights": [600, 700]},
+      "handwrittenAccent": {"family": "Parsa", "weights": [400], "usage": "optional-short-phrase-when-story-benefits"}
+    },
+    "notes": "Owner selected Peyda + Morabba and optional Parsa handwriting, 2026-11-06. Roles are editorial defaults; vary by content, keep real weights and Persian word joining. Meem remains disabled."
   },
   "colorEvidence": "Official Kalam Studio brand map, verified 2026-11-02",
   "handleEvidence": "Owner explicitly confirmed dot-separated Instagram handles, 2026-11-02",
