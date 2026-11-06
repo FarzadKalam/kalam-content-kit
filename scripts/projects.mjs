@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {ROOT,inside,safeId,readJson,writeJson} from './lib/paths.mjs';
+import {freezeTeam} from './agent-team.mjs';
 
 export function createProject({id,brand,mode='motion',engine='hyperframes',width=1080,height=1920}, root=ROOT) {
   safeId(id);safeId(brand);
@@ -28,5 +29,6 @@ export function createProject({id,brand,mode='motion',engine='hyperframes',width
     fs.writeFileSync(path.join(project,'README.md'),`# Remotion\n\nاز engines/remotion/src الگوی Composition بگیر و صحنهٔ واقعی سفارش را بنویس.\nبرای preview: node scripts/remotion.mjs studio .local/projects/${id}/src/index.jsx\nبرای رندر: node scripts/remotion.mjs render .local/projects/${id}/src/index.jsx Main .local/projects/${id}/renders/final.mp4\nدستورها از ریشهٔ کیت اجرا شوند؛ public همین سفارش خودکار انتخاب می‌شود.\n`,'utf8');
     fs.mkdirSync(path.join(project,'src')); // Source is intentionally not a copied generic film.
   }
+  freezeTeam(project,root);
   return project;
 }

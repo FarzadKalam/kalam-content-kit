@@ -119,6 +119,25 @@ class StudioRulesTests(unittest.TestCase):
         spec=self.video();spec['video']['monitor']={'enabled':False,'mode':'disabled','imageMode':'generate','assetIds':['33333333-3333-3333-3333-333333333333']}
         out=studio.compile_spec(spec,self.base)
         self.assertFalse(any(name.startswith('MONITOR') for name in out['segments'][0]['referenceFiles']))
+    def test_video_prompt_model_and_dimensions_match_in_all_compiler_sections(self):
+        for model, resolutions in [('veo_3_1', ['720p', '1080p']), ('gemini_omni_flash', ['360p', '720p', '1080p', '4k'])]:
+            for resolution in resolutions:
+                for canvas in ['portrait', 'landscape']:
+                    with self.subTest(model=model, resolution=resolution, canvas=canvas):
+                        spec=self.video();spec['video'].update({'generationModel':model,'resolution':resolution,'canvas':canvas})
+                        result=studio.compile_spec(spec,self.base)
+                        prompt=result['segments'][0]['prompt']
+                        width,height={'360p':(640,360),'720p':(1280,720),'1080p':(1920,1080),'4k':(3840,2160)}[resolution]
+                        dimensions=f'{height}x{width}' if canvas=='portrait' else f'{width}x{height}'
+                        target='Gemini Omni Flash' if model=='gemini_omni_flash' else 'Veo 3.1'
+                        self.assertIn(f'{target}: a 8-second',prompt)
+                        self.assertIn(f'24fps {target} scene',prompt)
+                        self.assertEqual(prompt.count(dimensions),2)
+                        self.assertIn('متن قطعی اول',prompt)
+                        if model=='gemini_omni_flash':self.assertNotIn('Veo 3.1',prompt)
+                        original=studio.video.compile_segment(result['project'],result['project']['lines'][0],0)
+                        adapted=studio.video_creative_prompt(result['project'],result['project']['lines'][0],0)
+                        self.assertEqual(original.split('. Cinematic professional',1)[1],adapted.split('. Cinematic professional',1)[1])
     def test_audio_missing_native_tool_has_explicit_file_fallback(self):
         out=studio.compile_spec({'kind':'audio','brand':'golbahar','audio':{'text':'متن نریشن تأییدشده'}},self.base)
         self.assertEqual(out['execution']['fallback'],'await-admin-audio-file')

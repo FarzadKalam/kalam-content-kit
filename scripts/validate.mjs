@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {ROOT,readJson} from './lib/paths.mjs';
 import {sharedFiles} from './shared-files.mjs';
+import {python} from './lib/studio-runtime.mjs';
 let failures=0; const fail=m=>{console.error(m);failures++};
 for(const name of fs.readdirSync(path.join(ROOT,'brands')).filter(n=>n.endsWith('.json'))) {
   const b=readJson(path.join(ROOT,'brands',name));
@@ -34,7 +35,7 @@ for(const entry of readJson(path.join(ROOT,'library/catalog.json')))if(entry.cod
 for(const f of sharedFiles()) {
   const sharedVendorSfx=/^\.agents\/skills\/media-use\/audio\/assets\/sfx\/[^/]+\.mp3$/.test(f);
   if(!sharedVendorSfx&&/(^|\/)\.env($|\.)|(^|\/)(node_modules|\.local|\.cache)\/|\.(mp4|mov|mkv|mp3|m4a|pem|key)$/i.test(f))fail('Private or generated file in Git candidate: '+f);
-  if(/\.(md|json|mjs|cjs|jsx|html|ps1|sh|yml|yaml|py|ts|tsx|txt|css)$/.test(f)) {
+  if(/\.(md|json|mjs|cjs|jsx|html|ps1|sh|yml|yaml|toml|py|ts|tsx|txt|css)$/.test(f)) {
     const p=path.join(ROOT,f); if(!fs.existsSync(p))continue;
     const t=fs.readFileSync(p,'utf8');
     try { new TextDecoder('utf-8',{fatal:true}).decode(fs.readFileSync(p)); } catch { fail('Invalid UTF-8 bytes: '+f); }
@@ -46,3 +47,4 @@ for(const f of sharedFiles()) {
 console.log(failures?`failed: ${failures}`:'passed: brands, fonts, sample paths, UTF-8 and Git content checks');
 process.exitCode=failures?1:0;
 if(!failures)await import('./validate-content.mjs');
+if(!failures) {try {console.log(python(['scripts/validate-agent-team.py']).trim());}catch(error){fail(error.message);process.exitCode=1;}}

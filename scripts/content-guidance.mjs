@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {ROOT,readJson} from './lib/paths.mjs';
+import {teamGuide} from './agent-team.mjs';
 
 // Discover abilities from the real catalogs; do not encode a fixed recommendation menu.
 export function contentGuidance({spec={},state={},settingsDir,root=ROOT}={}) {
@@ -30,6 +31,7 @@ export function contentGuidance({spec={},state={},settingsDir,root=ROOT}={}) {
   const musicInstructionsPresent=fs.existsSync(musicInstructions);
   return {
     policy,
+    team:teamGuide({id:state.id,kind:spec.kind,root}),
     brandTypography,
     context:{kind:spec.kind||null,brand:spec.brand||null,purpose:spec.purpose||null,templates:activeTemplates,profile:spec.profile||null,
       motionNarration:spec.purpose==='motion',music:spec.music||null,
@@ -39,6 +41,7 @@ export function contentGuidance({spec={},state={},settingsDir,root=ROOT}={}) {
     routes:{
       text:{guide:'docs/studio/text.fa.md',profiles,basePrompt:'prompts/editorial/master.txt'},
       image:{guide:'docs/studio/image.fa.md',templates,modes:['generate','preserve','reference','edit_existing','studio'],
+        skill:'.agents/skills/kalam-image/SKILL.md',approval:'describe-specific-image-plan-then-actual-user-approval-before-generation',
         basePrompts:['prompts/image-base.txt','prompts/image-non-news-base.txt','prompts/image-style.txt']},
       slides:{guide:'docs/studio/slides.fa.md',perSlideSettings:true,limit:rules.limits.slides},
       audio:{guide:'docs/studio/audio.fa.md',execution:'native-if-available-after-script-approval; otherwise admin audio file'},
@@ -51,6 +54,7 @@ export function contentGuidance({spec={},state={},settingsDir,root=ROOT}={}) {
       videoPrompts:{guide:'docs/studio/video-prompts.fa.md',execution:'prompt-package-for-manual-Gemini-or-Google-Flow',
         models:Object.keys(rules.limits.videoReferences),compiler:'vendor/studio/video_rules.py',videoGeneration:false},
       motion:{guide:'docs/studio/motion.fa.md',skill:'.agents/skills/kalam-edit/SKILL.md',taste:policy.motionTaste||'docs/editing-contract.fa.md',
+        storyboard:'docs/studio/storyboard.fa.md',finalRender:'requires-current-visual-storyboard-approval-and-real-required-audio',
         craftSkills:['.agents/skills/gsap-kalam/SKILL.md','.agents/skills/illustration-kalam/SKILL.md'],
         reframing:'docs/workflows/reframing.md',durationBasis:'actual-narration-audio-when-present',
         mediaChoices:['existing-media','generated-images','studio-characters','svg-html','documented-charts','external-generated-video'],

@@ -1,0 +1,28 @@
+# Project roles for the verified Codex CLI 0.135 configuration schema.
+# Inherit the user's model, account, tools and permissions.
+[features]
+multi_agent = true
+
+[agents]
+max_threads = 4
+max_depth = 1
+
+[agents.kalam_writer]
+description = "نویسنده و ویراستار فارسی؛ متن، خبر، نریشن و سناریوی تصویرپذیر با قواعد Studio."
+config_file = "agents/kalam-writer.toml"
+
+[agents.kalam_image_artist]
+description = "تصویرساز با تمام قالب‌ها، پرامپت‌ها و مراجع واقعی Studio و ابزار تصویر همین محیط."
+config_file = "agents/kalam-image-artist.toml"
+
+[agents.kalam_motion_editor]
+description = "کارگردان تدوین و موشن؛ متن مصوب، رسانه، صدا، استوری‌بورد تصویری و رندر محلی پس از تأیید."
+config_file = "agents/kalam-motion-editor.toml"
+
+[agents.kalam_video_director]
+description = "کارگردان سکانس و پرامپت Veo و Omni مطابق فرم‌ها و compiler ویدیوساز Studio."
+config_file = "agents/kalam-video-director.toml"
+
+[agents.kalam_news_researcher]
+description = "کشف و ارزیابی خبر تازه و سوژهٔ کم‌پوشش با وب واقعی، مدرک و سابقهٔ محلی."
+config_file = "agents/kalam-news-researcher.toml"

@@ -2,9 +2,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {ROOT,readJson,localEnv,browser} from './lib/paths.mjs';
+import {assertProductionReadyForPath} from './storyboard.mjs';
 const [command,entry,...rest]=process.argv.slice(2);
 try {
   if(!['studio','render','still','compositions'].includes(command)||!entry)throw new Error('remotion.mjs studio|render|still|compositions entry [composition] [output]');
+  if(command==='render')assertProductionReadyForPath(entry);
   const chrome=browser();if(!chrome)throw new Error('KALAM_BROWSER_PATH را به مرورگر موجود تنظیم کن.');
   const engine=path.join(ROOT,'engines/remotion'); const manifest=readJson(path.join(engine,'node_modules/@remotion/cli/package.json'));
   const bin=typeof manifest.bin==='string'?manifest.bin:Object.values(manifest.bin)[0];

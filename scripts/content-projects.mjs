@@ -6,6 +6,8 @@ import {createProject} from './projects.mjs';
 import {compile} from './lib/studio-runtime.mjs';
 import {defaultDataRequests,refreshData,dataIsFresh} from './content-data.mjs';
 import {contentGuidance} from './content-guidance.mjs';
+import {freezeTeam} from './agent-team.mjs';
+import {imageApprovalStatus} from './image-approval.mjs';
 
 export const kinds=['text','image','slides','audio','video-prompts','motion'];
 export const projectPath=(id,root=ROOT)=>inside(path.join(root,'.local/projects'),safeId(id));
@@ -80,6 +82,7 @@ export function createContentProject({id,brand='kalametaze',kind='image',templat
     spec.references??=[];spec.references.push({...ref,path:relative.replaceAll('\\','/'),sha256:hash(target)});
   }
   writeJson(path.join(dest,'spec.json'),spec);
+  freezeTeam(dest,root);
   return dest;
 }
 
@@ -118,6 +121,7 @@ export function buildBrief(id,root=ROOT) {
     if(!data.canRender)throw new Error('داده‌های روز آماده نیستند؛ گزارش publicData را بخوان، منبع وب معتبر وارد کن یا دادهٔ دستیِ تأییدشده را انتخاب کن.');
   }
   const result=compile(specPath,inside(dest,'settings'));
+  if(['image','slides'].includes(readJson(specPath).kind))result.imageApproval=imageApprovalStatus(id,root);
   result.assistantGuidance=contentGuidance({spec:readJson(specPath),state:readJson(inside(dest,'project.json')),settingsDir:inside(dest,'settings'),root});
   saveRevision(dest,'compile-brief');
   const outputs=inside(dest,'analysis');fs.mkdirSync(outputs,{recursive:true});

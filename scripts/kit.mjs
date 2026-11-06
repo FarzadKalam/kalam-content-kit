@@ -4,6 +4,7 @@ import {spawnSync} from 'node:child_process';
 import {ROOT,readJson,localEnv,browser} from './lib/paths.mjs';
 import {createProject} from './projects.mjs';
 import {binary} from './lib/tools.mjs';
+import {assertProductionReadyForPath} from './storyboard.mjs';
 const [command,...args]=process.argv.slice(2);
 const opts={}; for(let i=0;i<args.length;i++) if(args[i].startsWith('--')) opts[args[i].slice(2)]=args[i+1]&&!args[i+1].startsWith('--')?args[++i]:true;
 const env=localEnv(); const chrome=browser(); if(chrome) env.HYPERFRAMES_BROWSER_PATH=chrome;
@@ -23,6 +24,10 @@ try {
     const q=String(opts.query||'').toLowerCase(), items=readJson(path.join(ROOT,'library/catalog.json'));
     console.log(JSON.stringify(items.filter(x=>[x.name,x.description,...x.tags].join(' ').toLowerCase().includes(q)&&(!opts.engine||x.engine===opts.engine)),null,2));
   } else if(command==='hf') {
+    if(args[0]==='render'&&!args.includes('--help')&&!args.includes('-h')) {
+      if(!args[1]||args[1].startsWith('-'))throw new Error('برای رندر، ابتدا مسیر سفارش و سپس گزینه‌ها را بده.');
+      assertProductionReadyForPath(args[1]);
+    }
     const localCommands=new Set(['check','lint','snapshot','preview','render','info','compositions','timeline','docs','catalog','add','history','init','audio','keyframes','compare','present','play']);
     if(!localCommands.has(args[0])||args.some(a=>['--cloud','--upload','--publish'].includes(a))||args.includes('--describe')&&args[args.indexOf('--describe')+1]!=='false')throw new Error('این کیت فقط فرمان‌های محلی HyperFrames را اجرا می‌کند؛ تولید رسانه با ابزار داخلی محیط است.');
     if(args[0]==='snapshot'&&!args.includes('--describe'))args.push('--describe','false');

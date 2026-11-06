@@ -21,6 +21,28 @@ gateway = load('gateway_rules')
 image = load('image_rules')
 video = load('video_rules')
 
+def video_creative_prompt(project, line, index):
+    """Correct the historical compiler's fixed Veo/1080p header locally.
+
+    Keep its direction, exact dialogue and continuity clauses unchanged. The
+    vendored source remains immutable; an unfamiliar header fails explicitly
+    instead of producing two contradictory transport contracts.
+    """
+    prompt = video.compile_segment(project, line, index)
+    scene = video.scene_project(project, line, index)
+    portrait = scene['canvas'] == 'portrait'
+    legacy_dimensions = ('720x1280' if portrait else '1280x720') if scene['resolution'] == '720p' else ('1080x1920' if portrait else '1920x1080')
+    orientation = 'vertical' if portrait else 'horizontal'
+    ratio = '9:16' if portrait else '16:9'
+    legacy_header = f"A {scene['durationSeconds']}-second {orientation} {legacy_dimensions} ({ratio}), 24fps Veo 3.1 scene with natural motion and motivated camera movement."
+    if not prompt.startswith(legacy_header):
+        raise ValueError('ساختار compiler ویدیو تغییر کرده است؛ تطبیق مدل و ابعاد را بررسی کنید.')
+    width, height = {'360p': (640, 360), '720p': (1280, 720), '1080p': (1920, 1080), '4k': (3840, 2160)}[scene['resolution']]
+    dimensions = f'{height}x{width}' if portrait else f'{width}x{height}'
+    target = 'Gemini Omni Flash' if scene['generationModel'] == 'gemini_omni_flash' else 'Veo 3.1'
+    header = f"A {scene['durationSeconds']}-second {orientation} {dimensions} ({ratio}), 24fps {target} scene with natural motion and motivated camera movement."
+    return header + prompt[len(legacy_header):]
+
 def read(path, fallback=None):
     return json.loads(path.read_text(encoding='utf-8-sig')) if path.is_file() else copy.deepcopy(fallback)
 
@@ -199,7 +221,7 @@ def compile_spec(spec, base, settings_dir=None):
             wanted=wanted[:limit]
             filenames=[r['downloadName'] for r in wanted]
             segments.append({'index':index,'durationSeconds':line['durationSeconds'],'referenceFiles':filenames,
-                'prompt':gateway.video_generation_contract(project,line,index,filenames)+'\n\n'+video.compile_segment(project,line,index),
+                'prompt':gateway.video_generation_contract(project,line,index,filenames)+'\n\n'+video_creative_prompt(project,line,index),
                 'negativePrompt':'identity drift, invented dialogue, fake logos, unreadable Persian, warped hands, discontinuity',
                 'continuityAssetRequired':index>0 or bool(project.get('continuation')),
                 'deferredReferenceIds':deferred})

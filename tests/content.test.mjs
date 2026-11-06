@@ -7,6 +7,7 @@ import {ROOT,readJson} from '../scripts/lib/paths.mjs';
 import {createContentProject,attachReference,buildBrief} from '../scripts/content-projects.mjs';
 import {python} from '../scripts/lib/studio-runtime.mjs';
 import {refreshData,defaultDataRequests,validateData} from '../scripts/content-data.mjs';
+import {registerImagePlan,approveImagePlan} from '../scripts/image-approval.mjs';
 function fixture(t) {
   const base=path.join(ROOT,'.cache/tests');fs.mkdirSync(base,{recursive:true});
   const root=fs.mkdtempSync(path.join(base,'content-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
@@ -53,11 +54,15 @@ test('sticker export rejects opaque alpha and stale briefs while preserving real
   t.after(()=>fs.rmSync(dest,{recursive:true,force:true}));
   createContentProject({id,kind:'image',brand:'golbahar',template:'sticker'});
   const specPath=path.join(dest,'spec.json'),spec=readJson(specPath);spec.request.content.stickerText='آزمون شفافیت';fs.writeFileSync(specPath,JSON.stringify(spec));
+  const proposal=registerImagePlan(id,{mode:'generate',images:[{id:'alpha-test',description:'آزمون فنی شفافیت، تصویر واقعی سفارش نیست',style:'fixture',text:'آزمون شفافیت',referencePaths:[]}]});
+  approveImagePlan(id,{version:proposal.version,reference:'unit-test-user-message',response:'تأیید ساختگی فقط برای آزمون نرم‌افزار'});
   buildBrief(id);
   const opaque=path.join(dest,'opaque.png'),transparent=path.join(dest,'transparent.png');
   await sharp({create:{width:32,height:32,channels:4,background:{r:20,g:40,b:60,alpha:1}}}).png().toFile(opaque);
   await sharp({create:{width:32,height:32,channels:4,background:{r:20,g:40,b:60,alpha:0.5}}}).png().toFile(transparent);
   const run=input=>spawnSync(process.execPath,['scripts/content.mjs','image-export',id,input],{cwd:ROOT,encoding:'utf8'});
+  const extra=spawnSync(process.execPath,['scripts/content.mjs','image-export',id,transparent,'--slide','2'],{cwd:ROOT,encoding:'utf8'});
+  assert.equal(extra.status,1);assert.match(extra.stderr,/برنامهٔ تأییدشده نیست/);
   assert.equal(run(opaque).status,1);
   const good=run(transparent);assert.equal(good.status,0,good.stderr);
   const result=JSON.parse(good.stdout);assert.equal((await sharp(result.file).metadata()).width,1024);

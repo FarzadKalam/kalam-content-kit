@@ -9,6 +9,9 @@ import {python} from './lib/studio-runtime.mjs';
 import {createContentProject,projectPath,attachReference,buildBrief,saveRevision,kinds} from './content-projects.mjs';
 import {defaultDataRequests,refreshData,importWebData,validateData} from './content-data.mjs';
 import {contentGuidance} from './content-guidance.mjs';
+import {teamGuide,createHandoff} from './agent-team.mjs';
+import {registerStoryboard,approveStoryboard,checkProduction} from './storyboard.mjs';
+import {registerImagePlan,approveImagePlan,imageApprovalStatus,assertImageApproved} from './image-approval.mjs';
 const [command,...args]=process.argv.slice(2),opts={},pos=[];
 for(let i=0;i<args.length;i++) {
   if(args[i].startsWith('--'))opts[args[i].slice(2)]=args[i+1]&&!args[i+1].startsWith('--')?args[++i]:true;
@@ -30,6 +33,14 @@ try {
     doctor:'بررسی ابزار محلی؛ وجود تصویرساز و نریشن را خود عامل جدا بررسی کند',
     settings:'--template news_story | --profile post | --all',
     guide:'[job] [--kind motion] [--purpose motion] [--template morning_local] [--profile channel]؛ شناخت قابلیت‌ها و فرم مرتبط، بدون تولید',
+    team:'[job] [--kind text|image|slides|audio|motion|video-prompts|news]؛ نقش‌های واقعی و راهنمای واگذاری، بدون اجرای عامل',
+    handoff:'job --role kalam_writer --task TASK؛ بستهٔ ورودی و مسیر خروجی مستقل برای عامل تخصصی',
+    'image-plan':'job --file plan.json؛ شرح دقیق تصاویر پیش از تأیید و تولید',
+    'approve-images':'job --version N --reference USER_MESSAGE --response EXACT_APPROVAL؛ فقط بعد از تأیید واقعی برنامهٔ همان تصاویر',
+    'image-status':'job؛ اعتبار تأیید برنامهٔ تصاویر و تغییرات ورودی',
+    storyboard:'job --file plan.json؛ ثبت فریم‌های واقعی و ساخت تصاویر استوری‌بورد',
+    'approve-storyboard':'job --version N --reference USER_MESSAGE --response EXACT_APPROVAL --presented-reference IMAGE_MESSAGE؛ فقط بعد از نمایش و تأیید واقعی تصاویر',
+    'production-check':'job؛ اعتبار استوری‌بورد و صوت لازم پیش از رندر',
     new:'--id job --kind image|text|slides|audio|video-prompts|motion --brand golbahar [--template news_story] [--purpose motion] [--spec file.json]',
     set:'job --patch changes.json (تنظیمات فعلی حفظ و نسخهٔ قبلی ذخیره می‌شود)',
     attach:'job input.png [--kind presenter --entityId kamran --scope studio]',
@@ -62,7 +73,15 @@ try {
       print(contentGuidance({spec:{kind:opts.kind,profile:opts.profile,purpose:opts.purpose,
         ...(opts.template?{request:{format:{template:opts.template}}}:{})}}));
     }
-  } else if(command==='settings') {
+  } else if(command==='team')print(teamGuide({id:pos[0],kind:opts.kind}));
+  else if(command==='handoff')print(createHandoff(required(pos[0]),{role:required(opts.role),task:required(opts.task)}));
+  else if(command==='image-plan')print(registerImagePlan(required(pos[0]),readJson(required(opts.file))));
+  else if(command==='approve-images')print(approveImagePlan(required(pos[0]),{version:required(opts.version),reference:required(opts.reference),response:required(opts.response)}));
+  else if(command==='image-status')print(imageApprovalStatus(required(pos[0])));
+  else if(command==='storyboard')print(await registerStoryboard(required(pos[0]),readJson(required(opts.file))));
+  else if(command==='approve-storyboard')print(await approveStoryboard(required(pos[0]),{version:required(opts.version),reference:required(opts.reference),response:required(opts.response),presentedReference:required(opts['presented-reference'])}));
+  else if(command==='production-check') {const report=checkProduction(required(pos[0]));print(report);if(!report.ready)process.exitCode=1;}
+  else if(command==='settings') {
     const ui=readJson(path.join(ROOT,'catalog/studio-ui.json')),rules=readJson(path.join(ROOT,'catalog/studio.json'));
     if(opts.all)print({ui,rules});
     else if(opts.template) {
@@ -99,6 +118,10 @@ try {
     }
     saveRevision(dest,'host-capabilities');state.capabilities={...state.capabilities,...evidence};writeJson(path.join(dest,'project.json'),state);print(state.capabilities);
   } else if(command==='image-export'||command==='text-export') {
+    if(command==='image-export') {
+      const approval=assertImageApproved(required(pos[0])),number=Number(opts.slide||1);
+      if(!Number.isInteger(number)||number<1||number>approval.plan.images.length)throw new Error('این تصویر/اسلاید در برنامهٔ تأییدشده نیست؛ برنامهٔ دقیق نسخهٔ تازه لازم است.');
+    }
     const dest=projectPath(required(pos[0])),state=readJson(inside(dest,'project.json'));
     validateData(dest);
     if(!state.latestBrief)throw new Error('ابتدا brief بساز.');

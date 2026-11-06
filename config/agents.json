@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guide": "docs/studio/agents.fa.md",
+  "nativeConfig": ".codex/config.toml",
+  "roles": {
+    "kalam_writer": {
+      "label": "نویسنده و ویراستار",
+      "description": "ویرایش و نگارش طبیعی فارسی با حفظ واقعیت و تمام پروفایل‌های Studio؛ نریشن تصویرپذیر و تلفظ مستند نام‌ها.",
+      "config": ".codex/agents/kalam-writer.toml",
+      "skill": ".agents/skills/kalam-writer/SKILL.md",
+      "references": ["docs/studio/text.fa.md", "docs/studio/writing.fa.md", "docs/studio/audio.fa.md"],
+      "outputs": ["متن ویرایش‌شده و واقعیت‌های محفوظ", "نریشن و سناریوی هماهنگ در صورت درخواست موشن", "واژه‌نامهٔ تلفظ و ابهام‌های واقعی"]
+    },
+    "kalam_image_artist": {
+      "label": "تصویرساز استودیو",
+      "description": "تولید و ویرایش تصویر با فرم‌ها، پرامپت‌ها و مراجع واقعی استودیو؛ ابزار داخلی و متن مصوب.",
+      "config": ".codex/agents/kalam-image-artist.toml",
+      "skill": ".agents/skills/kalam-image/SKILL.md",
+      "references": ["docs/studio/image.fa.md", "docs/studio/slides.fa.md", "docs/visual-assets.fa.md"],
+      "outputs": ["برنامهٔ تصویر و تنظیمات کامل قالب", "تصویر واقعی یا گزارش نبود ابزار", "منبع، مسیر و checksum رسانه"]
+    },
+    "kalam_motion_editor": {
+      "label": "کارگردان تدوین و موشن",
+      "description": "سناریو، آماده‌سازی رسانه و صدا، موشن و تدوین، استوری‌بورد تصویری، تأیید و رندر محلی.",
+      "config": ".codex/agents/kalam-motion-editor.toml",
+      "skill": ".agents/skills/kalam-edit/SKILL.md",
+      "references": ["docs/editing-contract.fa.md", "docs/studio/storyboard.fa.md", "docs/studio/audio.fa.md", "docs/studio/music.fa.md"],
+      "outputs": ["سناریو و فهرست رسانه و صوت", "استوری‌بورد تصویری با نسخهٔ مشخص", "پرامپت آهنگسازی زمینه", "منبع تدوین و رندر بازبینی‌شده پس از تأیید"]
+    },
+    "kalam_video_director": {
+      "label": "کارگردان ویدیوی مولد",
+      "description": "فرم و سناریوی Veo و Omni، پرسش‌های لازم، مراجع و تداوم سکانس‌ها، تأیید و بستهٔ پرامپت اجرای جداگانه.",
+      "config": ".codex/agents/kalam-video-director.toml",
+      "skill": ".agents/skills/kalam-video-director/SKILL.md",
+      "references": ["docs/studio/video-prompts.fa.md"],
+      "outputs": ["انتخاب‌ها و ابهام‌های فرم کامل", "سناریوی سکانس‌ها و مراجع", "بستهٔ پرامپت و دستور تداوم برای اجرای کاربر"]
+    },
+    "kalam_news_researcher": {
+      "label": "پژوهشگر و خبریاب",
+      "description": "کشف خبر تازه و سوژهٔ کم‌پوشش با جستجوی واقعی وب و بررسی منبع، زمان، پوشش، ظرفیت و سابقه.",
+      "config": ".codex/agents/kalam-news-researcher.toml",
+      "skill": ".agents/skills/kalam-news/SKILL.md",
+      "references": ["docs/studio/news-discovery.fa.md", "config/news.json"],
+      "outputs": ["نامزدها با لینک و مدرک و زمان واقعی", "پوشش مشاهده‌شده و زاویهٔ قابل پیگیری", "محدودیت دسترسی و ابهام‌های باقی‌مانده"]
+    }
+  },
+  "routes": {
+    "text": ["kalam_writer"],
+    "audio": ["kalam_writer", "kalam_motion_editor"],
+    "image": ["kalam_image_artist"],
+    "slides": ["kalam_image_artist"],
+    "motion": ["kalam_motion_editor"],
+    "video-prompts": ["kalam_video_director"],
+    "news": ["kalam_news_researcher"]
+  },
+  "conditionalDelegation": {
+    "rawCopyNeedsEditing": "kalam_writer",
+    "generatedImageNeeded": "kalam_image_artist",
+    "externalGeneratedVideoNeeded": "kalam_video_director",
+    "newsDiscoveryRequested": "kalam_news_researcher"
+  }
+}
