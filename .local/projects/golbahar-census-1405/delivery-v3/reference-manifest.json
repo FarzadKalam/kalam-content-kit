@@ -1,0 +1,29 @@
+{
+  "status": "existing-references-only-scene-masters-not-generated",
+  "files": [
+    {
+      "file": "references/kamran-identity.png",
+      "source": "assets/originals/0b75cc57-6cbb-546f-a8b3-2b1428f8ea2f.png",
+      "sha256": "d7506d880719f3f187b4363c5d7d003372dcc91e38f0b63667d12a6d90345e16",
+      "bytes": 1942781
+    },
+    {
+      "file": "references/tara-identity.png",
+      "source": "assets/originals/6019acb1-b3a3-558d-9922-e1f4f3755271.png",
+      "sha256": "534fd1372961784dcb9fe1982576f14e2ea287d1e14f5eff77dcb6acf5c8e917",
+      "bytes": 1934467
+    },
+    {
+      "file": "references/census-uniform-golbahar.jpg",
+      "source": "assets/originals/cf4c27c2-8f38-4178-840c-e20c1e0b6cc8.jpg",
+      "sha256": "4eee78ceceef29b833e0f45a36b3d1a73033f3120149ad06aca22e7c10333899",
+      "bytes": 99679
+    },
+    {
+      "file": "references/golbahar-aerial-2020.jpg",
+      "source": "outputs/image-planning/references/golbahar-aerial-2020.jpg",
+      "sha256": "4c74659e58c2b4d26ec00ba1ce5bdf18280cd0cf72f85bc2c798c5a5a7c49d41",
+      "bytes": 625965
+    }
+  ]
+}

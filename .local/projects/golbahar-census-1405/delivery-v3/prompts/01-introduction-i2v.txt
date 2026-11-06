@@ -1,0 +1,19 @@
+Animate this exact input image (scene-01.png) as the first frame for a 10-second vertical 9:16 video using Gemini Omni 1.2 Flash.
+
+CRITICAL IDENTITY & STYLE LOCK:
+- Do NOT alter, redraw, or replace the faces, features, skin tones, or identities of Tara and Kamran from the starting frame.
+- Keep the exact clothing (official navy census vests with reflective strips, Tara's taupe hijab, Kamran's shirt) and background city illustration 100% consistent with the starting frame.
+- The upper 35% of the frame must remain clean and empty for typography.
+
+AUDIO & SPOKEN PERSIAN DIALOGUE:
+Tara speaks in native, warm, conversational Iranian Persian with natural inflection and precise lip synchronization:
+"سرشماری شروع شده، ولی این سرشماری برای گلبهار و مردمش یه جور دیگه‌ای مهمه. چرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم."
+
+ACTION & TIMING (Image-to-Video):
+- 0.0s - 3.5s: Seamlessly start from the input image. Tara speaks with natural eye contact, subtle head movement, and realistic breathing.
+- 3.5s - 5.0s: At "چرا؟", Tara pauses briefly with an expressive, inviting tilt of her head.
+- 5.0s - 8.5s: Tara delivers "با من، تارا، و همکارم کامران...", while Kamran smiles warmly and nods in agreement toward the camera.
+- 8.5s - 10.0s: Both settle into a welcoming, friendly hold.
+
+RESTRICTIONS:
+No captions, no on-screen text or logos. Keep the animation subtle, natural, and fluid without morphing or distortion.

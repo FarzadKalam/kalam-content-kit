@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-motion-prompts-awaiting-approved-scene-masters",
+  "targetModel": "Gemini Omni 1.2 Flash",
+  "compilerOutput": false,
+  "audio": {
+    "required": false,
+    "naturalConversationalMouthMovementAllowed": true,
+    "prescribedDialogue": false,
+    "generatedVoiceover": false,
+    "generatedMusic": false,
+    "finalEdit": "mute entire generated soundtrack; independent female Persian narration"
+  },
+  "referencePathsRelativeTo": "project delivery-v3 folder",
+  "referenceAvailability": {
+    "identityAndUniformAndCity": "copied and SHA-256 verified in references/",
+    "sceneMasters": "missing; require approved image plan, actual generation and visual review"
+  },
+  "scenes": [
+    {
+      "id": "V2-01",
+      "promptFile": "prompts/01-introduction.txt",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-01.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        },
+        {
+          "order": 5,
+          "file": "references/golbahar-aerial-2020.jpg",
+          "role": "historical graphic city collage source only, not a present-day street"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 5
+    },
+    {
+      "id": "V2-02",
+      "promptFile": "prompts/02-city-and-services.txt",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-02.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        },
+        {
+          "order": 5,
+          "file": "references/golbahar-aerial-2020.jpg",
+          "role": "historical graphic city collage source only, not a present-day street"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 5
+    },
+    {
+      "id": "V2-03",
+      "promptFile": "prompts/03-apartment-corridor.txt",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-03.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 4
+    },
+    {
+      "id": "V2-04",
+      "promptFile": "prompts/04-family-doorway.txt",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-04.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 4
+    },
+    {
+      "id": "V2-05",
+      "promptFile": "prompts/05-family-living-room.txt",
+      "durationSeconds": 10,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-05.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/scene-04.png",
+          "role": "same two adult family identities and clothing; same apartment entrance",
+          "availableNow": false
+        },
+        {
+          "order": 5,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 5
+    },
+    {
+      "id": "V2-06",
+      "promptFile": "prompts/06-tablet-over-shoulder.txt",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-06.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/scene-04.png",
+          "role": "same two adult family identities and clothing; same apartment entrance",
+          "availableNow": false
+        },
+        {
+          "order": 5,
+          "file": "references/scene-05.png",
+          "role": "living room layout, seats, host-family axis and exact prop placement",
+          "availableNow": false
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 5
+    },
+    {
+      "id": "V2-07",
+      "promptFile": "prompts/07-phone-route.txt",
+      "durationSeconds": 10,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-07.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 4
+    },
+    {
+      "id": "V2-08",
+      "promptFile": "prompts/08-closing-two-hosts.txt",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "draftResolution": "720p where available",
+      "finalTarget": "1080x1920 via supported upscale workflow",
+      "referenceOrder": [
+        {
+          "order": 1,
+          "file": "references/scene-08.png",
+          "role": "approved scene composition and visual anchor; initial keyframe only where supported",
+          "availableNow": false
+        },
+        {
+          "order": 2,
+          "file": "references/kamran-identity.png",
+          "role": "Kamran identity only"
+        },
+        {
+          "order": 3,
+          "file": "references/tara-identity.png",
+          "role": "Tara identity only"
+        },
+        {
+          "order": 4,
+          "file": "references/census-uniform-golbahar.jpg",
+          "role": "wardrobe only; rightmost two people; never transfer faces"
+        },
+        {
+          "order": 5,
+          "file": "references/golbahar-aerial-2020.jpg",
+          "role": "historical graphic city collage source only, not a present-day street"
+        }
+      ],
+      "generationReady": false,
+      "dependsOnPriorGeneratedVideo": false,
+      "continuity": "approved scene masters; not a fictional last-frame asset",
+      "referenceCount": 5
+    }
+  ]
+}

@@ -1,0 +1,1058 @@
+{
+  "schemaVersion": 1,
+  "kind": "motion",
+  "brand": "golbahar",
+  "references": [
+    {
+      "assetId": "0b75cc57-6cbb-546f-a8b3-2b1428f8ea2f",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "کامران؛ مرجع هویت اصلی بدون کراوات"
+      },
+      "path": "assets/originals/0b75cc57-6cbb-546f-a8b3-2b1428f8ea2f.png",
+      "filename": "01-kamran-editorial-master.png",
+      "sha256": "d7506d880719f3f187b4363c5d7d003372dcc91e38f0b63667d12a6d90345e16",
+      "sourcePath": "output/reference-assets/kamran-20260831/01-kamran-editorial-master.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "87950beb-b475-5d84-977e-a401e3b1100e",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "full_body",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "کامران؛ تمام‌قد با زمینهٔ خنثی"
+      },
+      "path": "assets/originals/87950beb-b475-5d84-977e-a401e3b1100e.png",
+      "filename": "02-kamran-full-neutral.png",
+      "sha256": "47049ed0e517384826139bf3abfccd2c5614e4c318f874d30d3d0b6d374db9df",
+      "sourcePath": "output/reference-assets/kamran-20260831/02-kamran-full-neutral.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "8e47aed6-08aa-541b-ba9b-4c26a99b34e3",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "portrait",
+        "aspectRatio": "portrait",
+        "framing": "close",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "کامران؛ کلوزآپ هویتی"
+      },
+      "path": "assets/originals/8e47aed6-08aa-541b-ba9b-4c26a99b34e3.png",
+      "filename": "03-kamran-closeup.png",
+      "sha256": "741628916d711a106a968fc6fc4a588394da2d3063f14e33f19ea758dd889cf3",
+      "sourcePath": "output/reference-assets/kamran-20260831/03-kamran-closeup.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "e4e637ea-19d6-5825-b2a5-b83c2b34c680",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "expression",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "کامران؛ اشاره با فضای طبیعی متن"
+      },
+      "path": "assets/originals/e4e637ea-19d6-5825-b2a5-b83c2b34c680.png",
+      "filename": "04-kamran-pointing-copyspace.png",
+      "sha256": "10946a17023c83ffb17addcc3d7fa438dc4378c45cfc4ef55f38012ecc40bce3",
+      "sourcePath": "output/reference-assets/kamran-20260831/04-kamran-pointing-copyspace.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "83303faa-6847-5b39-8d16-8359606687f8",
+      "kind": "presenter",
+      "entityId": "kamran",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "left",
+        "label": "کامران؛ نشسته در نشیمن معاصر"
+      },
+      "path": "assets/originals/83303faa-6847-5b39-8d16-8359606687f8.png",
+      "filename": "05-kamran-seated-living-room.png",
+      "sha256": "d6e6a3df48f574dd5e44d4ca55bb97911f6d62ba11d9c19bf7fedc403e38d282",
+      "sourcePath": "output/reference-assets/kamran-20260831/05-kamran-seated-living-room.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "901801bc-5d53-5d77-a6c2-e9aadc381ad7",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "تارا؛ نشسته در نشیمن معاصر"
+      },
+      "path": "assets/originals/901801bc-5d53-5d77-a6c2-e9aadc381ad7.png",
+      "filename": "08-tara-seated-living-room.png",
+      "sha256": "e3c9730c8ba7bcd7462b59aa658bb6321b2204094c66c5f1393d3da354f34277",
+      "sourcePath": "output/reference-assets/tara-20260831/08-tara-seated-living-room.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "3706bda6-95cb-5e51-8a75-81152301921d",
+      "kind": "location",
+      "entityId": "living_room",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "right",
+        "label": "نشیمن معاصر؛ نمای اصلی روشن با لوگوتایپ"
+      },
+      "path": "assets/originals/3706bda6-95cb-5e51-8a75-81152301921d.png",
+      "filename": "01-living-room-master.png",
+      "sha256": "cf5912e4e7caaace662d54567e98963f39471a22dda2579342cbd02dc19b9241",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/01-living-room-master.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "7b83ec62-ce80-5202-a19f-9688f80cd8ce",
+      "kind": "location",
+      "entityId": "living_room",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "نشیمن؛ زاویهٔ معکوس از پنجره به کنج و مانیتور دیواری"
+      },
+      "path": "assets/originals/7b83ec62-ce80-5202-a19f-9688f80cd8ce.png",
+      "filename": "02-living-room-window-reverse-monitor.png",
+      "sha256": "1cfd20d10d995b14bc333e88b82c95906a6ad06d2d8aaf8e073c940b325a6e24",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/02-living-room-window-reverse-monitor.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "238df4c4-9836-5740-a6b6-fcf33c91c41e",
+      "kind": "location",
+      "entityId": "terrace",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "تراس سرزنده؛ نمای اصلی با لوگوتایپ"
+      },
+      "path": "assets/originals/238df4c4-9836-5740-a6b6-fcf33c91c41e.png",
+      "filename": "03-terrace-master.png",
+      "sha256": "ede7d3beff3d28490d7d453e580f9235273758e83b9586170bf97b3de85e7bb0",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/03-terrace-master.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "4a1b2b99-644b-5a22-8ecd-e1dba8c52c02",
+      "kind": "location",
+      "entityId": "terrace",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "right",
+        "label": "تراس؛ زاویهٔ معکوس به نما و نمایشگر استندی"
+      },
+      "path": "assets/originals/4a1b2b99-644b-5a22-8ecd-e1dba8c52c02.png",
+      "filename": "04-terrace-building-reverse-monitor.png",
+      "sha256": "ea521c0bf0eee68e7b8450102afe433104d2bf0e21db1547fce91ab4e10e17a4",
+      "sourcePath": "output/reference-assets/living-terrace-20260831/04-terrace-building-reverse-monitor.png",
+      "metadataSource": "deploy/register-approved-reference-assets-20260831.py"
+    },
+    {
+      "assetId": "6019acb1-b3a3-558d-9922-e1f4f3755271",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ مرجع هویت اصلی و پوشش خبری"
+      },
+      "path": "assets/originals/6019acb1-b3a3-558d-9922-e1f4f3755271.png",
+      "filename": "01-tara-editorial-master.png",
+      "sha256": "534fd1372961784dcb9fe1982576f14e2ea287d1e14f5eff77dcb6acf5c8e917",
+      "sourcePath": "output/reference-assets/tara-20260831/01-tara-editorial-master.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "86a751a9-521f-5efb-b5fa-d3675e4bcabc",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "full_body",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ تمام‌قد با زمینهٔ خنثی"
+      },
+      "path": "assets/originals/86a751a9-521f-5efb-b5fa-d3675e4bcabc.png",
+      "filename": "02-tara-full-neutral.png",
+      "sha256": "c9070ba2243c77f23ee87bbe7a4a2b731615f505a1038648e3b18e6df4684c96",
+      "sourcePath": "output/reference-assets/tara-20260831/02-tara-full-neutral.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "d696f4c3-7e95-57d0-b7bf-087687398e5d",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "portrait",
+        "aspectRatio": "portrait",
+        "framing": "close",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ کلوزآپ هویتی"
+      },
+      "path": "assets/originals/d696f4c3-7e95-57d0-b7bf-087687398e5d.png",
+      "filename": "03-tara-closeup.png",
+      "sha256": "26cdc7b5f82bdea4aa492a9f24c7c0b191cc044a6cfcc62d4b52c637a0d4f9b6",
+      "sourcePath": "output/reference-assets/tara-20260831/03-tara-closeup.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "dbe398aa-90dd-5ce5-bc85-ea01eb311ea4",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ نیم‌تنه در حال توضیح"
+      },
+      "path": "assets/originals/dbe398aa-90dd-5ce5-bc85-ea01eb311ea4.png",
+      "filename": "04-tara-explaining.png",
+      "sha256": "a098b40ea523e0c0a3f3388ceceaad8732ac0d8da13013ec312d3cb8935163b3",
+      "sourcePath": "output/reference-assets/tara-20260831/04-tara-explaining.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "ee803e3e-b869-5647-8a0c-d74e0b871a4d",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "expression",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "تارا؛ اشاره با فضای طبیعی متن در راست"
+      },
+      "path": "assets/originals/ee803e3e-b869-5647-8a0c-d74e0b871a4d.png",
+      "filename": "05-tara-pointing-copyspace.png",
+      "sha256": "f866ea4a7c2c33c459278238b6ac1aebda03e666135c09075503eff02785b247",
+      "sourcePath": "output/reference-assets/tara-20260831/05-tara-pointing-copyspace.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "2188d82b-162f-5b0a-aba7-77e2f971f3d1",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "identity",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ نشسته پشت میز خبری"
+      },
+      "path": "assets/originals/2188d82b-162f-5b0a-aba7-77e2f971f3d1.png",
+      "filename": "06-tara-seated-newsdesk.png",
+      "sha256": "20f2162785b94ea26a58d0eb4bbd2bdb755f7d955cb34e6508dc83ea70a87b54",
+      "sourcePath": "output/reference-assets/tara-20260831/06-tara-seated-newsdesk.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "f90256df-4483-5400-8719-4519e7818c47",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "three_quarter",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "تارا؛ نمای سه‌رخ ملایم"
+      },
+      "path": "assets/originals/f90256df-4483-5400-8719-4519e7818c47.png",
+      "filename": "07-tara-three-quarter.png",
+      "sha256": "c440514a567982571955e76622b9fc02abe116af32ae73cfac13511401f32e97",
+      "sourcePath": "output/reference-assets/tara-20260831/07-tara-three-quarter.png",
+      "metadataSource": "deploy/register-tara-reference-assets.py"
+    },
+    {
+      "assetId": "ca5e5fa0-dbae-5ff9-9158-a49115850d03",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "استودیو اصلی؛ دیوار مانیتوری بزرگ، نمای روشن اصلی"
+      },
+      "path": "assets/originals/ca5e5fa0-dbae-5ff9-9158-a49115850d03.png",
+      "filename": "01-bright-master-wall.png",
+      "sha256": "732d420e131bb2e6fcd51b3944611e73ab448154d45c1c4906a74f3211bc4bae",
+      "sourcePath": "output/reference-assets/studio-main-20260830/01-bright-master-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "3de633e9-67fe-56df-99b7-76f7d859664c",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "alternate",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "right",
+        "label": "استودیو اصلی؛ زاویهٔ مکمل دیوار مانیتوری"
+      },
+      "path": "assets/originals/3de633e9-67fe-56df-99b7-76f7d859664c.png",
+      "filename": "02-dark-angle-wall.png",
+      "sha256": "1b0e5aa1f4100dd720c26237aa71709ae88ba48ebfe95d64407887cb6590f549",
+      "sourcePath": "output/reference-assets/studio-main-20260830/02-dark-angle-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "6b31f90d-8081-587e-8e53-a6f61511cd48",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "استودیو اصلی؛ میز و دیوار مانیتوری برای تک‌مجری"
+      },
+      "path": "assets/originals/6b31f90d-8081-587e-8e53-a6f61511cd48.png",
+      "filename": "03-dark-desk-wall.png",
+      "sha256": "b1e3eb85cdb1ac661fed8c31d4279abb6405536cf126589a5c4142d4d917a935",
+      "sourcePath": "output/reference-assets/studio-main-20260830/03-dark-desk-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "c3f74fa5-9a06-54d0-b9cb-dadc52caa074",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو اصلی؛ نمای مجری کنار مانیتور بزرگ"
+      },
+      "path": "assets/originals/c3f74fa5-9a06-54d0-b9cb-dadc52caa074.png",
+      "filename": "04-dark-wide-wall.png",
+      "sha256": "2b4ffef3efeecde4ebf3b50d5a4243910e42748eaf0cdd07b539d2ccdcbd438e",
+      "sourcePath": "output/reference-assets/studio-main-20260830/04-dark-wide-wall.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "18afcbae-4995-5cfb-b964-687e6419c1d8",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "title_space",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "استودیو اصلی؛ دیوار مانیتوری و فضای عنوان"
+      },
+      "path": "assets/originals/18afcbae-4995-5cfb-b964-687e6419c1d8.png",
+      "filename": "05-bright-title-space.png",
+      "sha256": "0b27c91632d3ec57d73f2fefd0bd48796d13bc621e63096e7a6f1edd0047457d",
+      "sourcePath": "output/reference-assets/studio-main-20260830/05-bright-title-space.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "dfe726d5-f451-5786-a3b3-3b9129d83f4d",
+      "kind": "location",
+      "entityId": "studio_main",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو اصلی؛ زاویهٔ روشن دیوار مانیتوری"
+      },
+      "path": "assets/originals/dfe726d5-f451-5786-a3b3-3b9129d83f4d.png",
+      "filename": "06-bright-wall-angle.png",
+      "sha256": "997d3198ff236fae057f6915d34969e0c67fc97c315bc7f568758185cdf0fea5",
+      "sourcePath": "output/reference-assets/studio-main-20260830/06-bright-wall-angle.png",
+      "metadataSource": "deploy/register-studio-main-reference-assets.py"
+    },
+    {
+      "assetId": "6d6e0c93-730a-5822-8af9-4df0227487c4",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "master",
+        "aspectRatio": "landscape",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "نمای اصلی و باز تحریریه"
+      },
+      "path": "assets/originals/6d6e0c93-730a-5822-8af9-4df0227487c4.png",
+      "filename": "01-master-wide.png",
+      "sha256": "bfa89d18575a6efc586f0c84eabc0af53fb5b93a836a2b539e046e13332bf685",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/01-master-wide.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "1297e952-e33c-5327-808c-d649f4cb19d4",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "screen_presenter",
+        "aspectRatio": "landscape",
+        "framing": "wide",
+        "presenterCapacity": 1,
+        "copySpace": "left",
+        "label": "نمای خبری عریض با فضای مجری"
+      },
+      "path": "assets/originals/1297e952-e33c-5327-808c-d649f4cb19d4.png",
+      "filename": "02-news-wide-left.png",
+      "sha256": "1c8d5896a6f2d5476363fde55c9ce33eaf23095b66917dde60932d352ccbf681",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/02-news-wide-left.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "2a2ebcf0-c3b0-586e-8a38-5fec8bc2cc5e",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "landscape",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "right",
+        "label": "زاویهٔ مکمل تک‌مجری"
+      },
+      "path": "assets/originals/2a2ebcf0-c3b0-586e-8a38-5fec8bc2cc5e.png",
+      "filename": "03-presenter-angle.png",
+      "sha256": "5ffe5e00bfa233edd17c1393008a77afd1a81396e98c4271a9f88ba987803857",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/03-presenter-angle.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "79e0c369-6058-51a6-8258-2439e4dd2914",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "landscape",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "زاویهٔ معکوس دو‌مجری"
+      },
+      "path": "assets/originals/79e0c369-6058-51a6-8258-2439e4dd2914.png",
+      "filename": "04-reverse-two-presenter.png",
+      "sha256": "7b886204659e6c9be4263223a5c3106844232c54d044743b293e826e1bc79a7b",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/04-reverse-two-presenter.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "c37fda7c-4f66-5c90-859f-c8a6d1903a9a",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "قاب عمودی تک‌مجری"
+      },
+      "path": "assets/originals/c37fda7c-4f66-5c90-859f-c8a6d1903a9a.png",
+      "filename": "05-vertical-single-presenter-9x16.png",
+      "sha256": "f879c9eb849b7f1869f56b151f149c1cc9dbbf14e326c8429f05f6be00791d65",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/05-vertical-single-presenter-9x16.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "74142ae9-db18-5b61-91ec-1831874891d2",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "portrait",
+        "framing": "full",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "قاب عمودی دو‌مجری"
+      },
+      "path": "assets/originals/74142ae9-db18-5b61-91ec-1831874891d2.png",
+      "filename": "06-vertical-two-presenter-9x16.png",
+      "sha256": "b90d235f8372c2fce7fc6c6a8d48299a96341c5e9a42931f9cbbeba10f8374d8",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/06-vertical-two-presenter-9x16.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "7fba2ad2-1e70-546b-9496-226683239495",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "title_space",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "left",
+        "label": "قاب عمودی با فضای خالی عنوان در چپ"
+      },
+      "path": "assets/originals/7fba2ad2-1e70-546b-9496-226683239495.png",
+      "filename": "07-vertical-blank-title-9x16.png",
+      "sha256": "6ddffe0a4f8fe4f0ec75f75ce92f43d490087935443c16d01673cebd89175c38",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/07-vertical-blank-title-9x16.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "c7cf15e6-c8ee-51f1-8d31-0385779ffc25",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "square",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "قاب مربعی تک‌مجری"
+      },
+      "path": "assets/originals/c7cf15e6-c8ee-51f1-8d31-0385779ffc25.png",
+      "filename": "08-square-presenter-1x1.png",
+      "sha256": "b1313c900e190136b9a1b11d03b2a981687af76bdfba82859db623527b9bdb58",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/08-square-presenter-1x1.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "39d4c461-6620-5144-be4d-c274acdcdc41",
+      "kind": "location",
+      "entityId": "newsroom",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "continuity",
+        "aspectRatio": "landscape",
+        "framing": "medium",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "قاب افقی متوسط برای تداوم خبری"
+      },
+      "path": "assets/originals/39d4c461-6620-5144-be4d-c274acdcdc41.png",
+      "filename": "09-horizontal-medium-news-16x9.png",
+      "sha256": "8124063a6b9794e8710ead8369ce31a0a949fe7477b2aec036c6844bb27ba610",
+      "sourcePath": "output/location-concepts/kalametaze-newsroom-v1/09-horizontal-medium-news-16x9.png",
+      "metadataSource": "deploy/register-newsroom-reference-assets.py"
+    },
+    {
+      "assetId": "6e0910ad-4a23-5de8-96d8-90a472d1e5b9",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ عمودی تک‌مجری با مانیتور"
+      },
+      "path": "assets/originals/6e0910ad-4a23-5de8-96d8-90a472d1e5b9.png",
+      "filename": "01-vertical-single-presenter-monitor.png",
+      "sha256": "bb634650c6e0e1607a5cc473f03e556ef0533d44b4d4e13bfd76c93e9fc654f2",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v1/01-vertical-single-presenter-monitor.png",
+      "metadataSource": "deploy/register-studio-2-reference-assets.py"
+    },
+    {
+      "assetId": "7c1cca09-15bf-5b1f-81e8-59c5e8eff6b2",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ عمودی دو‌مجری با مانیتور"
+      },
+      "path": "assets/originals/7c1cca09-15bf-5b1f-81e8-59c5e8eff6b2.png",
+      "filename": "02-vertical-two-presenter-monitor.png",
+      "sha256": "26607d8b9abaa5657655271cf48a8b958c4d530b1d02989171427bd6298a339b",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v1/02-vertical-two-presenter-monitor.png",
+      "metadataSource": "deploy/register-studio-2-reference-assets.py"
+    },
+    {
+      "assetId": "97b34264-c1b9-5e70-9084-5b3599bc93ee",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": true,
+      "profile": {
+        "role": "single_presenter",
+        "aspectRatio": "portrait",
+        "framing": "medium",
+        "presenterCapacity": 1,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ نسخهٔ نهایی تک‌مجری"
+      },
+      "path": "assets/originals/97b34264-c1b9-5e70-9084-5b3599bc93ee.png",
+      "filename": "01-vertical-single-presenter-final.png",
+      "sha256": "b1e3eb85cdb1ac661fed8c31d4279abb6405536cf126589a5c4142d4d917a935",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v2/01-vertical-single-presenter-final.png",
+      "metadataSource": "deploy/promote-studio-2-final-assets.py"
+    },
+    {
+      "assetId": "4740ba1d-f11a-5c31-87a5-fa41bc9a1091",
+      "kind": "location",
+      "entityId": "studio_2",
+      "scope": "studio",
+      "isDefault": false,
+      "profile": {
+        "role": "two_presenter",
+        "aspectRatio": "portrait",
+        "framing": "wide",
+        "presenterCapacity": 2,
+        "copySpace": "none",
+        "label": "استودیو ۲؛ نسخهٔ نهایی دو‌مجری"
+      },
+      "path": "assets/originals/4740ba1d-f11a-5c31-87a5-fa41bc9a1091.png",
+      "filename": "02-vertical-two-presenter-final.png",
+      "sha256": "2b4ffef3efeecde4ebf3b50d5a4243910e42748eaf0cdd07b539d2ccdcbd438e",
+      "sourcePath": "output/location-concepts/kalametaze-studio-2-v2/02-vertical-two-presenter-final.png",
+      "metadataSource": "deploy/promote-studio-2-final-assets.py"
+    },
+    {
+      "assetId": "cf4c27c2-8f38-4178-840c-e20c1e0b6cc8",
+      "kind": "image",
+      "entityId": "input",
+      "scope": "project",
+      "path": "assets/originals/cf4c27c2-8f38-4178-840c-e20c1e0b6cc8.jpg",
+      "sha256": "4eee78ceceef29b833e0f45a36b3d1a73033f3120149ad06aca22e7c10333899",
+      "filename": "photo_2026-11-06_14-47-58.jpg"
+    },
+    {
+      "assetId": "eb09a4e5-56ce-4c42-aa08-6fc4be932f1b",
+      "kind": "image",
+      "entityId": "input",
+      "scope": "project",
+      "path": "assets/originals/eb09a4e5-56ce-4c42-aa08-6fc4be932f1b.wav",
+      "sha256": "80a4b661ecacce87fd9d550c8efd06245d183108cf0b144d8930a1b1f31357b7",
+      "filename": "Generated Audio November 06, 2026 - 4_51PM.wav"
+    }
+  ],
+  "dataRequests": [],
+  "motion": {
+    "engine": "hyperframes",
+    "mode": "motion",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "purpose": "motion",
+  "additionalInstructions": "تیتر طبق اجازه تازه کاربر واجب به مهم تغییر کرد. نریشن اول‌شخص تارا و کامران با لباس مرجع حفظ شود. کپشن ویدیویی کوتاه و برای ترغیب تماشا؛ نشان بازنمایی آموزشی روی تصویر نباشد، فقط تارا و کامران؛ مجریان کلام تازه. ماهیت نمایشی خانواده در سند تولید داخلی محفوظ و صحنه به‌عنوان رویداد واقعی معرفی نشود. شروع سرشماری احراز شد؛ پایان واحد همه مسیرهای گلبهار احراز نشد. دریافت‌کنندگان پیامک مهلت اعلام‌شده در پیامک/سامانه را رعایت کنند. تاریخ پایان حدس زده نشود. جمله آخر کاربر درباره ویدیوهای تولیدی ناقص و ادامه آن نامعلوم است.",
+  "webResearch": {
+    "sources": [
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%a3%da%a9%db%8c%d8%af-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%b1-%d8%b1%d9%81%d8%b9-%d9%85%d9%88%d8%a7%d9%86%d8%b9-%d8%a7%d8%ac%d8%b1/",
+        "title": "تأکید فرماندار گلبهار بر رفع موانع اجرای قانون جوانی جمعیت و تسریع در تعیین تکلیف خانواده‌های مشمول",
+        "publishedAt": "2026-10-25T20:47:57+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%a3%da%a9%db%8c%d8%af-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%b1-%d8%ab%d8%a8%d8%aa-%d8%af%d9%82%db%8c%d9%82-%d8%a7%d8%b7%d9%84%d8%a7/",
+        "title": "تأکید فرماندار گلبهار بر ثبت دقیق اطلاعات جمعیتی و نقش آن در برنامه‌ریزی شهرستان",
+        "publishedAt": "2026-09-30T16:55:18+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%88%d8%a7%d8%ad%d8%af%d9%87%d8%a7%db%8c-%d9%85%d8%b3%da%a9%d9%88%d9%86%db%8c-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%a7-%d8%aa%da%a9%d9%85%db%8c%d9%84-%d9%be%d8%b1%d9%88%da%98%d9%87/",
+        "title": "واحدهای مسکونی گلبهار با تکمیل پروژه‌های مسکن به ۵۴ هزار و ۵۳۳ واحد می‌رسد",
+        "publishedAt": "2026-05-13T12:08:12+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%a3%da%a9%db%8c%d8%af-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a7%d8%ac%d8%b1%d8%a7%db%8c-%d8%b7%d8%b1%d8%ad-%d8%a2/",
+        "title": "تأکید فرماندار گلبهار بر هم‌افزایی دستگاه‌ها برای اجرای طرح آمارگیری و دستیابی به آمار واقعی جمعیت شهرستان",
+        "publishedAt": "2026-04-09T09:41:41+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%b1%d8%b4%d8%af-%d8%b4%d8%aa%d8%a7%d8%a8%d8%a7%d9%86-%d8%ac%d9%85%d8%b9%db%8c%d8%aa-%da%86%d8%a7%d9%84%d8%b4-%d8%a8%d8%b2%d8%b1%da%af-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%af%d8%b1-%da%af%d9%84%d8%a8/",
+        "title": "رشد شتابان جمعیت، چالش بزرگ آموزش در گلبهار / مطالبات آموزشی شهرستان در شورای آموزش‌وپرورش استان مطرح شد",
+        "publishedAt": "2025-12-25T22:13:04+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%ac%d8%a7%d9%86%db%8c-%d8%aa%d8%a7%d8%b2%d9%87-%d8%a8%d9%87-%d8%ae%d9%88%d8%af-%d8%ae%d9%88%d8%a7%d9%87%d8%af-%da%af%d8%b1%d9%81%d8%aa/",
+        "title": "گلبهار جانی تازه به خود خواهد گرفت",
+        "publishedAt": "2024-04-04T12:48:49+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%85%d8%b3%d8%a6%d9%88%d9%84%db%8c%d9%86-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d9%85%d9%87%d9%85%d8%a7%d9%86-%d9%85%d8%b1%d8%af%d9%85-%d9%85%d8%ad%d9%84%d9%87-%db%b1%db%b7-%d8%b4%d8%af%d9%86%d8%af/",
+        "title": "فرماندار گلبهار: تا انتهای سال، سه نانوایی به محدوده مهرگان و فروردین اضافه می‌شود",
+        "publishedAt": "2023-02-22T14:29:49+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%82%d8%b7%d8%b9%db%8c-%d8%b3%d8%a7%db%8c%d8%aa-%d8%b3%d8%b1%d8%b4%d9%85%d8%a7%d8%b1%db%8c-%d8%af%d8%a7%d8%af-%d9%85%d8%b3%d8%a6%d9%88%d9%84%db%8c%d9%86-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%b1/",
+        "title": "قطعی سایت سرشماری داد مسئولین گلبهار را در آورد",
+        "publishedAt": "2023-01-01T19:23:48+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1%d8%8c-%d8%b4%d9%87%d8%b1-%d9%85%d9%86%d8%aa%d8%ae%d8%a8-%d8%a7%d8%b3%d8%aa%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%d8%ac%d8%b1%d8%a7%db%8c-%d8%b7%d8%b1%d8%ad-%d8%a2%d8%b2/",
+        "title": "گلبهار، شهر منتخب استان در اجرای طرح آزمايش سرشماری عمومی نفوس و مسكن",
+        "publishedAt": "2022-12-31T10:53:26+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%a7%d9%81%d8%aa%d8%aa%d8%a7%d8%ad-%db%b3%db%b5-%d9%be%d8%b1%d9%88%da%98%d9%87-%d8%a8%d8%a7-%d8%a7%d8%b9%d8%aa%d8%a8%d8%a7%d8%b1-%db%b4%db%b1%db%b7-%d9%85%db%8c%d9%84%db%8c%d8%a7%d8%b1%d8%af-%d8%aa/",
+        "title": "افتتاح ۳۵ پروژه با اعتبار ۴۱۷ میلیارد تومان در هفته دولت در شهرستان گلبهار+گزارش تصویری",
+        "publishedAt": "2022-08-24T12:19:15+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%a7%d9%85%da%a9%d8%a7%d9%86%d8%a7%d8%aa-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%b1%d8%a7%db%8c-%d8%ac%d9%85%d8%b9%db%8c%d8%aa-%db%b1%db%b4%db%b0-%d9%87%d8%b2%d8%a7%d8%b1%d9%86%d9%81%d8%b1/",
+        "title": "امکانات گلبهار برای جمعیت ۱۴۰ هزارنفری فعلی کفاف نمی‌دهد",
+        "publishedAt": "2022-03-31T15:18:52+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%ad%d9%84%db%8c%d9%84%db%8c-%d8%a8%d8%b1-%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8%d8%a7%d8%aa-%db%b1%db%b4%db%b0%db%b0-%d8%af%d8%b1-%da%86%d9%86%d8%a7%d8%b1%d8%a7%d9%86-%d9%88-%da%af%d9%84%d8%a8/",
+        "title": "تحلیلی بر انتخابات ۱۴۰۰ در چناران و گلبهار",
+        "publishedAt": "2021-07-17T09:55:44+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1%d8%8c-%d8%b3%da%a9%d9%88%db%8c-%d9%be%d8%b1%d8%b4-%d8%a8%d8%b1%d8%a7%db%8c-%d8%ac%d9%85%d8%b9%db%8c%d8%aa-%d9%85%d9%87%d8%a7%d8%ac%d8%b1-%d9%86%db%8c%d8%b3%d8%aa/",
+        "title": "گلبهار، سکوی پرش برای جمعیت مهاجر نیست",
+        "publishedAt": "2020-12-05T07:08:00+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%af%d9%84%d8%a8%d9%87%d9%80%d9%80%d8%a7%d8%b1-%d8%a8%d9%87-%d8%b2%d9%88%d8%af%db%8c-%d8%b4%d9%87%d8%b1%d8%b3%d8%aa%d9%80%d9%80%d8%a7%d9%86-%d9%85%db%8c%e2%80%8c%d8%b4%d9%88%d8%af/",
+        "title": "گلبهار به زودی شهرستان می‌شود",
+        "publishedAt": "2020-06-16T17:32:15+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%a8%db%8c%d9%85%d8%a7%d8%b1%d8%b3%d8%aa%d8%a7%d9%86-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d9%87-%d8%b2%d9%88%d8%af%db%8c-%d8%a8%d8%a7-%d9%85%d8%b4%d8%a7%d8%b1%da%a9%d8%aa-%d8%a2%d8%b3%d8%aa/",
+        "title": "بیمارستان گلبهار به زودی با مشارکت آستان قدس به بهره‌برداری خواهد رسید",
+        "publishedAt": "2020-05-20T14:43:50+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%ac%d9%84%d8%b3%d9%87-%d9%85%d8%b4%d8%aa%d8%b1%da%a9-%d9%87%db%8c%d8%a6%d8%aa%d9%87%d8%a7%db%8c-%d8%a7%d8%ac%d8%b1%d8%a7%db%8c%db%8c-%d9%88-%d9%86%d8%b8%d8%a7%d8%b1%d8%aa-%d8%a7%d9%86/",
+        "title": "جلسه مشترک هیئت‌های اجرایی و نظارت انتخابات شوراهای اسلامی شهر و روستا در شهرستان گلبهار برگزار شد",
+        "publishedAt": "2026-10-13T12:11:18+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%b4%d9%88%d8%b1%d8%a7%db%8c-%d8%a7%d8%af%d8%a7%d8%b1%db%8c-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%a7-%d9%85%d8%ad%d9%88%d8%b1%db%8c%d8%aa-%d8%b3%d8%b1%d8%b4%d9%85%d8%a7%d8%b1%db%8c-%d9%86/",
+        "title": "شورای اداری گلبهار با محوریت سرشماری نفوس و مسکن ۱۴۰۵ و مدیریت پیامدهای پدیده ال‌نینو برگزار شد",
+        "publishedAt": "2026-10-08T10:05:25+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%a3%da%a9%db%8c%d8%af-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%d8%a8%d8%b1-%d8%ae%d8%af%d9%85%d8%aa-%d8%b5%d8%a7%d8%af%d9%82%d8%a7%d9%86%d9%87%d8%8c-%d8%a8%d8%a7%d8%b2%da%af%d8%b4/",
+        "title": "تأکید فرماندار بر خدمت صادقانه، بازگشایی مدارس و اجرای برنامه‌های هفته دفاع مقدس",
+        "publishedAt": "2026-09-22T14:46:49+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%a3%da%a9%db%8c%d8%af-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%d8%a8%d8%b1-%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d9%85%d8%b1%d8%af%d9%85-%d9%88-%d8%af%d8%b3%d8%aa%da%af%d8%a7%d9%87/",
+        "title": "تأکید فرماندار بر همکاری مردم و دستگاه‌ها در سرشماری ثبتی‌مبنا ۱۴۰۵",
+        "publishedAt": "2026-09-22T13:22:00+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%85%d8%b4%d8%a7%d8%b1%da%a9%d8%aa-%d8%af%d8%b1-%d8%b7%d8%b1%d8%ad-gnaf-%d9%88-%d8%b3%d8%a7%d9%85%d8%a7%d9%86%d9%87-%d8%b3%db%8c%d8%a8%d8%8c-%da%af%d8%a7%d9%85%db%8c-%d8%a7%d8%b3%d8%a7/",
+        "title": "مشارکت در طرح GNAF و سامانه «سیب»، گامی اساسی برای ثبت جمعیت واقعی و افزایش سهم شهرستان از اعتبارات است",
+        "publishedAt": "2026-07-26T11:12:59+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%b1%d9%88%d8%a7%d8%a8%d8%b7%d8%b9%d9%85%d9%88%d9%85%db%8c%d9%87%d8%a7-%d9%85%d8%ad%d9%88%d8%b1-%d8%a7%d8%b7%d9%84%d8%a7%d8%b9%d8%b1%d8%b3%d8%a7%d9%86%db%8c%d8%8c-%d8%a7/",
+        "title": "فرماندار گلبهار: روابط‌عمومی‌ها محور اطلاع‌رسانی، امیدآفرینی و انتقال واقعیت‌های درون دستگاه‌ها هستند",
+        "publishedAt": "2026-05-23T11:20:03+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%82%d8%af%d8%b1%d8%af%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a7%d8%b2-%da%a9%d8%a7%d8%b1%da%a9%d9%86%d8%a7%d9%86-%d8%a8%d9%87/",
+        "title": "قدردانی فرماندار گلبهار از کارکنان بهداشت به مناسبت هفته سلامت",
+        "publishedAt": "2026-05-23T10:15:04+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%ad%d8%b6%d9%88%d8%b1-%d9%85%db%8c%d8%af%d8%a7%d9%86%db%8c-%d9%85%d8%af%db%8c%d8%b1%d8%a7%d9%86-%d9%88-%d8%aa%d8%a3%d9%85%db%8c%d9%86-%d9%85%d8%b9%db%8c%d8%b4%d8%aa-%d9%85%d8%b1%d8%af%d9%85%d8%8c/",
+        "title": "حضور میدانی مدیران و تأمین معیشت مردم، اولویت اصلی شهرستان گلبهار است",
+        "publishedAt": "2026-04-16T10:46:17+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%aa%d8%a3%da%a9%db%8c%d8%af-%d9%81%d8%b1%d9%85%d8%a7%d9%86%d8%af%d8%a7%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%b1-%d9%84%d8%b2%d9%88%d9%85-%d8%af%d9%82%d8%aa-%d8%af%d8%b1-%d8%a2%d9%85/",
+        "title": "تأکید فرماندار گلبهار بر لزوم دقت در آمار سرشماری برای دستیابی به سهم واقعی شهرستان",
+        "publishedAt": "2026-04-05T10:28:20+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%a8%d9%87-%d8%b2%d9%88%d8%af%db%8c-%d8%b7%d8%b1%d8%ad-%d8%a2%d8%b1%d8%a7%d9%85%d8%b3%d8%aa%d8%a7%d9%86-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d9%87-%d8%a7%d8%ac%d8%b1%d8%a7-%d8%af%d8%b1-%d9%85/",
+        "title": "به زودی طرح آرامستان گلبهار به اجرا در می‌آید",
+        "publishedAt": "2023-05-23T22:12:57+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%a9%d9%85%d8%a8%d9%88%d8%af-%d8%a2%d8%b1%d8%af-%d9%86%d8%a7%d9%86%d9%88%d8%a7%db%8c%db%8c-%d8%a7%d9%81%d8%b2%d8%a7%db%8c%d8%b4-%d8%b3%d9%87%d9%85%db%8c%d9%87-%d8%a2%d8%b1%d8%af-%da%af%d9%84%d8%a8/",
+        "title": "مسئولین استان کمبود آرد گلبهار را باور کردند",
+        "publishedAt": "2023-05-09T11:03:47+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%a7%d9%88%d9%84%db%8c%d9%86-%d8%b3%d8%b1%d8%b4%d9%85%d8%a7%d8%b1%db%8c-%d8%ab%d8%a8%d8%aa%db%8c-%d9%85%d8%a8%d9%86%d8%a7-%d8%af%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%a8%d8%b1%da%af%d8%b2/",
+        "title": "اولین سرشماری ثبتی مبنا در گلبهار برگزار خواهد شد",
+        "publishedAt": "2022-12-12T12:46:59+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1%d8%8c-%d8%b4%d9%87%d8%b1-%d9%85%d9%86%d8%aa%d8%ae%d8%a8-%d8%a7%d8%b3%d8%aa%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%d8%ac%d8%b1%d8%a7%d9%8a-%d8%b7%d8%b1%d8%ad-%d8%a2%d8%b2/",
+        "title": "گلبهار، شهر منتخب استان در اجراي طرح آزمايش سرشماري عمومي نفوس و مسكن ثبتي مبنا",
+        "publishedAt": "2022-12-20T20:52:08+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%86%d8%b4%d8%b3%d8%aa-%d9%be%d8%b1%d8%b3%d8%b4-%d9%88-%d9%be%d8%a7%d8%b3%d8%ae-%d8%a8%d8%a7-%d8%b3%d8%a7%da%a9%d9%86%db%8c%d9%86-%d8%a8%d8%b2%d8%b1%da%af%d8%aa%d8%b1%db%8c%d9%86-%d9%85%d8%ac%d8%aa/",
+        "title": "نشست پرسش و پاسخ با ساکنین بزرگترین مجتمع مسکونی گلبهار برگزار شد+ گزارش تصویری",
+        "publishedAt": "2022-08-29T10:09:50+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%be%db%8c%d8%b4-%d8%a8%db%8c%d9%86%db%8c-%d9%85%d8%b1%da%a9%d8%b2-%d8%a2%d9%85%d8%a7%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86%d8%9b-%d8%b4%d9%87%d8%b1%d8%b3%d8%aa%d8%a7%d9%86-%da%af%d9%84%d8%a8%d9%87/",
+        "title": "پیش بینی مرکز آمار ایران؛ شهرستان گلبهار ۱۰۰ هزار نفر جمعیت دارد",
+        "publishedAt": "2022-05-23T12:39:18+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%86%d9%88%d8%b3%d8%a7%d8%b2%db%8c-%d9%88-%d8%aa%d8%ac%d9%87%db%8c%d8%b2-%d8%ad%d9%85%d9%84-%d9%88-%d9%86%d9%82%d9%84%d8%8c-%d8%a7%d9%88%d9%84%d9%88%db%8c%d8%aa-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1/",
+        "title": "نوسازی و تجهیز حمل و نقل، اولویت گلبهار است",
+        "publishedAt": "2022-02-20T20:41:36+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1%d8%8c-%d9%86%db%8c%d8%a7%d8%b2-%d8%a8%d9%87-%d9%81%da%a9%d8%b1-%d9%88-%d9%87%d9%85%d8%aa-%d9%86%d9%88-%d8%af%d8%a7%d8%b1%d8%af%d8%8c-%d9%86%d9%87-%d9%86%da%af/",
+        "title": "گلبهار، نیاز به فکر و همت نو دارد، نه نگاه سنتی و پوسیده مدیریتی",
+        "publishedAt": "2021-02-04T10:56:28+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%85%d8%b1%d8%af%d9%85%d8%9b-%d8%b1%da%a9%d9%86-%d8%a7%d8%b3%d8%a7%d8%b3%db%8c-%d8%a7%d9%86%d9%82%d9%84%d8%a7%d8%a8-%d8%af%d8%b1-%d8%af%d9%87%d9%87-%d9%81%d8%ac%d8%b1-%d8%b3%d8%a7%d9%84%d8%ac%d8%a7/",
+        "title": "مردم؛ رکن اصلی انقلاب/ در دهه فجر سالجاری، ۴۲ پروژه در شهرستان گلبهار کلنگ‌زنی و به بهره‌برداری خواهد رسید.",
+        "publishedAt": "2021-01-28T21:51:20+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%b3%d8%b1%d8%a7%d9%86%d9%87-%d9%86%d8%a7%d9%87%d9%85%da%af%d9%88%d9%86-%d8%a7%d8%b5%d9%86%d8%a7%d9%81-%d8%af%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1/",
+        "title": "سرانه ناهمگون اصناف در گلبهار",
+        "publishedAt": "2020-03-03T19:29:39+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d8%b4%d9%87%d8%b1-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%af%d8%a7%d8%b1%d8%a7%db%8c-%d8%ac%d8%a7%db%8c%da%af%d8%a7%d9%87-%d9%88-%d8%a7%d9%87%d9%85%db%8c%d8%aa-%d9%88%db%8c%da%98%d9%87%e2%80%8c/",
+        "title": "شهر گلبهار دارای جایگاه و اهمیت ویژه‌ای در کشور می‌باشد",
+        "publishedAt": "2019-08-03T19:47:27+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      },
+      {
+        "url": "https://kalametazenews.ir/%d9%82%d8%a8%d8%b1%d8%b3%d8%aa%d8%a7%d9%86-%da%af%d9%84%d8%a8%d9%87%d8%a7%d8%b1-%d8%aa%d9%87%d8%af%db%8c%d8%af%db%8c-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a2%d8%a8-%d9%85%d8%b4%d9%87%d8%af/",
+        "title": "قبرستان گلبهار تهدیدی برای آب مشهد",
+        "publishedAt": "2019-06-26T11:10:29+03:30",
+        "access": "full",
+        "tool": "mcp__kalametaze_wordpress__post_get"
+      }
+    ]
+  },
+  "videoProduction": {
+    "requestedModel": "Gemini Omni 1.2 Flash",
+    "sourceModelId": "gemini_omni_flash",
+    "execution": "user-generates-in-external-ui",
+    "availability": "account-unverified",
+    "voiceover": "female; Tara persona; separate continuous track",
+    "dialogueInGeneratedClips": false,
+    "sourceAnnouncement": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "announcementDate": "2026-11-05"
+  },
+  "hostToolEvidence": {
+    "checkedAt": "2026-11-06",
+    "image": {
+      "available": true,
+      "tool": "image_gen__imagegen"
+    },
+    "narration": {
+      "available": false,
+      "basis": "No speech-generation tool in ALL_TOOLS"
+    },
+    "music": {
+      "available": false,
+      "basis": "No music-generation tool in ALL_TOOLS"
+    },
+    "localRender": {
+      "doctor": "passed",
+      "engine": "hyperframes"
+    }
+  },
+  "text": "سرشماری شروع شده، ولی این سرشماری برای گلبهار و مردمش یه جور دیگه‌ای مهمه. چرا؟ با من، تارا، و همکارم کامران که اتفاقاً الان براتون لباس‌های رسمی مأموران سرشماری رو پوشیدیم، همراه باشین تا بهتون توضیح بدم.\n\nگلبهار بزرگ‌تر شده، ولی فرماندار می‌گه آمار رسمی شهرستان هنوز بر پایه سرشماری نود و پنجه؛ و بخشی از اعتبارات و خدمات، با نیازهای شهرستان تناسب نداره.\n\nحرف فقط یه عدد نیست؛ از سهمیه آرد و ارزش افزوده تا مدرسه، خدمات درمانی و حمل‌ونقل، آمار دقیق پایه برنامه‌ریزی و پیگیری سهم متناسب گلبهاره.\n\nتوی بازدید ناظر مرکز آمار هم فرماندار خواسته تعداد آمارگیرها متناسب با جمعیت و گستردگی شهرستان بیشتر بشه؛ تا مناطق شهری و روستایی بهتر پوشش داده بشن.\n\nحالا من و تو باید چی‌کار کنیم؟ طبق اطلاعیه فرمانداری، سه گروه، سه مسیر متفاوت دارن.\n\nاول، بعضی خانوارها برای مراجعه حضوری انتخاب می‌شن. مأمور با لباس فرم، کارت شناسایی معتبر و تبلت میاد. این لباس رو ببینین؛ قبل از پاسخ‌گویی، حتماً کارت معتبر مأمور رو هم بررسی کنین.\n\nدوم، اگه از مرکز آمار پیامک گرفتین، به سامانه «دولت من»، بخش سرشماری برین؛ اطلاعات خانوار رو ثبت کنین و کد ثبت سرشماری بگیرین. این کار رو عقب نندازین و مهلت اعلام‌شده در پیامک یا سامانه رو رعایت کنین. یادتون باشه پیامک سرشماری لینک نداره؛ خودتون از مسیر رسمی وارد بشین.\n\nسوم، سایر خانوارها طبق اطلاعیه فرمانداری، برای مراحل بعدی به خانه بهداشت محل سکونتشون مراجعه کنن؛ تا تشکیل پرونده سلامت و ثبت اطلاعات در سامانه «سیب»، از طریق خانه بهداشت انجام بشه.\n\nپس ببینین جزو کدوم گروه هستین و همون مسیر رو پیگیری کنین.\n\nگلبهار بزرگ شده؛ بذاریم آمارش هم دقیق ثبت بشه. این راهنما رو برای همسایه‌ها و گروه ساختمونتون بفرستین.",
+  "narrationDraftPath": "outputs/writing/narration-storyboard.fa.md",
+  "sourceNoticePaths": [
+    "inputs/admin-notice.txt",
+    "inputs/admin-field-visit.txt"
+  ],
+  "editorialRevision": 3,
+  "title": "چرا شرکت توی سرشماری امسال برای گلبهاری‌ها مهمه؟",
+  "imagePlanStatus": "version-1-superseded-by-revision-2-not-approved",
+  "narrationApprovalStatus": "draft-rewrite-requested-not-approved",
+  "videoCaption": true,
+  "captionPurpose": "کپشن همراه ویدیو؛ دو تا سه خط برای ترغیب تماشا، نه شرح کامل خبر یا تمام مسیرها",
+  "presenterLabel": "تارا و کامران؛ مجریان کلام تازه",
+  "showEducationalLabel": false,
+  "videoActionPolicy": "شخصیت‌ها کار طبیعی انجام دهند؛ نگاه، اشاره، راه‌رفتن محدود و مکالمه طبیعی با حرکت لب مجاز است. صوت داخل کلیپ لازم نیست؛ اگر تولید شد، در تدوین کامل mute می‌شود و نریشن مستقل زن روی آن می‌آید. لب‌خوانی متن نریشن و دیالوگ ازپیش‌تعیین‌شده لازم نیست.",
+  "narrationDeliveryStatus": "متن فعلی برای ویرایش جزئی کاربر و اجرای موتور صداساز تحویل می‌شود؛ فایل صوتی واقعی هنوز موجود نیست.",
+  "videoPromptDeliveryStatus": "پرامپت حرکت هشت نما و مراجع موجود آماده‌سازی می‌شود؛ قاب‌های شروع هشت‌نما هنوز تولید/بازبینی/تأیید تصویری نشده‌اند.",
+  "imageApprovalStatus": "نیازمند تأیید واقعی برنامه دقیق هشت قاب نسخه تازه؛ تأیید سناریو مجوز تولید تصویر نیست."
+}

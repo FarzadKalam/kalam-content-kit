@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "id": "golbahar-census-1405",
+  "brand": "golbahar",
+  "mode": "motion",
+  "engine": "hyperframes",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "phase": "brief",
+  "audio": {
+    "mode": "undecided",
+    "scriptApproval": null,
+    "narrationFile": null
+  },
+  "fonts": {
+    "primary": "Peyda",
+    "complement": [
+      "Morabba",
+      "Parsa"
+    ],
+    "captionFallback": "Vazirmatn",
+    "selection": "brand-default",
+    "roles": {
+      "headline": {
+        "family": "Morabba",
+        "weights": [
+          700,
+          800,
+          900
+        ]
+      },
+      "kineticEmphasis": {
+        "family": "Morabba",
+        "weights": [
+          700,
+          800,
+          900
+        ]
+      },
+      "body": {
+        "family": "Peyda",
+        "weights": [
+          400,
+          600
+        ]
+      },
+      "captions": {
+        "family": "Peyda",
+        "weights": [
+          600,
+          700
+        ]
+      },
+      "identity": {
+        "family": "Peyda",
+        "weights": [
+          600,
+          700
+        ]
+      },
+      "handwrittenAccent": {
+        "family": "Parsa",
+        "weights": [
+          400
+        ],
+        "usage": "optional-short-phrase-when-story-benefits"
+      }
+    },
+    "notes": "Owner selected Peyda + Morabba and optional Parsa handwriting, 2026-11-06. Roles are editorial defaults; vary by content, keep real weights and Persian word joining. Meem remains disabled."
+  },
+  "brandReady": true,
+  "createdAt": "2026-11-06T11:17:23.215Z",
+  "kind": "motion",
+  "source": "fd3367b7dbd23735823e9b3660159858a472d676",
+  "settingsStatus": {
+    "schemaVersion": 1,
+    "status": "local-source-ready",
+    "source": "Studio Git prompts, tracked production prompts and approved local reference packs",
+    "sourceCommit": "fd3367b7dbd23735823e9b3660159858a472d676",
+    "liveSyncRequired": false,
+    "liveVerified": false,
+    "decision": "Owner selected an independent local kit on 2026-11-05; server settings are outside the required scope.",
+    "coverage": {
+      "promptFiles": 51,
+      "approvedReferenceFiles": 36,
+      "unmappedLocalReferenceFiles": 0,
+      "referenceRegistry": "assets/studio/references/registry.json",
+      "evidence": "vendor/studio/local-transfer.json"
+    },
+    "missing": []
+  },
+  "capabilities": {
+    "image": {
+      "status": "unknown"
+    },
+    "speech": {
+      "status": "unknown"
+    },
+    "music": {
+      "status": "unknown"
+    }
+  },
+  "approvals": [],
+  "artifacts": []
+}

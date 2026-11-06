@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "file": "references/scene-04.png",
+      "original": "outputs/image-planning/v2/generated/scene-04.png",
+      "originalDimensions": [
+        916,
+        1717
+      ],
+      "outputDimensions": [
+        1080,
+        1920
+      ],
+      "operation": "proportional resize then crop upper edge to 9:16; original preserved",
+      "sha256": "62544b3d693ce23a1f9062c0bb451e5759ec80633e7837d77fa21ac019e53da7"
+    },
+    {
+      "file": "references/scene-05.png",
+      "original": "outputs/image-planning/v2/generated/scene-05.png",
+      "originalDimensions": [
+        916,
+        1717
+      ],
+      "outputDimensions": [
+        1080,
+        1920
+      ],
+      "operation": "proportional resize then crop upper edge to 9:16; original preserved",
+      "sha256": "e4f391d0f8ec967ead068361686d36f734fd01a98083ad8b37b6b4a3be719030"
+    },
+    {
+      "file": "references/scene-06.png",
+      "original": "outputs/image-planning/v2/generated/scene-06.png",
+      "originalDimensions": [
+        916,
+        1717
+      ],
+      "outputDimensions": [
+        1080,
+        1920
+      ],
+      "operation": "proportional resize then crop upper edge to 9:16; original preserved",
+      "sha256": "b053b7d2dcd9087c57ad0d97a601ae5cee834760feddbb2f087653d3bf4619fc"
+    },
+    {
+      "file": "references/scene-02.png",
+      "original": "outputs/image-planning/v2/generated-city/scene-02.png",
+      "originalDimensions": [
+        916,
+        1717
+      ],
+      "outputDimensions": [
+        1080,
+        1920
+      ],
+      "operation": "proportional resize then crop upper edge to 9:16; original preserved",
+      "sha256": "1c8a8703783bb50ea76314d70e9f26c51f67bdbdd173d3a68447df1c14a99b10"
+    },
+    {
+      "file": "references/scene-07.png",
+      "original": "outputs/image-planning/v2/generated-city/scene-07.png",
+      "originalDimensions": [
+        916,
+        1717
+      ],
+      "outputDimensions": [
+        1080,
+        1920
+      ],
+      "operation": "proportional resize then crop upper edge to 9:16; original preserved",
+      "sha256": "4eb72d8c47663239d6396f1087226b95ed578748415685e067455c1802cf44ac"
+    }
+  ]
+}
