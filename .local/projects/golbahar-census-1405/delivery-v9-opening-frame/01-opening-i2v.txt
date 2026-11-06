@@ -1,6 +1,15 @@
-Use the supplied image as the starting frame for a 10-second vertical, photorealistic video. Keep the two presenters’ faces, outfits, white vest logos, Golbahar square, statue, and surrounding buildings consistent with the image.
+Create a single 10-second, vertical 9:16 photorealistic live-action shot with natural, clearly audible spoken Persian. Use the supplied media as follows; select the actual uploaded media from Flow’s @ menu, rather than relying on filenames alone:
 
-Tara, in the foreground, speaks directly to the camera in natural, conversational Iranian Persian, with accurate lip sync and a warm, clear female voice. At «چرا؟», she slightly raises her eyebrows and makes a subtle questioning gesture with her hand. She then smiles gently and gestures toward Kamran. Kamran listens naturally and gives a small nod. Use a gentle camera push-in. One continuous shot, no subtitles, no on-screen text, no background music, and no other voices.
+@GOLBAHAR_OPENING — the starting frame and primary composition and location reference: preserve the two-person arrangement, Golbahar square, statue, buildings, daylight and outfits. There is no additional person behind the presenters.
+@TARA_FACE_PRIMARY — the primary and authoritative reference for Tara’s facial identity. Tara is the woman in the foreground, on the left. Match her facial features closely and consistently throughout the shot.
+@KAMRAN_FACE_PRIMARY — the primary reference for Kamran’s facial identity. Kamran is the man slightly behind Tara on the right. Match his facial features closely and consistently throughout the shot.
 
-Tara says exactly:
-«سرشماری شروع شده، ولی این سرشماری برای گلبهار و مردمش یه جور دیگه‌ای مهمه. چرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.»
+Both wear their dark census vests as in @GOLBAHAR_OPENING, with the small white Statistical Center of Iran emblem on each vest. Preserve the emblems consistently. No lower-third, captions or on-screen titles.
+
+DIRECTION: Eye-level medium two-shot, natural daylight, with a very gentle, steady camera push toward Tara. One continuous shot without cuts. Tara addresses the viewer with a warm, energetic, conversational delivery at a pace that comfortably completes the entire line within 10 seconds. Around «چِرا؟» she raises her eyebrows slightly and opens one hand in a small questioning gesture; as she says «همکارم کامران» she briefly gestures toward Kamran. Finish with an inviting, subtle smile. Kamran listens attentively, looks naturally toward Tara and the camera, and gives a slight nod. Neither presenter changes identity, clothing or position abruptly.
+
+AUDIO: Tara speaks herself in natural Iranian Persian, with a clear female voice and precise lip sync. Say all of the following exactly, without omission, paraphrase or extra words:
+
+«سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.»
+
+No other voices, no narration track, no music and no subtitles. Keep the performance natural, without exaggerated gestures or abrupt camera movement.
