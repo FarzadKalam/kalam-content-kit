@@ -1,0 +1,15 @@
+Create ONE 8-second vertical 9:16 continuous live-action clip with Omni Flash 1.1.
+
+REFERENCE ROLES, IN ORDER:
+1. @TARA_FACE_PRIMARY — Tara's original close-up, primary face identity.
+2. @KAMRAN_FACE_PRIMARY — Kamran's face identity only.
+3. @STUDIO_MAIN — exact existing studio wall, desk and room geometry.
+4. @CENSUS_UNIFORM — clothing construction only, rightmost two people.
+
+Tara: @TARA_FACE_PRIMARY is the ORIGINAL close-up and absolute facial identity authority: preserve her facial geometry, eyes, brows, nose, lips, skin tone and age. Kamran: preserve only @KAMRAN_FACE_PRIMARY. Never average identities or borrow faces from the clothing source. Keep Tara's taupe headscarf, dark modest underlayer and navy census vest; Kamran's blue shirt and matching vest. Match vest cut, pockets and pale lower patches to the RIGHTMOST TWO people in @CENSUS_UNIFORM, never their faces or printed marks.
+
+Inside this exact dark studio, preserve its black geometric wall, red vertical accent, curved desk and switched-off monitor. Tara and Kamran ALREADY wear the SAME census vests and clothes as outdoors; no dressing or costume change. Tara briefly smooths the edge of her already-worn vest, then steadies an open plain dark work bag on the desk. Kamran lifts a plain dark tablet from beside it and lowers the tablet into the bag. They share a modest matter-of-fact smile and settle. Ordinary small facial movements are welcome. Keep the tablet back toward the lens; no display is visible.
+
+Eye-level waist-up medium two-shot, 40mm equivalent, gentle short lateral move that settles with the bag action. Keep the desk's existing illuminated lettering outside the crop. One practical action, not a montage.
+
+Photoreal live-action, real skin and fabric, restrained cinematic contrast, soft practical studio lighting matching the source. No illustration or beauty-filter faces. Keep all sign lettering, vest marks and personal information outside the readable frame. No captions, generated text, logos, ID designs, screens, QR codes or floating graphics. Coherent hands, stable faces and clothes; no cuts or location changes.

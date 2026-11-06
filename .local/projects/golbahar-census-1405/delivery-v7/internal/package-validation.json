@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "promptCount": 4,
+  "rawDurationsSeconds": [
+    10,
+    8,
+    8,
+    8
+  ],
+  "introMatchesApprovedText": true,
+  "sourceBackgroundAndNewCamera": true,
+  "taraCloseupPrimaryAllHostClips": true,
+  "remaining9ParagraphsVerbatim": true,
+  "noNarrationMentionsIn3OtherProviderPrompts": true,
+  "referenceRolesMatchAll4Prompts": true,
+  "inlineOnlyPhotosNotFaked": true,
+  "noGenerationOrFinalRenderClaimed": true
+}

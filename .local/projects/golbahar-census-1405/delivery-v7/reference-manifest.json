@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "file": "references/CENSUS_UNIFORM.jpg",
+      "flowHandle": "@CENSUS_UNIFORM",
+      "status": "present",
+      "bytes": 99679,
+      "sha256": "4eee78ceceef29b833e0f45a36b3d1a73033f3120149ad06aca22e7c10333899"
+    },
+    {
+      "file": "references/KAMRAN_FACE_PRIMARY.png",
+      "flowHandle": "@KAMRAN_FACE_PRIMARY",
+      "status": "present",
+      "bytes": 1942781,
+      "sha256": "d7506d880719f3f187b4363c5d7d003372dcc91e38f0b63667d12a6d90345e16"
+    },
+    {
+      "file": "references/SOURCE_V01_10S.mp4",
+      "flowHandle": "@SOURCE_V01_10S",
+      "status": "present",
+      "bytes": 2963558,
+      "sha256": "09ade518042ba01a490b83d90364e1cf22f444de5ff46e8e7cf00f23a61470e3"
+    },
+    {
+      "file": "references/STUDIO_MAIN.png",
+      "flowHandle": "@STUDIO_MAIN",
+      "status": "present",
+      "bytes": 1775166,
+      "sha256": "732d420e131bb2e6fcd51b3944611e73ab448154d45c1c4906a74f3211bc4bae"
+    },
+    {
+      "file": "references/TARA_FACE_PRIMARY.png",
+      "flowHandle": "@TARA_FACE_PRIMARY",
+      "status": "present",
+      "bytes": 2229894,
+      "sha256": "26cdc7b5f82bdea4aa492a9f24c7c0b191cc044a6cfcc62d4b52c637a0d4f9b6"
+    },
+    {
+      "file": null,
+      "suggestedFilename": "GOLBAHAR_AERIAL_MAIN.jpg",
+      "flowHandle": "@GOLBAHAR_AERIAL_MAIN",
+      "status": "user supplied inline; user uploads original directly intoFlow",
+      "captureDate": null
+    },
+    {
+      "file": null,
+      "suggestedFilename": "GOLBAHAR_SHOPS.jpg",
+      "flowHandle": "@GOLBAHAR_SHOPS",
+      "status": "user supplied inline; user uploads original directly intoFlow"
+    }
+  ],
+  "taraFaceAuthority": "TARA_FACE_PRIMARY original closeup",
+  "sourceVideoAudio": "none; male voice removed only in trimmed working copy",
+  "sourceVideoEdit": "user explicitly requests replacing the male presenter withTara/Kamran; original background retained",
+  "oldAerialExcluded": true,
+  "archNotActiveOpening": true
+}

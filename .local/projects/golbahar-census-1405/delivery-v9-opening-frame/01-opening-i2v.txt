@@ -1,0 +1,6 @@
+Use the supplied image as the starting frame for a 10-second vertical, photorealistic video. Keep the two presenters’ faces, outfits, white vest logos, Golbahar square, statue, and surrounding buildings consistent with the image.
+
+Tara, in the foreground, speaks directly to the camera in natural, conversational Iranian Persian, with accurate lip sync and a warm, clear female voice. At «چرا؟», she slightly raises her eyebrows and makes a subtle questioning gesture with her hand. She then smiles gently and gestures toward Kamran. Kamran listens naturally and gives a small nod. Use a gentle camera push-in. One continuous shot, no subtitles, no on-screen text, no background music, and no other voices.
+
+Tara says exactly:
+«سرشماری شروع شده، ولی این سرشماری برای گلبهار و مردمش یه جور دیگه‌ای مهمه. چرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.»

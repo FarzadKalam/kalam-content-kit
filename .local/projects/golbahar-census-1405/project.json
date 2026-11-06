@@ -9,9 +9,15 @@
   "fps": 30,
   "phase": "brief",
   "audio": {
-    "mode": "undecided",
+    "mode": "narration",
     "scriptApproval": null,
-    "narrationFile": null
+    "narrationFile": null,
+    "introNativeSpeech": {
+      "approvedTextPath": "delivery-v7/internal/live-intro-approved.fa.txt",
+      "durationSeconds": 10,
+      "speaker": "tara",
+      "evidence": "Latest explicit user text, one10second requested, in sourcevideo background"
+    }
   },
   "fonts": {
     "primary": "Peyda",
@@ -102,5 +108,7 @@
     }
   },
   "approvals": [],
-  "artifacts": []
+  "artifacts": [],
+  "activeDelivery": "delivery-v7",
+  "activeOpening": "delivery-v9-opening-frame"
 }

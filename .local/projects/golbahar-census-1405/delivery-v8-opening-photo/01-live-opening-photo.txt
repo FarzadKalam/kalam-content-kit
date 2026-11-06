@@ -1,0 +1,19 @@
+Create ONE 10-second vertical 9:16 photoreal live-action video with Omni Flash 1.1, using these IMAGE ingredients.
+
+IMAGE ROLES:
+@GOLBAHAR_SQUARE_PHOTO: background/location ONLY. Preserve this real square, statue, buildings, curb and daylight. The man in the photograph is NOT a character reference: exclude him completely from the generated scene, including the first frame.
+@TARA_FACE_PRIMARY: Tara's ORIGINAL close-up; absolute authority for her facial geometry, eyes, brows, nose, lips, skin tone and age.
+@KAMRAN_FACE_PRIMARY: Kamran's exact face identity, separate from Tara and the man in the location photo.
+@CENSUS_UNIFORM: clothing construction of the RIGHTMOST TWO people only; never their faces, printed marks or credentials.
+
+Compose Tara foreground slightly left and Kamran half a step behind right in this same square. Tara wears her taupe headscarf, dark modest underlayer and navy census vest; Kamran wears his blue shirt and matching vest. Do not transfer the photographed man's face, hair, suit, accessories or pose. No face averaging or beautification. Keep both hosts' identities and clothing stable.
+
+New cinematic camera: eye-level medium two-shot, 35–40mm equivalent, gentle slow dolly-in. Keep enough depth of field to recognize the statue and real buildings. No orbit, invented landmark or scene change.
+
+Tara ACTUALLY SPEAKS audibly in native conversational Iranian Persian, warm clear adult female voice with synchronized mouth movement. Kamran listens, gives one modest nod and says nothing. Speak this complete EXACT text in this ONE clip:
+
+«سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.»
+
+Begin around0.1s and finish around9.7s, natural brisk clear Persian, no artificial speed-up or omitted words. At «چِرا؟», a short pause, slightly raised eyebrows and a relaxed upward open palm. Then a small inviting smile and a brief hand gesture toward Kamran at his introduction. Maintain eye contact and stay in place.
+
+Natural skin and fabric, coherent hands, no music. No subtitles, captions, generated text, logos, visible ID fronts, readable screens, QR codes or extra presenters. The location photo guides the background, not a locked frame containing the original man.

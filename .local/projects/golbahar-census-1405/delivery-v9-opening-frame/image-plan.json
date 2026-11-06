@@ -1,0 +1,17 @@
+{
+  "mode": "generate",
+  "images": [
+    {
+      "id": "opening-two-hosts-realistic",
+      "description": "یک فریم آغازین واقع‌گرایانه۱۰۸۰×۱۹۲۰، دو مجری کلام در همان میدان کنار مجسمهٔ ویدیوی کاربر. تارا کمی جلو و چپ، کامران نیم‌قدم عقب و راست. همان ساختمان، مجسمه و جدول؛ مرد منبع حذف و هیچ خودرو در پشت مستقیم مجریان نباشد. تناسب چهره‌ها از اصل مراجع، تارا با روسری خاکی، هر دو با جلیقهٔ تیره و تکه‌های روشن مطابق مرجع لباس، بدون کارت یا نشان رسمی خوانا. معرفی مجریان کوچک و خوانا در پایین؛ نور طبیعی و نمای دونفره هم‌سطح چشم. این صحنه اجرای طراحی‌شدهٔ مجریان رسانه است، نه مدرک یک عملیات واقعی سرشماری.",
+      "style": "Photoreal natural cinematic; skin texture and exact reference identities; same real location; no illustration, beauty retouch or official credential fabrication",
+      "text": "تارا و کامران؛ مجریان کلام تازه",
+      "referencePaths": [
+        "delivery-v7/references/TARA_FACE_PRIMARY.png",
+        "delivery-v7/references/KAMRAN_FACE_PRIMARY.png",
+        "delivery-v8-opening-photo/GOLBAHAR_SQUARE_PHOTO.jpg",
+        "delivery-v7/references/CENSUS_UNIFORM.jpg"
+      ]
+    }
+  ]
+}

@@ -740,6 +740,24 @@
       "path": "assets/originals/eb09a4e5-56ce-4c42-aa08-6fc4be932f1b.wav",
       "sha256": "80a4b661ecacce87fd9d550c8efd06245d183108cf0b144d8930a1b1f31357b7",
       "filename": "Generated Audio November 06, 2026 - 4_51PM.wav"
+    },
+    {
+      "assetId": "f83a6ee4-2d62-4a72-bd0a-42b5ca5702bb",
+      "kind": "footage",
+      "entityId": "street-presentation-style",
+      "scope": "project",
+      "path": "assets/originals/f83a6ee4-2d62-4a72-bd0a-42b5ca5702bb.mp4",
+      "sha256": "fc602730aff3984c14a4c943785f6b213963964fcff10cebbf6a09633755d000",
+      "filename": "4_6014600243436330536.mp4"
+    },
+    {
+      "assetId": "c26cd383-b276-4592-af3b-d6e110d9520c",
+      "kind": "presenter",
+      "entityId": "tara",
+      "scope": "project",
+      "path": "assets/originals/c26cd383-b276-4592-af3b-d6e110d9520c.png",
+      "sha256": "26cdc7b5f82bdea4aa492a9f24c7c0b191cc044a6cfcc62d4b52c637a0d4f9b6",
+      "filename": "03-tara-closeup.png"
     }
   ],
   "dataRequests": [],
@@ -751,7 +769,7 @@
     "fps": 30
   },
   "purpose": "motion",
-  "additionalInstructions": "تیتر طبق اجازه تازه کاربر واجب به مهم تغییر کرد. نریشن اول‌شخص تارا و کامران با لباس مرجع حفظ شود. کپشن ویدیویی کوتاه و برای ترغیب تماشا؛ نشان بازنمایی آموزشی روی تصویر نباشد، فقط تارا و کامران؛ مجریان کلام تازه. ماهیت نمایشی خانواده در سند تولید داخلی محفوظ و صحنه به‌عنوان رویداد واقعی معرفی نشود. شروع سرشماری احراز شد؛ پایان واحد همه مسیرهای گلبهار احراز نشد. دریافت‌کنندگان پیامک مهلت اعلام‌شده در پیامک/سامانه را رعایت کنند. تاریخ پایان حدس زده نشود. جمله آخر کاربر درباره ویدیوهای تولیدی ناقص و ادامه آن نامعلوم است.",
+  "additionalInstructions": "Finaluserdirection: video+motion; onlyfourgeneratedvideofiles. Opening10s replacesmaleintheuploadedstatue-squarevideo withTara/Kamran andTaraactuallyspeaks exactmarked27wordapprovedsentence. Two middleclips:newaerial thenstudio-ready; endingwalkatred/yellowshops. ExactTaracloseupprimary. Remaining9paragraphnarrationunchanged afterintro; majorityexplanation via localSVGandkineticmotion. No20shotbank, no2partopening, nofamily/phone/healthvideo generations. Newaerialsupersedesold. Archiveearlierdrafts; do notclaimoutputvideosgenerated.",
   "webResearch": {
     "sources": [
       {
@@ -1009,14 +1027,72 @@
     ]
   },
   "videoProduction": {
-    "requestedModel": "Gemini Omni 1.2 Flash",
+    "requestedModel": "Gemini Omni Flash1.1",
     "sourceModelId": "gemini_omni_flash",
-    "execution": "user-generates-in-external-ui",
-    "availability": "account-unverified",
-    "voiceover": "female; Tara persona; separate continuous track",
-    "dialogueInGeneratedClips": false,
+    "execution": "user-generates-in-Google-Flow",
+    "availability": "user confirms1.1; specific edit/reference counts vary withactualUI, notclaimed verifiedaccount",
+    "voiceover": "existing separate narration retained for editing; never mentioned in generator prompts",
+    "dialogueInGeneratedClips": "natural spontaneous interaction allowed; no prescribed dialogue or forced lip closure",
     "sourceAnnouncement": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "announcementDate": "2026-11-05"
+    "announcementDate": "2026-11-05",
+    "generationDurations": [
+      4,
+      6,
+      8
+    ],
+    "referenceWorkflow": "Flow selected @ asset chips in Ingredients; Frames as separate fallback after actual approved start image exists",
+    "officialSources": [
+      "https://support.google.com/flow/answer/16353334?hl=en",
+      "https://support.google.com/flow/answer/16352836?hl=en"
+    ],
+    "generatedVideoCount": 4,
+    "totalRawGenerationSeconds": 34,
+    "shots": [
+      {
+        "id": "V01",
+        "position": "opening",
+        "durationSeconds": 10,
+        "mode": "edit user video",
+        "source": "delivery-v7/references/SOURCE_V01_10S.mp4",
+        "speakingCharacter": "tara",
+        "speechEnabled": true
+      },
+      {
+        "id": "V02",
+        "position": "middle growth/services",
+        "durationSeconds": 8,
+        "mode": "new user aerial image to video",
+        "speechEnabled": false
+      },
+      {
+        "id": "V03",
+        "position": "middle inpersonvisit preparation",
+        "durationSeconds": 8,
+        "mode": "twohosts studio readiness",
+        "speechEnabled": false
+      },
+      {
+        "id": "V04",
+        "position": "closing",
+        "durationSeconds": 8,
+        "mode": "twohosts walking user storefront sidewalk",
+        "speechEnabled": false
+      }
+    ],
+    "introSpeech": {
+      "mode": "native audible Tara speech in generatedV01",
+      "text": "سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.",
+      "approvalEvidence": "User explicitly supplied this marked Persian text and instructed one10second live speaking shot",
+      "speaker": "Tara",
+      "otherPerson": "Kamran listens without speaking",
+      "targetDurationSeconds": 10,
+      "sourceMaleVoice": "removed from prepared input; do not copy"
+    },
+    "remainingNarrationPath": "delivery-v7/internal/narration-remaining.fa.txt",
+    "voicePolicy": "Tara speaks approved27word opening audibly in one10second sourceedit; Kamran listens. Then existing separate narration resumes at paragraph2. Do not reuse original male voice. Nonintro generator prompts never refer to narration.",
+    "cameraPolicy": "same actual square background from extracted photo; new cinematic mediumtwo-shot with dolly-in",
+    "openingInputMode": "image ingredients, not video editing; user interface rejected video edit",
+    "openingSourcePhotoRole": "location only; original man excluded from firstgeneratedframe; Taraoriginalcloseupstillprimary"
   },
   "hostToolEvidence": {
     "checkedAt": "2026-11-06",
@@ -1045,7 +1121,7 @@
   ],
   "editorialRevision": 3,
   "title": "چرا شرکت توی سرشماری امسال برای گلبهاری‌ها مهمه؟",
-  "imagePlanStatus": "version-1-superseded-by-revision-2-not-approved",
+  "imagePlanStatus": "revision7supportframes draft; V01 usesexistingvideoedit, no mandatorynewintroimage",
   "narrationApprovalStatus": "draft-rewrite-requested-not-approved",
   "videoCaption": true,
   "captionPurpose": "کپشن همراه ویدیو؛ دو تا سه خط برای ترغیب تماشا، نه شرح کامل خبر یا تمام مسیرها",
@@ -1053,6 +1129,52 @@
   "showEducationalLabel": false,
   "videoActionPolicy": "شخصیت‌ها کار طبیعی انجام دهند؛ نگاه، اشاره، راه‌رفتن محدود و مکالمه طبیعی با حرکت لب مجاز است. صوت داخل کلیپ لازم نیست؛ اگر تولید شد، در تدوین کامل mute می‌شود و نریشن مستقل زن روی آن می‌آید. لب‌خوانی متن نریشن و دیالوگ ازپیش‌تعیین‌شده لازم نیست.",
   "narrationDeliveryStatus": "متن فعلی برای ویرایش جزئی کاربر و اجرای موتور صداساز تحویل می‌شود؛ فایل صوتی واقعی هنوز موجود نیست.",
-  "videoPromptDeliveryStatus": "پرامپت حرکت هشت نما و مراجع موجود آماده‌سازی می‌شود؛ قاب‌های شروع هشت‌نما هنوز تولید/بازبینی/تأیید تصویری نشده‌اند.",
-  "imageApprovalStatus": "نیازمند تأیید واقعی برنامه دقیق هشت قاب نسخه تازه؛ تأیید سناریو مجوز تولید تصویر نیست."
+  "videoPromptDeliveryStatus": "preparedtwohoststartingframegeneration inprogress; other3clipdirectionsunchanged",
+  "imageApprovalStatus": "no imagegeneration or approvals fabricated; old supersededplanshistorical",
+  "videoRevision": 7,
+  "visualDirection": "hybrid local motion graphics +4natural cinematic videos only: start/twomiddle/end",
+  "taraIdentityPrimary": {
+    "assetId": "c26cd383-b276-4592-af3b-d6e110d9520c",
+    "path": "delivery-v4/references/TARA_FACE_PRIMARY.png",
+    "source": "original Tara close-up",
+    "priority": "Face-primary in every Tara shot; full-body secondary never overrides face"
+  },
+  "userSelectedLocationReferences": [
+    {
+      "handle": "@GOLBAHAR_COLOR_ARCH",
+      "source": "current user inline image; colored arch sidewalk",
+      "status": "available in conversation, not copied local original"
+    },
+    {
+      "handle": "@GOLBAHAR_SHOPS",
+      "source": "current user inline image; storefront sidewalk",
+      "status": "available in conversation, not copied local original"
+    },
+    {
+      "handle": "@GOLBAHAR_AERIAL_MAIN",
+      "source": "latest user inline replacement aerial",
+      "captureDate": null,
+      "status": "available in conversation, not copied local original"
+    }
+  ],
+  "activeDelivery": "delivery-v7",
+  "requestedGeneratedVideoCount": 4,
+  "openingRevision": 9,
+  "openingPromptOverride": "delivery-v8-opening-photo/01-live-opening-photo.txt",
+  "openingLocationPhoto": "delivery-v8-opening-photo/GOLBAHAR_SQUARE_PHOTO.jpg",
+  "openingInputMode": "prepared photoreal two-host image to video",
+  "openingFrameDesign": {
+    "count": 1,
+    "width": 1080,
+    "height": 1920,
+    "transparent": false,
+    "style": "photoreal cinematic staged public-information media presenters",
+    "composition": "same real square/statue/buildings; Tara foregroundslightlyleft,Kamranhalfstepbehindright; eyelevelmediumtwo-shot; source man absent; no large passingcar",
+    "text": "تارا و کامران؛ مجریان کلام تازه",
+    "identityPrimary": "Tara originalcloseup,Kamran originalface; sourceimage anduniform neveridentityauthority"
+  },
+  "openingFrameUserApproval": {
+    "response": "باشه انجام بده واقع گرایانه.",
+    "context": "Explicit acceptance of proposed prepared two-host frame in same square, clearly identified as KalamTaze presenters, followed by realistic-style instruction"
+  }
 }

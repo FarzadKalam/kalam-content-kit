@@ -1,0 +1,19 @@
+Edit the supplied @SOURCE_V01_10S video with Omni Flash 1.1 into ONE 10-second vertical 9:16 photoreal live-action clip. Use this actual first-ten-seconds source, not a longer version.
+
+INPUT ROLES:
+1. @SOURCE_V01_10S — source footage: background/location authority ONLY: same real square, statue, buildings, curb and daylight.
+2. @TARA_FACE_PRIMARY — ORIGINAL Tara close-up, absolute authority for her face.
+3. @KAMRAN_FACE_PRIMARY — Kamran identity only.
+4. @CENSUS_UNIFORM — vest construction from the RIGHTMOST TWO people only, never their faces or printed marks.
+
+Remove the original male presenter entirely from every frame and replace him with the two hosts. Replace him with Tara foreground slightly left and Kamran half a step behind right. Never transfer the original man's face, hair, suit, body or accessories to either host. Preserve the real square, statue, buildings, curb, lighting direction and location geometry. Newly direct an eye-level medium two-shot, 35–40mm equivalent, with a gentle slow dolly-in and enough depth of field to recognize the location. Do not inherit source camera shake, movements, timing or the original man's poses. No orbit, unseen-city reveal, new town or invented landmark.
+
+Tara's face must precisely match her original close-up: eyes, brows, nose, lips, facial geometry, skin tone and age. Keep Kamran's own exact face separate. Tara wears her taupe headscarf, dark modest underlayer and navy census vest; Kamran wears a blue shirt and matching vest. No costume changes.
+
+Tara ACTUALLY SPEAKS audibly in native conversational Iranian Persian, warm clear adult female voice, with accurately synchronized mouth movement. Kamran listens, gives one modest nod and utters no words. Deliver the entire exact text in THIS ONE clip:
+
+«سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.»
+
+Start around0.1s, complete around9.7s. Natural brisk Persian, clear enunciation, no artificial speed-up, time compression or omitted words. At «چِرا؟», pause0.15–0.25s, slightly raise eyebrows and open one relaxed palm upward at waist height. Then a small welcoming smile, briefly turn that hand toward Kamran at his introduction, return eyes to lens. Stay in place. Only Tara's new clear delivery, with no music.
+
+Natural skin, coherent hands and stable identities. No captions, generated text, logos, visible ID fronts, readable screens, QR codes, extra people or scene changes. Keep clothing marks optically unreadable.

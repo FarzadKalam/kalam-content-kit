@@ -1,0 +1,21 @@
+{
+  "intro": {
+    "mode": "native audible Tara speech in generatedV01",
+    "text": "سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.",
+    "approvalEvidence": "User explicitly supplied this marked Persian text and instructed one10second live speaking shot",
+    "speaker": "Tara",
+    "otherPerson": "Kamran listens without speaking",
+    "targetDurationSeconds": 10,
+    "sourceMaleVoice": "removed from prepared input; do not copy"
+  },
+  "afterIntro": {
+    "startsWith": "گلبهار بزرگ‌تر شده، ولی فرماندار می‌گه آمار رسمی شهرستان هنوز بر پایه سرشماری نود و پنجه؛ و بخشی از اعتبارات و خدمات، با نیازهای شهرستان تناسب نداره.",
+    "mode": "existing remaining narration",
+    "file": "internal/narration-remaining.fa.txt",
+    "paragraphs": 9,
+    "words": 242,
+    "status": "text available; final recording not supplied"
+  },
+  "totalGeneratedVideoFiles": 4,
+  "narrationTextChangedOnlyByReplacingOldOpening": true
+}

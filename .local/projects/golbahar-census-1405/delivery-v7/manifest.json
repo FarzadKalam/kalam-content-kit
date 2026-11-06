@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "projectId": "golbahar-census-1405",
+  "assignmentId": "bf0e8e2a-9b7b-4806-a747-8c024c96dd1f",
+  "revision": "hybrid-four-position-v7",
+  "status": "complete-reviewable-text-draft; no generated video or approved storyboard",
+  "deliveryType": "VIDEO + predominantly light local MOTION",
+  "targetModel": "Omni Flash 1.1",
+  "targetInterface": "Google Flow",
+  "activeGeneratedClipCount": 4,
+  "totalRawGenerationSeconds": 34,
+  "generationPositions": [
+    "one opening",
+    "two middle clips",
+    "one ending"
+  ],
+  "noHiddenSubclipsOrAdditionalGenerations": true,
+  "supersedes": "20clipcinematic-v4 and two-take live-intro-v6 are history, not the active production plan",
+  "intro": {
+    "singleClipSeconds": 10,
+    "exactPersian": "سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.",
+    "instruction": "one complete take; no split, word deletion or added uniform clause",
+    "Kamran": "silent listener; one modest nod",
+    "location": "statue-square background of actual SOURCE_V01_10S.mp4; no arch",
+    "sourceAudio": "removed in prepared source; generate requested new Tara female Persian delivery"
+  },
+  "remainingNarration": {
+    "source": "delivery-v3/narration.fa.txt paragraphs2–10",
+    "paragraphCount": 9,
+    "verbatim": true,
+    "sha256OfJoinedParagraphs": "0550b5468c6c796c05eb22be9f39d5b40bfd4d2645527988bd6a2f4774bd5a70",
+    "originalFileSha256": "e6c2bd053ba584b8014b74757c29042e60f81a82af46f558ab6cb7d6d4986afd",
+    "originalFileChanged": false,
+    "actualAudioAvailable": false,
+    "overallDuration": "provisional until actual voice track is available; no fixed film timeline"
+  },
+  "assets": {
+    "TARA_FACE_PRIMARY": {
+      "handle": "@TARA_FACE_PRIMARY",
+      "source": "assets/studio/references/presenter/tara/03-tara-closeup.png",
+      "actualProjectFile": "delivery-v7/references/TARA_FACE_PRIMARY.png",
+      "status": "present",
+      "role": "Original close-up; absolute face authority for Tara in all three host clips",
+      "existsVerified": true,
+      "sha256": "26cdc7b5f82bdea4aa492a9f24c7c0b191cc044a6cfcc62d4b52c637a0d4f9b6",
+      "deliveryFile": "references/TARA_FACE_PRIMARY.png"
+    },
+    "KAMRAN_FACE_PRIMARY": {
+      "handle": "@KAMRAN_FACE_PRIMARY",
+      "source": ".local/projects/golbahar-census-1405/delivery-v3/references/kamran-identity.png",
+      "actualProjectFile": "delivery-v7/references/KAMRAN_FACE_PRIMARY.png",
+      "status": "present",
+      "role": "Kamran identity only; never the man in sample video",
+      "existsVerified": true,
+      "sha256": "d7506d880719f3f187b4363c5d7d003372dcc91e38f0b63667d12a6d90345e16",
+      "deliveryFile": "references/KAMRAN_FACE_PRIMARY.png"
+    },
+    "CENSUS_UNIFORM": {
+      "handle": "@CENSUS_UNIFORM",
+      "source": ".local/projects/golbahar-census-1405/delivery-v3/references/census-uniform-golbahar.jpg",
+      "actualProjectFile": "delivery-v7/references/CENSUS_UNIFORM.jpg",
+      "status": "present",
+      "role": "Vest construction of rightmost two people only; original photo also used as actual source photograph in local motion",
+      "existsVerified": true,
+      "sha256": "4eee78ceceef29b833e0f45a36b3d1a73033f3120149ad06aca22e7c10333899",
+      "deliveryFile": "references/CENSUS_UNIFORM.jpg"
+    },
+    "STUDIO_MAIN": {
+      "handle": "@STUDIO_MAIN",
+      "source": "assets/studio/references/location/studio_main/01-bright-master-wall.png",
+      "actualProjectFile": "delivery-v7/references/STUDIO_MAIN.png",
+      "status": "present",
+      "role": "Existing dark geometric studio, red accent, curved desk and black monitor; filename brightness not authority",
+      "existsVerified": true,
+      "sha256": "732d420e131bb2e6fcd51b3944611e73ab448154d45c1c4906a74f3211bc4bae",
+      "deliveryFile": "references/STUDIO_MAIN.png"
+    },
+    "GOLBAHAR_COLOR_ARCH": {
+      "handle": "@GOLBAHAR_COLOR_ARCH",
+      "source": null,
+      "actualProjectFile": null,
+      "status": "available-only-in-conversation; user uploads own original into Flow",
+      "role": "not used in active four-video plan after latest source-video correction",
+      "suggestedFilename": "GOLBAHAR_COLOR_ARCH.jpg",
+      "existsVerified": false,
+      "activeGenerationReference": false
+    },
+    "GOLBAHAR_AERIAL_MAIN": {
+      "handle": "@GOLBAHAR_AERIAL_MAIN",
+      "source": null,
+      "actualProjectFile": null,
+      "status": "available-only-in-conversation; user uploads own original into Flow",
+      "role": "Latest chosen inline aerial only; tree-lined central boulevard, broad junction, low-rise blocks",
+      "suggestedFilename": "GOLBAHAR_AERIAL_MAIN.jpg",
+      "existsVerified": false,
+      "captureDate": "unknown; supplied inline by user"
+    },
+    "GOLBAHAR_SHOPS": {
+      "handle": "@GOLBAHAR_SHOPS",
+      "source": null,
+      "actualProjectFile": null,
+      "status": "available-only-in-conversation; user uploads own original into Flow",
+      "role": "Exact red/yellow storefront sidewalk location for generated closingV04; optional still in local motion",
+      "suggestedFilename": "GOLBAHAR_SHOPS.jpg",
+      "existsVerified": false
+    },
+    "SOURCE_V01_10S": {
+      "handle": "@SOURCE_V01_10S",
+      "source": "/workspace/.codex-attachments/3e31c976-c503-4991-af5c-0c1712f5fbfe/d3629d81-83ba-49c4-88d7-6b24de1d7916/4_6014600243436330536.mp4",
+      "sourceDurationSeconds": 16.767,
+      "actualProjectFile": "delivery-v7/references/SOURCE_V01_10S.mp4",
+      "suggestedFilename": "SOURCE_V01_10S.mp4",
+      "status": "present; real first10s source prepared by parent; original audio removed",
+      "existsVerified": true,
+      "role": "Background/location authority ONLY: same real square/statue/buildings/curb and lighting. No authority for camera movement, timing, shake, actor poses, identity or voice; original man fully replaced.",
+      "sha256": "09ade518042ba01a490b83d90364e1cf22f444de5ff46e8e7cf00f23a61470e3",
+      "verifiedMedia": {
+        "durationSeconds": 10.0,
+        "width": 720,
+        "height": 1280,
+        "frameRate": 30,
+        "frames": 300,
+        "audioStreams": 0
+      },
+      "deliveryFile": "references/SOURCE_V01_10S.mp4"
+    }
+  },
+  "clips": [
+    {
+      "id": "V01",
+      "promptFile": "prompts/01-live-opening.txt",
+      "position": "start",
+      "durationSeconds": 10,
+      "canvas": "9:16",
+      "orderedRequiredAssets": [
+        "SOURCE_V01_10S",
+        "TARA_FACE_PRIMARY",
+        "KAMRAN_FACE_PRIMARY",
+        "CENSUS_UNIFORM"
+      ],
+      "requiredReferenceCount": 4,
+      "promptCharacters": 2556,
+      "mandatedNativeAudibleTaraSpeech": true,
+      "exactSpokenPersian": "سَرشُماری شُروع شده، وَلی این سَرشُماری برای گُلبَهار و مَردُمِش یه جورِ دیگه‌ای مُهِمِه. چِرا؟ با من، تارا، و همکارم کامران همراه باشین تا بهتون توضیح بدم.",
+      "actors": [
+        "Tara",
+        "Kamran"
+      ],
+      "generationPerformed": false,
+      "referenceGaps": [],
+      "referenceCountInterpretation": "one video plus three images; UI counting not verified",
+      "sourceReferenceGaps": [],
+      "workflow": "Video-to-Video Edit",
+      "location": "original statue-square source video only; no colored arch",
+      "camera": "Newly directed eye-level medium two-shot35–40mm, gentle slow dolly-in, sufficient depth of field for recognizable real square; no orbit or unseen city reveal; do not copy source camera or man poses"
+    },
+    {
+      "id": "V02",
+      "promptFile": "prompts/02-growth-aerial.txt",
+      "position": "middle: growth and statistics",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "orderedRequiredAssets": [
+        "GOLBAHAR_AERIAL_MAIN"
+      ],
+      "requiredReferenceCount": 1,
+      "promptCharacters": 910,
+      "mandatedNativeAudibleTaraSpeech": false,
+      "exactSpokenPersian": null,
+      "actors": [],
+      "generationPerformed": false,
+      "referenceGaps": [
+        "GOLBAHAR_AERIAL_MAIN"
+      ]
+    },
+    {
+      "id": "V03",
+      "promptFile": "prompts/03-visit-studio.txt",
+      "position": "middle: in-person visit explanation",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "orderedRequiredAssets": [
+        "TARA_FACE_PRIMARY",
+        "KAMRAN_FACE_PRIMARY",
+        "STUDIO_MAIN",
+        "CENSUS_UNIFORM"
+      ],
+      "requiredReferenceCount": 4,
+      "promptCharacters": 2120,
+      "mandatedNativeAudibleTaraSpeech": false,
+      "exactSpokenPersian": null,
+      "actors": [
+        "Tara",
+        "Kamran"
+      ],
+      "generationPerformed": false,
+      "referenceGaps": []
+    },
+    {
+      "id": "V04",
+      "promptFile": "prompts/04-closing-walk.txt",
+      "position": "end",
+      "durationSeconds": 8,
+      "canvas": "9:16",
+      "orderedRequiredAssets": [
+        "TARA_FACE_PRIMARY",
+        "KAMRAN_FACE_PRIMARY",
+        "GOLBAHAR_SHOPS",
+        "CENSUS_UNIFORM"
+      ],
+      "requiredReferenceCount": 4,
+      "promptCharacters": 2187,
+      "mandatedNativeAudibleTaraSpeech": false,
+      "exactSpokenPersian": null,
+      "actors": [
+        "Tara",
+        "Kamran"
+      ],
+      "generationPerformed": false,
+      "referenceGaps": [
+        "GOLBAHAR_SHOPS"
+      ]
+    }
+  ],
+  "localMotionOnly": [
+    "family/in-person route explanation",
+    "phone/government route",
+    "health-house route",
+    "three separate conditional household branches",
+    "services and attributed statistics",
+    "original uniform photograph and legitimate crops",
+    "share invitation/end card"
+  ],
+  "excludedFromGenerationInputs": [
+    "original sample man as identity or wardrobe source",
+    "old rejected aerial",
+    "old semi-flat masters",
+    "secondary Tara full-body image unless separately needed and reviewed",
+    "colored arch for V01"
+  ],
+  "workflow": {
+    "namedAssets": "Upload actual files, type @ and select actual matching media chips. A typed handle alone does not attach a file.",
+    "hostReferenceCount": "V01: one video+3images; V03/V04:4images; V02:1image",
+    "fixedMaxReferenceLimit": "not confirmed for Omni1.1; do not claim6or7",
+    "fourInputFallback": "If the actual interface cannot accept the required video+image set or image set, keep both face identities. Prepare and approve a real photoreal replacement start frame verified against BOTH original faces, source location and uniform, then use a separately supported Frames workflow. No such frame created here; no simultaneous Frames+Ingredients or video-edit feature guarantee.",
+    "simultaneousFramesIngredients": "not assumed",
+    "continuationFrame": "No previous-frame asset needed for these four independent clips; none fabricated",
+    "nativeOpeningAudio": "Requested and pending real output; do not claim heard or generated until checked",
+    "opening": "Video-to-Video Edit of actual first10s cut as background/location authority ONLY. Newly directed35–40mm medium two-shot with slow dolly-in; original man fully removed, original silent source audio not reused, native audible Tara required.",
+    "videoPlusImageCounting": "One video + three image references; actual account counting/acceptance not verified. Do not infer it from image-only limits."
+  },
+  "approvalState": {
+    "currentPhotorealImagePlan": "not supplied as approved to this task",
+    "storyboard": "not approved by writing this package",
+    "videos": "not generated",
+    "introAudio": "not generated or heard"
+  },
+  "sharedWrites": false,
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "fourActualPromptFiles": 4,
+    "providerPromptCharacterCounts": {
+      "V01": 2556,
+      "V02": 910,
+      "V03": 2120,
+      "V04": 2187
+    },
+    "openingSource": "ffprobe actual 10s/720x1280/300frames/30fps, no audio",
+    "exactApprovedOpening": "matches parent approved UTF8file including every diacritic",
+    "nineRemainingParagraphs": "verbatim match to parent internal remaining file",
+    "scope": "text/media-input consistency only; no generation, listening or visual output approval performed",
+    "openingCamera": "new eye-level medium two-shot35–40mm, slow dolly-in; source background only"
+  },
+  "packaging": "Parent integrated and verified actual assets; see reference-manifest for exact copies and inline-only originals"
+}
