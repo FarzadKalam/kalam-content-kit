@@ -1,0 +1,18 @@
+Create a single 10-second vertical 9:16 photorealistic video for a local public-information program.
+
+CONTEXT: Kamran and Tara are fictional AI-generated presenter characters. The family members are also fictional. This is a staged educational scene about a local census announcement supplied by the editorial team, not documentary footage of a real census visit. The topic is social and public-service information, with no political message.
+
+REFERENCES:
+@HALLWAY_START — Starting frame and primary reference for composition, the apartment corridor, doorway, family, clothing and character positions.
+@KAMRAN_FACE_PRIMARY — Primary and authoritative facial identity reference for Kamran, the man in the foreground speaking to the camera.
+@TARA_FACE_PRIMARY — Primary facial identity reference for Tara, the woman behind Kamran at the apartment doorway.
+@STATISTICAL_CENTER_LOGO — Use the supplied image as the exact design reference. The complete emblem, including the Persian inscription «مرکز آمار ایران» directly beneath the symbol, must appear as a white print on both dark vests. Preserve the shape and the lettering clearly when the camera moves closer to Kamran’s vest.
+
+DIRECTION: One continuous eye-level shot. Kamran stands in the foreground, looking into the lens and holding a tablet. He speaks with a warm, clear, conversational Iranian Persian male voice. Behind him, Tara stands at the open apartment doorway with a mother, father and child. Tara naturally consults her tablet and has a quiet, friendly interaction with the family. Their movements are subtle and realistic; no background dialogue is audible.
+
+As Kamran says «این لِباس رو بِبینین», he briefly gestures toward the white emblem on his vest. The camera moves slightly closer and adjusts its framing so the vest and white emblem are clearly visible while Kamran’s face remains in the shot. When he says «کارتِ مُعتَبَر», he makes a small explanatory gesture, reminding viewers to check identification. Do not invent a readable ID card or personal details.
+
+Kamran delivers the entire line naturally within 10 seconds, with accurate Persian lip sync:
+«مَأمور با لِباسِ فُرم، کارتِ شِناساییِ مُعتَبَر و تَبلِت میاد. این لِباس رو بِبینین؛ قَبل از پاسُخ‌گویی، حَتماً کارتِ مُعتَبَرِ مَأمور رو هَم بَرِرسی کُنین.»
+
+Keep the characters’ faces and clothes consistent with the references. Natural lighting and restrained movement. No cuts, no other voices, no background music, no subtitles, no lower-third and no on-screen text.
