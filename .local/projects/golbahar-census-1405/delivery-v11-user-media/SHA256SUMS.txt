@@ -1,0 +1,3 @@
+4ac43588fcf394e7e73d65a275963a85dafef9fd608284cb683daf98449f50e2  .local/projects/golbahar-census-1405/delivery-v11-user-media/Creating_census_announcement_video_60b1d70a_1080p.mp4
+33a96552238535299ef5a929a8a816f0c3e8bd2e38dd1a97894831749f7da305  .local/projects/golbahar-census-1405/delivery-v11-user-media/Creating_public_information_video_dda2ade7_1080p.mp4
+2bdbd9ae02293fd6afabb848cf57860ab8578f52f00df18c46b59b994dee6c58  .local/projects/golbahar-census-1405/delivery-v11-user-media/Generated Audio November 07_ 2026 - 3_55AM.wav
